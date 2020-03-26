@@ -21,42 +21,6 @@ module.exports = mode => {
             path: path.resolve(__dirname, 'dist'),
             publicPath: '/',
         },
-        module: {
-            rules: [
-                // {
-                //     test: /\.(png|jpe?g|gif|svg)$/i,
-                //     use: [
-                //         {
-                //             loader: 'file-loader',
-                //             options: {
-                //                 name: 'img/[path][name].[ext]',
-                //                 outputPath: 'img',
-                //             },
-                //         },
-                //     ],
-                // },
-                // {
-                //     test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                //     loader: "file-loader",
-                //     options: {
-                //         name: "[name].[ext]"
-                //     }
-                // },
-            ],
-        },
-        optimization: {
-            splitChunks: {
-                cacheGroups: {
-                    vendor: {
-                        test: /node_modules/,
-                        name: 'vendors',
-                        chunks: 'all',
-                        enforce: true,
-                    }
-                },
-            },
-            // runtimeChunk: true
-        },
         plugins: [
             new CleanWebpackPlugin(),
             ...PAGES.map(

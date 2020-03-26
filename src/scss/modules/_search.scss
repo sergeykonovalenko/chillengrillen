@@ -1,0 +1,36 @@
+.search {
+    display: flex;
+}
+
+.search__field {
+    border-radius: 6px 0 0 6px;
+    appearance: none;
+
+    &::-ms-clear {
+        display: none;
+    }
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        display: none;
+    }
+}
+
+.search__button {
+    flex-shrink: 0;
+    width: 80px;
+    padding: 0;
+    background: $color-main url("img/bg/magnifier.svg") no-repeat center;
+    background-size: 25px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        background-color: $color-secondary;
+    }
+}

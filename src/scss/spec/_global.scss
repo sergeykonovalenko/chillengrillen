@@ -17,6 +17,8 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
     font-family: "Roboto", Tahoma, sans-serif;
     color: $color-main;
     word-wrap: break-word;
@@ -47,11 +49,13 @@ select,
 textarea {
     display: block;
     width: 100%;
-    padding: 0;
+    padding: 32px 30px;
     font-family: inherit;
     color: $color-main;
-    background-color: #fff;
-    border-radius: 0;
+    background-color: $color-bg;
+    border: none;
+    border-radius: 6px;
+    transition: all .15s ease-in;
 
     &:hover,
     &:focus {
@@ -61,6 +65,10 @@ textarea {
 
 textarea {
     resize: none;
+}
+
+::placeholder {
+    color: #666666;
 }
 
 .container {

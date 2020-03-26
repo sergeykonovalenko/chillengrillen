@@ -1,0 +1,15 @@
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.products-list__item {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}

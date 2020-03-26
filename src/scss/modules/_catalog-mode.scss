@@ -1,0 +1,48 @@
+.catalog-mode {
+    display: flex;
+    width: 114px;
+    padding: 0;
+    list-style: none;
+    background-color: $color-bg;
+    border-radius: 6px;
+}
+
+.catalog-mode__item {
+    width: 50%;
+}
+
+.catalog-mode__button {
+    display: block;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 26px auto;
+    border: none;
+    cursor: pointer;
+    opacity: .3;
+    transition: all .15s ease-in;
+
+    &--grid {
+        background-image: url("img/bg/grid.svg");
+        background-position: calc(50% + 6px) center;
+    }
+
+    &--list {
+        background-image: url("img/bg/list.svg");
+        background-position: calc(50% - 6px) center;
+    }
+
+    &--active {
+        opacity: 1;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

@@ -3,7 +3,22 @@ const common = require('./webpack.common.js');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 
-let devServer; // set below
+// Get local IP address in Node.js
+let os = require('os');
+let ifaces = os.networkInterfaces();
+let localIpAddress;
+
+Object.keys(ifaces).forEach(function (ifname) {
+    ifaces[ifname].forEach(function (iface) {
+        if ('IPv4' !== iface.family || iface.internal !== false) {
+            return;
+        }
+        localIpAddress = iface.address;
+    });
+});
+
+// Set below
+let devServer;
 
 module.exports = (env, argv) => {
 
@@ -19,10 +34,10 @@ module.exports = (env, argv) => {
                 warnings: true,
                 errors: true
             },
-            host: '192.168.0.100',
+            host: localIpAddress,
             port: 8081,
             hot: true,
-            writeToDisk: true,
+            // writeToDisk: true,
         },
         watchOptions: {
             aggregateTimeout: 100,
