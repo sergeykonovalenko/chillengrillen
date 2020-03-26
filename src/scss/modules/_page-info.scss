@@ -1,0 +1,18 @@
+.page-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.page-info__count {
+    color: $color-bg--darkest;
+    margin: 0 30px 0 0;
+}
+
+.page-info__count span {
+    color: $color-main;
+}
+
+.page-info__pagination {
+    margin: -10px -10px 0 auto;
+}

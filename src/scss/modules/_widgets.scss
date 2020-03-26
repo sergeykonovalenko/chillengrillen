@@ -1,0 +1,23 @@
+.widgets {
+    padding: 0;
+    list-style: none;
+}
+
+.widgets__item {
+    margin-bottom: 55px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.widgets__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: $color-secondary;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-bg--dark;
+}

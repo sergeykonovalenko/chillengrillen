@@ -7,6 +7,15 @@ $(document).ready(function () {
         $(this).addClass('catalog-mode__button--active');
     });
 
+    // show/hide subcategories
+    $('.categories__caret').on('click', function () {
+        $('.categories__item').removeClass('categories__item--open');
+        $(this).closest('.categories__item').toggleClass('categories__item--open');
+
+        $('.categories__item:not(.categories__item--open) .categories__children').slideUp(300);
+        $(this).closest('.categories__item').find('.categories__children').slideToggle(300);
+    });
+
     // rater
     let options = {
         max_value: 5,

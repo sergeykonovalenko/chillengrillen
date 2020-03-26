@@ -1,0 +1,52 @@
+.wp-pagenavi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wp-pagenavi span,
+.wp-pagenavi a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: $color-bg--dark;
+    border: 1px solid $color-bg--dark;
+    border-radius: 4px;
+}
+
+.wp-pagenavi a {
+    cursor: pointer;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $color-main;
+        border-color: $color-main;
+    }
+
+    &:hover svg,
+    &:focus svg {
+        fill: #fff;
+    }
+}
+
+.wp-pagenavi .current {
+    color: $color-main;
+    border-color: $color-main;
+    cursor: default;
+}
+
+.wp-pagenavi .extend {
+    cursor: not-allowed;
+}
+
+.wp-pagenavi svg {
+    transition: all .15s ease-in;
+}

@@ -29,9 +29,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page">
+    <div class="page-content">
         <div class="container">
-            <aside class="page__sidebar sidebar">
+            <aside class="page-content__sidebar sidebar">
                 <form class="sidebar__search search" action="#" method="GET">
                     <label class="visually-hidden" for="s">Поиск</label>
                     <input class="search__field" id="s" type="search" name="s" placeholder="Введите ключевое слово...">
@@ -39,8 +39,94 @@
                         <span class="visually-hidden">Поиск</span>
                     </button>
                 </form><!-- / .search -->
+                <ul class="sidebar__widgets widgets">
+                    <li class="widgets__item">
+                        <p class="widgets__title">Categories</p>
+                        <ul class="categories">
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">Cameras & Storage</a>
+                                <button class="categories__caret" type="button"></button>
+                                <ul class="categories__children">
+                                    <li><a href="#">Compact Cameras</a></li>
+                                    <li><a href="#">Drone</a></li>
+                                    <li><a href="#">Lenses</a></li>
+                                    <li><a href="#">Storage</a></li>
+                                </ul>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">Console & Computer</a>
+                                <button class="categories__caret" type="button"></button>
+                                <ul class="categories__children">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Control</a></li>
+                                    <li><a href="#">Game Console</a></li>
+                                    <li><a href="#">Game Title</a></li>
+                                    <li><a href="#">Gaming Gear</a></li>
+                                    <li><a href="#">Virual Reality</a></li>
+                                </ul>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">HeadPhones</a>
+                                <button class="categories__caret" type="button"></button>
+                                <ul class="categories__children">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Control</a></li>
+                                    <li><a href="#">Game Console</a></li>
+                                    <li><a href="#">Game Title</a></li>
+                                    <li><a href="#">Gaming Gear</a></li>
+                                    <li><a href="#">Virual Reality</a></li>
+                                </ul>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">Power & Cables</a>
+                                <button class="categories__caret" type="button"></button>
+                                <ul class="categories__children">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Control</a></li>
+                                    <li><a href="#">Game Console</a></li>
+                                    <li><a href="#">Game Title</a></li>
+                                    <li><a href="#">Gaming Gear</a></li>
+                                    <li><a href="#">Virual Reality</a></li>
+                                </ul>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">Smart Device</a>
+                                <button class="categories__caret" type="button"></button>
+                                <ul class="categories__children">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Control</a></li>
+                                    <li><a href="#">Game Console</a></li>
+                                    <li><a href="#">Game Title</a></li>
+                                    <li><a href="#">Gaming Gear</a></li>
+                                    <li><a href="#">Virual Reality</a></li>
+                                </ul>
+                            </li>
+                            <li class="categories__item">
+                                <a class="categories__link" href="#">TeLevitions</a>
+                                <button class="categories__caret" type="button"></button>
+                                <ul class="categories__children">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Control</a></li>
+                                    <li><a href="#">Game Console</a></li>
+                                    <li><a href="#">Game Title</a></li>
+                                    <li><a href="#">Gaming Gear</a></li>
+                                    <li><a href="#">Virual Reality</a></li>
+                                </ul>
+                            </li>
+                        </ul><!-- / .categories -->
+                    </li>
+                    <li class="widgets__item">
+                        <p class="widgets__title">Price</p>
+                    </li>
+                    <li class="widgets__item">
+                        <p class="widgets__title">Color</p>
+                    </li>
+                    <li class="widgets__item">
+                        <p class="widgets__title">Brands</p>
+                    </li>
+                </ul><!-- / .widgets -->
             </aside><!-- / .sidebar -->
-            <div class="page__main main">
+            <div class="page-content__main main">
                 <div class="main__catalog-settings catalog-settings">
                     <ul class="catalog-settings__mode catalog-mode">
                         <li class="catalog-mode__item">
@@ -79,6 +165,9 @@
                     <li class="products-list__item product-item">
                         <div class="product-item__thumb">
                             <a class="product-item__link" href="#">
+                                <ul class="product-item__label product-label">
+                                    <li class="product-label__item product-label__item--sale">-15%</li>
+                                </ul><!-- / .product-label -->
                                 <picture class="product-item__img-box">
                                     <source srcset="img/base/Watch-GT2-46mm-Sport-Black-1.webp" type="image/webp">
                                     <img class="product-item__img" src="img/base/Watch-GT2-46mm-Sport-Black-1.png" alt="">
@@ -132,6 +221,9 @@
                     <li class="products-list__item product-item">
                         <div class="product-item__thumb">
                             <a class="product-item__link" href="#">
+                                <ul class="product-item__label product-label">
+                                    <li class="product-label__item product-label__item--sale">-10%</li>
+                                </ul><!-- / .product-label -->
                                 <picture class="product-item__img-box">
                                     <source srcset="img/base/Crown-Gaming-Headset-1.webp" type="image/webp">
                                     <img class="product-item__img" src="img/base/Crown-Gaming-Headset-1.jpg" alt="">
@@ -445,6 +537,9 @@
                     <li class="products-list__item product-item">
                         <div class="product-item__thumb">
                             <a class="product-item__link" href="#">
+                                <ul class="product-item__label product-label">
+                                    <li class="product-label__item product-label__item--sale">-7%</li>
+                                </ul><!-- / .product-label -->
                                 <picture class="product-item__img-box">
                                     <source srcset="img/base/Apple-AirPods-Pro-1.webp" type="image/webp">
                                     <img class="product-item__img" src="img/base/Apple-AirPods-Pro-1.jpg" alt="">
@@ -654,6 +749,9 @@
                     <li class="products-list__item product-item">
                         <div class="product-item__thumb">
                             <a class="product-item__link" href="#">
+                                <ul class="product-item__label product-label">
+                                    <li class="product-label__item product-label__item--sale">-11%</li>
+                                </ul><!-- / .product-label -->
                                 <picture class="product-item__img-box">
                                     <source srcset="img/base/Rondell-Walzer-1.webp" type="image/webp">
                                     <img class="product-item__img" src="img/base/Rondell-Walzer-1.jpg" alt="">
@@ -695,18 +793,38 @@
                             <div class="product-item__footer">
                                 <div class="product-item__review">
                                     <div class="product-item__rating rating" data-rate-value=4.5></div>
-                                    <a class="product-item__review-item" href="#">30 отзывов</a>
+                                    <a class="product-item__review-item" href="#">27 отзывов</a>
                                 </div>
                                 <p class="product-item__price">
                                     <ins>5 422 руб.</ins>
+                                    <del>7 587 руб.</del>
                                 </p>
                             </div>
                         </div>
                     </li><!-- / .product-item -->
                 </ul><!-- / .products-list -->
+                <div class="main__page-info page-info">
+                    <p class="page-info__count">Showing <span>1–12</span> of <span>323</span> results</p>
+                    <div class="page-info__pagination wp-pagenavi">
+                        <span class="current">1</span>
+                        <a class="page larger" href="#" title="Страница 2">2</a>
+                        <a class="page larger" href="#" title="Страница 3">3</a>
+                        <span class="extend">...</span>
+                        <a class="larger page" href="#" title="Страница 10">10</a>
+                        <span class="extend">...</span>
+                        <!-- Стрелка влево -->
+                        <!--<a class="previouspostslink" rel="prev" href="#">
+                            <svg width="9" viewBox="0 0 149 256.1" fill="#ccc" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
+                        </a>-->
+                        <a class="nextpostslink" rel="next" href="#">
+                            <svg width="9" viewBox="0 0 149 256.1" fill="#ccc" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
+                        </a>
+                        <a class="last" href="#">15</a>
+                    </div><!-- / .wp-pagenavi -->
+                </div><!-- / .page-info -->
             </div>
         </div>
-    </div><!-- / .page -->
+    </div><!-- / .page-content -->
 
     <script src="js/app.bundle.js"></script>
 </body>

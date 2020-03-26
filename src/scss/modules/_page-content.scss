@@ -1,0 +1,15 @@
+.page-content {
+    padding: 100px 0;
+}
+
+.page-content .container {
+    display: flex;
+}
+
+.page-content__sidebar {
+    margin-right: 30px;
+}
+
+.page-content__main {
+    flex-grow: 1;
+}
