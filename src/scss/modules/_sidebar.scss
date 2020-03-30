@@ -8,5 +8,21 @@
 }
 
 .sidebar__widgets {
-    margin: 0;
+    margin: 0 0 55px 0;
+}
+
+.sidebar__banner {
+    display: block;
+}
+
+.sidebar__banner img {
+    border-radius: 6px;
+}
+
+.sidebar > *:first-child {
+    margin-top: 0;
+}
+
+.sidebar > *:last-child {
+    margin-bottom: 0;
 }

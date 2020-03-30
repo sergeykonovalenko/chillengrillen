@@ -9,12 +9,30 @@ $(document).ready(function () {
 
     // show/hide subcategories
     $('.categories__caret').on('click', function () {
-        $('.categories__item').removeClass('categories__item--open');
+        let categoriesItem = $('.categories__item');
+        let thisCategoriesItem = $(this).closest('.categories__item');
+
+        categoriesItem.not(thisCategoriesItem).removeClass('categories__item--open');
         $(this).closest('.categories__item').toggleClass('categories__item--open');
 
-        $('.categories__item:not(.categories__item--open) .categories__children').slideUp(300);
+        categoriesItem.not(thisCategoriesItem).find('.categories__children').slideUp(300);
         $(this).closest('.categories__item').find('.categories__children').slideToggle(300);
     });
+
+
+
+
+
+
+    // $('.categories__caret').on('click', function () {
+    //     let test = $(this).closest('.categories__item');
+    //
+    //     $('.categories__item').not(test).removeClass('categories__item--open');
+    //     $(this).closest('.categories__item').toggleClass('categories__item--open');
+    //
+    //     $('.categories__item:not(.categories__item--open) .categories__children').slideUp(300);
+    //     $(this).closest('.categories__item').find('.categories__children').slideToggle(300);
+    // });
 
     // rater
     let options = {
@@ -31,5 +49,65 @@ $(document).ready(function () {
     };
 
     $('.rating').rate(options);
+
+    // initialise Ion.RangeSlider
+    let rangeField = $('.range__field');
+    let minPrice;
+    let maxPrice;
+    let priceFilterMinPrice = $('#price-filter-min-price');
+    let priceFilterMaxPrice = $('#price-filter-max-price');
+
+    rangeField.ionRangeSlider({
+        skin: 'round',
+        type: 'double',
+        // min: 1000,
+        // max: 1000,
+        // from: 200,
+        // to: 500,
+        grid: true,
+        // prefix: '₽ ',
+        // postfix: ' ₽',
+        onStart: function (data) {
+            minPrice = data.min;
+            maxPrice = data.max;
+            priceFilterMinPrice.val(numberWithSpaces(data.from));
+            priceFilterMaxPrice.val(numberWithSpaces(data.to));
+        },
+        onChange: function (data) {
+            priceFilterMinPrice.val(numberWithSpaces(data.from));
+            priceFilterMaxPrice.val(numberWithSpaces(data.to));
+        },
+    });
+
+    let range = rangeField.data('ionRangeSlider');
+
+    priceFilterMinPrice.on('input', function () {
+        range.update({
+            from: $(this).val()
+        });
+    });
+
+    priceFilterMaxPrice.on('input', function () {
+        range.update({
+            to: $(this).val()
+        });
+    });
+
+    priceFilterMinPrice.on('change', function () {
+        if ($(this).val() < minPrice) {
+            $(this).val(minPrice)
+        }
+    });
+
+    priceFilterMaxPrice.on('change', function () {
+        if ($(this).val() > maxPrice) {
+            $(this).val(maxPrice)
+        }
+    });
+
+    // numberWithSpaces
+    function numberWithSpaces(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    }
 
 }); // end ready

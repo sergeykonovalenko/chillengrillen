@@ -61,6 +61,10 @@ textarea {
     &:focus {
         outline: none;
     }
+
+    &:focus {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    }
 }
 
 textarea {

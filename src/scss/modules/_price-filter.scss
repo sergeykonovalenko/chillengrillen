@@ -1,0 +1,39 @@
+.price-filter {
+
+}
+
+.price-filter__range {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.range__field {
+
+}
+
+.price-filter__row {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.price-filter__label {
+    flex-shrink: 0;
+}
+
+.price-filter__field-box {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.price-filter__field {
+    padding: 5px 10px;
+    font-weight: 700;
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

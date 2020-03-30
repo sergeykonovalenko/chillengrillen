@@ -3,6 +3,7 @@
    ========================================================================== */
 @import "~normalize.css/normalize.css";
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "~ion-rangeslider/css/ion.rangeSlider.min.css";
 
 /* ==========================================================================
    SPECIFICATION
@@ -18,12 +19,20 @@
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+
+/* ==========================================================================
+   CATALOG PAGE
+   ========================================================================== */
 @import "modules/main-header";
 @import "modules/page-content";
 @import "modules/sidebar";
 @import "modules/search";
 @import "modules/widgets";
 @import "modules/categories";
+@import "modules/price-filter";
+@import "modules/range";
+@import "modules/colors";
+@import "modules/list-filter";
 @import "modules/main";
 @import "modules/catalog-settings";
 @import "modules/catalog-mode";

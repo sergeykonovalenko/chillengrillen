@@ -1,0 +1,30 @@
+.list-filter {
+    padding: 0;
+    list-style: none;
+}
+
+.list-filter li {
+
+}
+
+.list-filter a {
+    display: block;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    color: $color-main;
+    transition: all .15s ease-out;
+
+    &:hover,
+    &:focus {
+        color: $color-secondary;
+    }
+}
+
+.list-filter li:first-child a {
+    padding-top: 0;
+}
+
+.list-filter li:last-child a {
+    padding-bottom: 0;
+}
