@@ -19,11 +19,13 @@
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+@import "modules/main-header";
+@import "modules/main-nav";
+@import "modules/dropdown-box";
 
 /* ==========================================================================
    CATALOG PAGE
    ========================================================================== */
-@import "modules/main-header";
 @import "modules/page-content";
 @import "modules/sidebar";
 @import "modules/search";

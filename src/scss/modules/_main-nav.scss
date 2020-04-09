@@ -1,0 +1,38 @@
+.main-nav {
+    display: flex;
+}
+
+.main-nav__list {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav__list > li {
+    display: flex;
+
+    &:hover > a {
+        color: $color-accent;
+    }
+
+    &:focus-within > a {
+        color: $color-accent;
+    }
+}
+
+.main-nav__list > li > a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.main-nav__list > li:last-child > a {
+    padding-right: 40px;
+}
+
+.main-nav__list a {
+    color: $color-main;
+    transition: all .15s ease-out;
+}

@@ -14,6 +14,15 @@
             background-image: url("img/bg/angle-right--light--secondary.svg");
         }
     }
+
+    &:hover .categories__link span {
+        color: $color-secondary;
+    }
+}
+
+.categories__item span {
+    color: $color-bg--darkest;
+    transition: all .15s ease-out;
 }
 
 .categories__link {
@@ -66,6 +75,10 @@
 
     &:focus {
         outline: none;
+    }
+
+    .categories__item:first-child & {
+        top: 3px;
     }
 
     .categories__item--open & {

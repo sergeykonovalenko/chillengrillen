@@ -1,0 +1,34 @@
+.dropdown-box {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown-box__item {
+    display: flex;
+
+    &:hover {
+        .dropdown-box__icon {
+            fill: $color-accent;
+        }
+    }
+}
+
+.dropdown-box__link {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+
+    .dropdown-box__item:first-child & {
+        padding-left: 40px;
+    }
+
+    .dropdown-box__item:last-child & {
+        padding-right: 40px;
+    }
+}
+
+.dropdown-box__icon {
+    transition: all .15s ease-out;
+}

@@ -7,29 +7,571 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SEO -->
-    <!-- SEO -->
-    <title>Catalog | GALAXI</title>
-    <meta name="description" content="Описание сайта для поисковиков, рекомендуемый размер от 70 до 140 символов">
-    <meta name="keywords" content="ключевые, слова, через, запятую (рекомендованное количество слов в данном теге — 5-10)">
+    <title>Каталог | Интернет-магазин Chillengrillen.ru</title>
+    <meta name="description" content="🚴‍♀️ Интернет-магазин Chillengrillen.ru предлагает велосипеды и велосипедные запчасти для профессионалов и любителей велоспорта, а также услуги ремонта велосипедов в Санкт-Петербурге - купить велосипедную продукцию с гарантией и бесплатной доставкой.">
+    <meta name="keywords" content="велосипед, запчасти для велосипеда, ремонт велосипеда, веломастерская, спб, интернет-магазин, купить велосипед">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
     <!-- OG -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Название страницы, максимум 70 символов">
-    <meta property="og:description" content="Описание, до 200 символов">
+    <meta property="og:title" content="Магазин велосипедов и велозапчастей в Санкт-Петербурге - Chillengrillen.ru">
+    <meta property="og:description" content="🚴‍♀️ Интернет-магазин Chillengrillen.ru предлагает велосипеды и велосипедные запчасти для профессионалов и любителей велоспорта, а также услуги ремонта велосипедов в Санкт-Петербурге - купить велосипедную продукцию с гарантией и бесплатной доставкой.">
     <meta property="og:image" content="img/og/poster.png">
-    <meta property="og:url" content="Ссылка на текущую страницу (http://www.site-name.com/current-page)">
-    <meta property="og:site_name" content="GULP PROJECT">
+    <meta property="og:url" content="https://chillengrillen.ru">
+    <meta property="og:site_name" content="Chillengrillen.ru">
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="main-header">
+        <a class="main-header__logo" href="index.html">
+            <img src="img/base/logo.svg" width="180" alt="">
+        </a>
+        <nav class="main-header__nav main-nav">
+            <!-- Desktop menu -->
+            <ul class="main-nav__list mega-menu">
+                <li class="mega-menu-item mega-current-menu-item">
+                    <a class="mega-menu-link" href="#">Каталог</a>
+                    <ul class="mega-sub-menu">
+                        <li class="mega-menu-row">
+                            <ul class="mega-sub-menu">
+                                <li class="mega-menu-column mega-menu-columns-3-of-12">
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Аксессуары</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка аксессуаров</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка вело-багажника</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка вело-зеркала</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка вело-крыльев (за штуку)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка вело-крыльев полноразмерных (за штуку)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка вело-подножки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка велокомпьютера</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка детского кресла</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка корзины на руль</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка шипов в велообувь</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Вилки</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена вилки на собранном велосипеде</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена масла в штанах вилки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена направляющих в вилке</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена сальников и пыльников в вилке</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Настройка вилки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Обрезка рулевой трубы вилки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">ТО вилки, закрытый картридж</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">ТО вилки, открытый картридж</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка вилки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка опорного кольца вилки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка якоря в рулевую трубу вилки</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-column mega-menu-columns-3-of-12">
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Задние амортизаторы</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена вкладышей в заднем амортизаторе</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена заднего амортизатора</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена направляющих в заднем амортизаторе</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Настройка заднего амортизатора</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">ТО воздушного амортизатора</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">ТО пружинного амортизатора</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка заднего амортизатора</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Колеса</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена покрышки бескамерной</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена покрышки/камеры (колесо на гайках)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена покрышки/камеры (колесо на эксцентрике)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена покрышки/камеры (колесо отдельно)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена покрышки/камеры (электровелосипеды и городские)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена пром-подшипников задней втулки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена пром-подшипников передней втулки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Исправление восьмерки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Исправление зонта</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Исправление радиального биения</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Переборка втулки задней на насыпных подшипниках</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Переборка втулки передней на насыпных подшипниках</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Подготовительная очистка обода, втулки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Протяжка колеса</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Протяжка колеса заспицованного</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса c кассетой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса c кассетой, покрышкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса c покрышкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса c тормозным диском</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса c тормозным диском, кассетой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса c тормозным диском, кассетой, покрышкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса c тормозным диском, покрышкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса без сохр. спиц</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Разборка колеса с сохр. спиц</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Регулировка конусов втулки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Сборка колеса</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Сборка колеса на старых спицах</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Сборка колеса повышенной сложности</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Сборка колеса повышенной сложности на старых спицах</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка покрышки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка покрышки бескамерной (герметизация, уст. нип.)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-column mega-menu-columns-3-of-12">
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Привод</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Демонтаж каретки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Демонтаж кассеты</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Демонтаж системы</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Демонтаж трещётки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена звезд на системе со снятием шатунов</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена звезды на системе</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена каретки без шатунов</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена каретки со снятием шатунов</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена кассеты</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена манетки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена манетки с настройкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена педалей</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена переключателя заднего</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена переключателя переднего</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена пистолета шоссейного</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена роликов зад. перекл.</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена системы (инегр. вал) с настройкой пер. переключателя</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена системы с настройкой пер. переключателя</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена фривила, трещетки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена цепи</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена шатунов</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Настройка переключателя (зад./пер.)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Перевод на парафиновую смазку (Squirt/Smoove)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Смазка цепи</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка каретки на раму</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка кассеты</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка педалей</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка переключателя заднего</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка переключателя переднего</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка системы с кареткой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка трещётки/кассеты</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка успокоителя</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка цепи</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка шатунов</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Устранение люфта разборной каретки</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Рама</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена подшипников рамы FSR, VPP, мото-линк итп (рама без навески)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена подшипников рамы одношарнирной (рама без навески)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Прогон резьбы кареточного стакана на раме без обвеса</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Торцевание кареточного стакана на раме без обвеса</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Торцевание рулевого стакана на раме без обвеса 1/1.8</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-column mega-menu-columns-3-of-12">
+                                    <ul class="mega-sub-menu">
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Тормоза</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Демонтаж тормозного диска</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена колодок в дисковом тормозе с настройкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена колодок в ободном тормозе с настройкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена тормоза, диск. гидравлический</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена тормоза, диск. механический</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена тормоза, ободной гидравлический</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена тормоза, ободной механический</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена тормозного диска</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена тормозной ручки, гидравлическая</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена тормозной ручки, механическая</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Исправление кривизны тормозного диска</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Настройка тормоза дискового</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Настройка тормоза ободного</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Обезжиривание тормозного диска</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Прокачка тормоза</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Прокачка тормоза на велосипеде с настройкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Прокачка тормоза с укорачиванием/установкой новой гидролинии</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Прокачка тормоза с установкой гидролинии внутренней проводки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка дискового тормоза</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка тормоза ободного</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка тормоза, диск. гидравлического</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка тормозного диска</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка тормозного калипера, механ.</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Троса/рубашки</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена рубашки п/метр</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена рубашки, внутр. проводка п/метр</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена троса торм./перекл.</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена троса торм./перекл. с настройкой</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка троса + рубашки переключателя или тормоза</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-item">
+                                            <a class="mega-menu-link">Управление</a>
+                                            <ul class="mega-sub-menu">
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена выноса</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена грипс lock-on</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена грипс резиновые/силиконовые</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена обмотки руля</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена подседельного штыря</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена рулевой колонки на раме без обвеса</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена рулевой колонки на собранном велосипеде</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена руля</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена руля (с переустановкой манеток, грипс и тд.)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Замена седла</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Переборка рулевой кол. шарик./картридж. подш. (на велосипеде)</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Регулировка люфта рулевой колонки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Укорачивание руля</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка выноса</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка обмотки руля</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка рулевой колонки</a>
+                                                </li>
+                                                <li class="mega-menu-item">
+                                                    <a class="mega-menu-link" href="#">Установка руля (с установкой манеток, тормозных ручек, грипс)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Мастерская</a></li>
+                <li class="mega-menu-item"><a class="mega-menu-link" href="#">О нас</a></li>
+                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Блог</a></li>
+                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Доставка, оплата и гарантия</a></li>
+                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Вакансии</a></li>
+                <li class="mega-menu-item"><a class="mega-menu-link" href="#">Контакты</a></li>
+            </ul>
+            <!-- Mobile menu -->
+        </nav><!-- / .main-nav -->
+        <ul class="main-header__user-actions dropdown-box">
+            <li class="dropdown-box__item">
+                <a class="dropdown-box__link">
+                    <svg class="dropdown-box__icon" width="20" viewBox="0 0 25.3 26" fill="#555" xmlns="http://www.w3.org/2000/svg"><path d="M9.8 0l-.1.8-.6 3c-1 .4-1.8.9-2.6 1.5l-2.9-1-.8-.2-.4.7-2 3.4-.4.7.6.5 2.3 2c-.1.5-.2 1-.2 1.6 0 .5.1 1.1.2 1.6l-2.3 2-.6.5.4.7 2 3.4.4.7.8-.3 2.9-1c.8.6 1.6 1.2 2.6 1.5l.6 3 .1.9h5.6l.2-.8.6-3c1-.4 1.8-.9 2.6-1.5l2.9 1 .8.3.4-.7 2-3.4.4-.7-.6-.5-2.3-2c.1-.5.2-1 .2-1.6 0-.5-.1-1.1-.2-1.6l2.3-2 .6-.5-.4-.7-2-3.4-.4-.7-.8.3-2.9 1c-.8-.6-1.6-1.2-2.6-1.5l-.6-3-.1-1H9.8zm1.7 2h2.4l.5 2.6.1.6.5.2c1.1.4 2.2 1 3 1.8l.4.4.6-.2 2.5-.9 1.2 2-2 1.8-.5.4.2.6c.1.6.2 1.2.2 1.8s-.1 1.2-.2 1.8l-.1.6.4.4 2 1.8-1.2 2-2.5-.9-.6-.2-.4.4c-.9.8-1.9 1.4-3 1.8l-.6.2-.1.6-.5 2.4h-2.4l-.4-2.6-.1-.6-.6-.2c-1.1-.4-2.2-1-3-1.8l-.4-.4-.6.2-2.5.9-1.2-2 2-1.8.4-.4-.2-.6c-.1-.6-.2-1.2-.2-1.8s.1-1.2.2-1.8l.2-.4-.5-.4-2-1.8 1.2-2 2.5.9.6.2.4-.4c.9-.8 1.9-1.4 3-1.8l.6-.2.2-.6.5-2.6zm1.2 6c-2.8 0-5 2.3-5 5s2.3 5 5 5 5-2.3 5-5-2.3-5-5-5zm0 2c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3z"/></svg>
+                </a>
+            </li>
+            <li class="dropdown-box__item">
+                <a class="dropdown-box__link" href="#">
+                    <span class="visually-hidden">Аккаунт</span>
+                    <svg class="dropdown-box__icon" width="16" viewBox="0 0 20 22" fill="#555" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C6.1 0 3 3.1 3 7c0 2.4 1.2 4.6 3.1 5.8C2.5 14.3 0 17.9 0 22h2c0-4.4 3.6-8 8-8s8 3.6 8 8h2c0-4.1-2.5-7.7-6.1-9.2C15.8 11.6 17 9.4 17 7c0-3.9-3.1-7-7-7zm0 2c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z"/></svg>
+                </a>
+            </li>
+            <li class="dropdown-box__item">
+                <a class="dropdown-box__link" href="#">
+                    <span class="visually-hidden">Корзина</span>
+                    <svg class="dropdown-box__icon" width="20" viewBox="0 0 23.8 20" fill="#555" xmlns="http://www.w3.org/2000/svg"><path d="M1 0C.4 0 0 .4 0 1s.4 1 1 1h2.2l2.6 10.5c.2.9 1 1.5 1.9 1.5h11.5c.9 0 1.7-.6 1.9-1.5L23.8 3H7l.5 2h13.7l-1.9 7H7.8L5.2 1.5C4.9.6 4.1 0 3.2 0H1zm17 14c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm-9 0c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm0 2c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm9 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z"/></svg>
+                </a>
+            </li>
+        </ul><!-- / .dropdown-box -->
+        <button class="main-header__btn-search" type="button">
+            <span class="visually-hidden">Поиск</span>
+            <svg width="20" viewBox="0 0 512 512" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M286.526 0C410.85 0 512 101.151 512 225.474c0 124.33-101.15 225.474-225.474 225.474-124.33 0-225.474-101.144-225.474-225.474C61.052 101.151 162.196 0 286.526 0zm0 409.323c101.373 0 183.848-82.475 183.848-183.848S387.9 41.626 286.526 41.626s-183.848 82.475-183.848 183.848 82.475 183.849 183.848 183.849z"/><path d="M6.098 476.472l119.328-119.328a20.81 20.81 0 0 1 29.43 29.43L35.528 505.902a20.81 20.81 0 1 1-29.43-29.43z"/></svg>
+        </button>
+    </header><!-- / .main-header -->
+
     <div class="page-content">
         <div class="container">
             <aside class="page-content__sidebar sidebar">
@@ -45,7 +587,7 @@
                         <p class="widgets__title">Категории</p>
                         <ul class="categories">
                             <li class="categories__item">
-                                <a class="categories__link" href="#">Cameras & Storage (530)</a>
+                                <a class="categories__link" href="#">Cameras & Storage <span>(530)</span></a>
                                 <button class="categories__caret" type="button"></button>
                                 <ul class="categories__children">
                                     <li><a href="#">Compact Cameras (135)</a></li>
@@ -55,7 +597,7 @@
                                 </ul>
                             </li>
                             <li class="categories__item">
-                                <a class="categories__link" href="#">Console & Computer (375)</a>
+                                <a class="categories__link" href="#">Console & Computer <span>(375)</span></a>
                                 <button class="categories__caret" type="button"></button>
                                 <ul class="categories__children">
                                     <li><a href="#">Accessories (55)</a></li>
@@ -67,7 +609,7 @@
                                 </ul>
                             </li>
                             <li class="categories__item">
-                                <a class="categories__link" href="#">HeadPhones (758)</a>
+                                <a class="categories__link" href="#">HeadPhones <span>(758)</span></a>
                                 <button class="categories__caret" type="button"></button>
                                 <ul class="categories__children">
                                     <li><a href="#">Accessories (143)</a></li>
@@ -79,7 +621,7 @@
                                 </ul>
                             </li>
                             <li class="categories__item">
-                                <a class="categories__link" href="#">Power & Cables (373)</a>
+                                <a class="categories__link" href="#">Power & Cables <span>(373)</span></a>
                                 <button class="categories__caret" type="button"></button>
                                 <ul class="categories__children">
                                     <li><a href="#">Accessories (45)</a></li>
@@ -91,7 +633,7 @@
                                 </ul>
                             </li>
                             <li class="categories__item">
-                                <a class="categories__link" href="#">Smart Device (445)</a>
+                                <a class="categories__link" href="#">Smart Device <span>(445)</span></a>
                                 <button class="categories__caret" type="button"></button>
                                 <ul class="categories__children">
                                     <li><a href="#">Accessories (195)</a></li>
@@ -103,7 +645,7 @@
                                 </ul>
                             </li>
                             <li class="categories__item">
-                                <a class="categories__link" href="#">TeLevitions (585)</a>
+                                <a class="categories__link" href="#">TeLevitions <span>(585)</span></a>
                                 <button class="categories__caret" type="button"></button>
                                 <ul class="categories__children">
                                     <li><a href="#">Accessories (70)</a></li>
@@ -146,42 +688,66 @@
                         <ul class="widgets__colors colors">
                             <li class="colors__item">
                                 <a class="colors__link" href="#" title="Черный">
-                                    <span class="colors__sample" style="background-color: #000000;"></span>
+                                    <span class="colors__sample-wr">
+                                        <span class="colors__sample" style="background-color: #000000;"></span>
+                                    </span>
+                                    <span class="colors__quantity">140</span>
                                 </a>
                             </li>
                             <li class="colors__item colors__item--current">
                                 <a class="colors__link" href="#" title="Голубой">
-                                    <span class="colors__sample" style="background-color: #00aeef;"></span>
+                                    <span class="colors__sample-wr">
+                                        <span class="colors__sample" style="background-color: #00aeef;"></span>
+                                    </span>
+                                    <span class="colors__quantity">75</span>
                                 </a>
                             </li>
                             <li class="colors__item">
                                 <a class="colors__link" href="#" title="Желтый">
-                                    <span class="colors__sample" style="background-color: #ffd80a;"></span>
+                                    <span class="colors__sample-wr">
+                                        <span class="colors__sample" style="background-color: #ffd80a;"></span>
+                                    </span>
+                                    <span class="colors__quantity">210</span>
                                 </a>
                             </li>
                             <li class="colors__item">
                                 <a class="colors__link" href="#" title="Зеленый">
-                                    <span class="colors__sample" style="background-color: #39b54a;"></span>
+                                    <span class="colors__sample-wr">
+                                        <span class="colors__sample" style="background-color: #39b54a;"></span>
+                                    </span>
+                                    <span class="colors__quantity">157</span>
                                 </a>
                             </li>
                             <li class="colors__item">
                                 <a class="colors__link" href="#" title="Розовый">
-                                    <span class="colors__sample" style="background-color: #e01664;"></span>
+                                    <span class="colors__sample-wr">
+                                        <span class="colors__sample" style="background-color: #e01664;"></span>
+                                    </span>
+                                    <span class="colors__quantity">98</span>
                                 </a>
                             </li>
                             <li class="colors__item">
                                 <a class="colors__link" href="#" title="Белый">
-                                    <span class="colors__sample" style="background-color: #ffffff; border: 1px solid #222222;"></span>
+                                    <span class="colors__sample-wr">
+                                        <span class="colors__sample" style="background-color: #ffffff; border: 1px solid #222222;"></span>
+                                    </span>
+                                    <span class="colors__quantity">81</span>
                                 </a>
                             </li>
                             <li class="colors__item">
                                 <a class="colors__link" href="#" title="Алый">
-                                    <span class="colors__sample" style="background-color: #ff3700;"></span>
+                                    <span class="colors__sample-wr">
+                                        <span class="colors__sample" style="background-color: #ff3700;"></span>
+                                    </span>
+                                    <span class="colors__quantity">235</span>
                                 </a>
                             </li>
                             <li class="colors__item">
                                 <a class="colors__link" href="#" title="Умеренный аспидно-синий">
-                                    <span class="colors__sample" style="background-color: #6a62fb;"></span>
+                                    <span class="colors__sample-wr">
+                                        <span class="colors__sample" style="background-color: #6a62fb;"></span>
+                                    </span>
+                                    <span class="colors__quantity">245</span>
                                 </a>
                             </li>
                         </ul><!-- / .colors -->

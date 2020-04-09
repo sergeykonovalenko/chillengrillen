@@ -12,23 +12,28 @@
 
 .colors__link {
     display: block;
+    color: $color-bg--darkest;
+    transition: all .15s ease-out;
+
+    &:hover {
+        opacity: .8;
+
+        .colors__item--current & {
+            opacity: 1;
+        }
+    }
+}
+
+.colors__sample-wr {
+    display: block;
     padding: 3px;
     width: 26px;
     height: 26px;
     border: 1px solid transparent;
     border-radius: 50%;
-    transition: all .15s ease-out;
-
-    &:hover {
-        opacity: .8;
-    }
 
     .colors__item--current & {
         border-color: #222;
-
-        &:hover {
-            opacity: 1;
-        }
     }
 }
 
@@ -36,4 +41,10 @@
     display: block;
     height: 100%;
     border-radius: 50%;
+}
+
+.colors__quantity {
+    display: block;
+    font-size: 10px;
+    text-align: center;
 }
