@@ -1,0 +1,25 @@
+.user-actions {
+
+}
+
+.user-actions__cart {
+    position: relative;
+    display: flex;
+
+    &::before {
+        content: attr(data-count);
+        position: absolute;
+        top: -21px;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        color: #fff;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        transform: translate(-50%, 0);
+    }
+}
