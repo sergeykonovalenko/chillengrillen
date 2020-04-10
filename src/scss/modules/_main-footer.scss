@@ -20,6 +20,7 @@
 }
 
 .main-footer__bottom {
+    padding-bottom: 65px;
     color: #fff;
     background: linear-gradient(90deg, rgba(135,45,29,1) 0%, rgba(186,0,43,1) 50%);
 }
@@ -28,8 +29,14 @@
     padding-top: 1px;
 }
 
+.main-footer__subscription {
+    margin-bottom: 100px;
+}
+
 .main-footer__logo-and-social {
     display: flex;
+    align-items: center;
+    margin-bottom: 27px;
 }
 
 .main-footer__logo {
@@ -42,12 +49,19 @@
 
 .main-footer__nav-and-copyright {
     display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 27px;
 }
 
 .main-footer__nav-extra {
     @include reset-list;
 
     display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 
 .main-footer__nav-extra li {
@@ -56,13 +70,36 @@
 
 .main-footer__nav-extra a {
     display: block;
+    padding: 2px 10px;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
 }
 
 .main-footer__copyright {
-    margin: 0;
+    width: calc(50% - 30px);
+    margin: 0 0 0 30px;
+    text-align: right;
 }
 
 .main-footer__author {
     display: block;
+    font-style: italic;
     text-align: right;
+}
+
+.main-footer__author a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #fff;
+    transition: all .15s ease-out;
+
+    &:hover,
+    &:focus {
+        color: $color-main;
+        text-decoration: none;
+    }
 }
