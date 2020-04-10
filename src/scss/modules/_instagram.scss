@@ -18,14 +18,46 @@
 }
 
 .instagram__link {
+    position: relative;
     display: flex;
     width: 108px;
     height: 108px;
     overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5) url("img/bg/instagram.svg") no-repeat center;
+        background-size: 25px auto;
+        opacity: 0;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+        transition-property: opacity, transform, filter;
+    }
+
+    &:hover,
+    &:focus {
+
+        &::after {
+            opacity: 1;
+        }
+
+        & .instagram__img {
+            transform: scale(1.1) rotate(3deg);
+        }
+    }
 }
 
 .instagram__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+    transition-property: opacity, transform, filter;
 }
