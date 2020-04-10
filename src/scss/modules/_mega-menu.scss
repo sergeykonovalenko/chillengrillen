@@ -137,7 +137,7 @@
 /***** 2nd level menu *****/
 .mega-menu-column > .mega-sub-menu > .mega-menu-item {
     margin-bottom: 36px;
-    border-right: 1px solid $color-bg--dark;
+    border-right: 1px solid $grey-3;
 
     &:last-child {
         margin-bottom: 0;
@@ -154,7 +154,7 @@
     font-size: 20px;
     text-transform: uppercase;
     color: $color-secondary;
-    border-bottom: 1px solid $color-bg--dark;
+    border-bottom: 1px solid $grey-3;
     margin-right: 24px;
 
     &:hover {

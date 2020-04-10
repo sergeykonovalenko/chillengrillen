@@ -5,8 +5,40 @@
     user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
+    //line-height: 1;
     text-align: center;
     white-space: normal;
     word-wrap: normal;
     cursor: pointer;
+    transition: all .3s ease;
+
+    &--stroke {
+        padding: 22px 35px;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: $color-secondary;
+        background-color: transparent;
+        border: 1px solid $color-secondary;
+        border-radius: 6px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #fff;
+            background-color: $color-secondary;
+        }
+
+        &--white {
+            color: #fff;
+            border-color: #fff;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $color-main;
+            }
+        }
+    }
 }
