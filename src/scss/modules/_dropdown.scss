@@ -1,0 +1,112 @@
+.dropdown {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown__list {
+    @include reset-list;
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    width: 130px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0, 10px);
+    transition: opacity 200ms ease-in,
+                transform 200ms ease-in,
+                visibility 200ms ease-in;
+
+    &--level-2 {
+        top: 100%;
+        left: 0;
+    }
+}
+
+.dropdown__item {
+    position: relative;
+
+    &--level-1 {
+        display: flex;
+
+        &:hover {
+
+            & .dropdown__icon {
+                fill: $color-secondary;
+            }
+        }
+    }
+
+    &:hover {
+
+        & > .dropdown__link:not(.dropdown__link--level-1) {
+            color: #fff;
+            background-color: $color-secondary;
+
+            &::after {
+                background-image: url("img/bg/angle-right--light--white.svg");
+            }
+        }
+
+        & > .dropdown__list {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+        }
+    }
+
+    &.dropdown__item--current:hover > .dropdown__link {
+        color: $color-secondary;
+        background-color: #fff;
+    }
+}
+
+.dropdown__link {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: $color-main;
+    transition: all .15s ease-out;
+
+    &--level-1 {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        cursor: pointer;
+
+        .dropdown__item--level-1:first-child & {
+            padding-left: 40px;
+        }
+
+        .dropdown__item--level-1:last-child & {
+            padding-right: 40px;
+        }
+    }
+
+    .dropdown__item--has-children > & {
+        padding-right: 30px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 15px;
+            width: 5px;
+            height: 100%;
+            background: url("img/bg/angle-right--light.svg") no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    .dropdown__item--current > & {
+        color: $color-secondary;
+    }
+}
+
+.dropdown__icon {
+    transition: all .15s ease-out;
+}

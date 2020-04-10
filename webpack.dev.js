@@ -17,18 +17,12 @@ Object.keys(ifaces).forEach(function (ifname) {
     });
 });
 
-// Set below
-let devServer;
-
 module.exports = (env, argv) => {
 
     return merge(common(argv.mode), {
         devtool: 'inline-source-map',
         // devtool: 'inline-cheap-module-source-map',
         devServer: {
-            before(app, server) {
-                devServer = server;
-            },
             contentBase: './dist',
             overlay: {
                 warnings: true,
@@ -115,26 +109,9 @@ module.exports = (env, argv) => {
                 // filename: 'css/[name].css',
                 filename: 'style.css',
             }),
-            reloadHtml,
             // new webpack.SourceMapDevToolPlugin({
             //     filename: "[file].map"
             // }),
         ],
     });
 };
-
-// Reload HTML
-function reloadHtml() {
-    this.plugin('compilation',
-        thing => thing.plugin('html-webpack-plugin-after-emit', trigger));
-    const cache = {};
-    function trigger(data, callback) {
-        const orig = cache[data.outputName];
-        const html = data.html.source();
-        // plugin seems to emit on any unrelated change?
-        if (orig && orig !== html)
-            devServer.sockWrite(devServer.sockets, 'content-changed');
-        cache[data.outputName] = html;
-        callback();
-    }
-}

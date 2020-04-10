@@ -1,3 +1,25 @@
+/* Smooth scroll down
+   ========================================================================== */
+@keyframes smooth-scroll-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Smooth scroll up
+   ========================================================================== */
+@keyframes smooth-scroll-up {
+    0% {
+        transform: translateY(calc(100% + 50px));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* Shake custom
    ========================================================================== */
 @keyframes shake-custom {

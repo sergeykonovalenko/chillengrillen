@@ -1,6 +1,31 @@
 $(document).ready(function () {
     'use strict';
 
+    // sticky menu
+    let mainHeader = document.querySelector('.main-header');
+    let mainHeaderWrapper = document.querySelector('.main-header__wr');
+    let waypointOffset = 50;
+
+    if (mainHeaderWrapper) {
+        let waypoint = new Waypoint({
+            element: mainHeader,
+            handler: function (direction) {
+                if (direction === 'down') {
+                    mainHeader.style.height = mainHeaderWrapper.offsetHeight + 'px';
+                    mainHeaderWrapper.classList.add('main-header__wr--sticky');
+                    mainHeaderWrapper.classList.remove('main-header__wr--end-sticky');
+                } else {
+                    mainHeader.style.height = 'auto';
+                    mainHeaderWrapper.classList.remove('main-header__wr--sticky');
+                    mainHeaderWrapper.classList.add('main-header__wr--end-sticky');
+                }
+            },
+            offset: function() {
+                return -(this.element.clientHeight + waypointOffset);
+            }
+        });
+    }
+
     // switching tile display mode
     $('.catalog-mode__button').on('click', function () {
         $('.catalog-mode__button').removeClass('catalog-mode__button--active');
@@ -18,21 +43,6 @@ $(document).ready(function () {
         categoriesItem.not(thisCategoriesItem).find('.categories__children').slideUp(300);
         $(this).closest('.categories__item').find('.categories__children').slideToggle(300);
     });
-
-
-
-
-
-
-    // $('.categories__caret').on('click', function () {
-    //     let test = $(this).closest('.categories__item');
-    //
-    //     $('.categories__item').not(test).removeClass('categories__item--open');
-    //     $(this).closest('.categories__item').toggleClass('categories__item--open');
-    //
-    //     $('.categories__item:not(.categories__item--open) .categories__children').slideUp(300);
-    //     $(this).closest('.categories__item').find('.categories__children').slideToggle(300);
-    // });
 
     // rater
     let options = {
