@@ -1,0 +1,24 @@
+.price-box {
+
+}
+
+.price-box ins {
+    font-weight: 500;
+    font-size: 20px;
+    color: $color-accent;
+    text-decoration: none;
+}
+
+.price-box--big ins {
+    font-size: 30px;
+}
+
+.price-box del {
+    margin-right: 15px;
+    font-size: 13px;
+    color: $grey-4;
+}
+
+.price-box--big del {
+    font-size: 19px;
+}

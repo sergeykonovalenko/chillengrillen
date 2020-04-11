@@ -1,0 +1,23 @@
+.rating-and-review {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rating-and-review__rating {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.rating-and-review__review {
+    align-self: center;
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: $color-main;
+    border-bottom: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}

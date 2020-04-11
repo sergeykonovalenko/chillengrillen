@@ -1,0 +1,53 @@
+.modal-quick-view {
+    width: 1030px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.modal-quick-view__body {
+    display: flex;
+}
+
+.modal-quick-view__left {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+}
+
+.modal-quick-view__product-gallery {
+    margin-bottom: 30px;
+}
+
+.modal-quick-view__product-gallery-side {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.modal-quick-view__right {
+    width: calc((100% - 30px) / 2);
+}
+
+.modal-quick-view__name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.modal-quick-view__review {
+
+}
+
+.modal-quick-view__status {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+
+    &--in-stock {
+        color: #3cb111;
+    }
+    
+    &--on-order {
+        color: #ff5c00;
+    }
+}

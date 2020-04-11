@@ -4,6 +4,7 @@
 @import "~normalize.css/normalize.css";
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 @import "~ion-rangeslider/css/ion.rangeSlider.min.css";
+@import "~slick-carousel/slick/slick.css";
 
 /* ==========================================================================
    SPECIFICATION
@@ -51,6 +52,15 @@
 @import "modules/product-item";
 @import "modules/product-label";
 @import "modules/product-additional";
+@import "modules/rating-and-review";
 @import "modules/rating";
+@import "modules/price-box";
+@import "modules/modal-common";
+@import "modules/modal-quick-view";
+@import "modules/product-gallery";
+@import "modules/product-gallery-side";
+@import "modules/content";
+@import "modules/form-quick-view";
+@import "modules/quantity";
 @import "modules/page-info";
 @import "modules/wp-pagenavi";

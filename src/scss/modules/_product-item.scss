@@ -119,44 +119,10 @@
 }
 
 .product-item__review {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 5px;
 }
 
-.product-item__rating {
-    flex-shrink: 0;
-    margin-right: 15px;
-}
-
-.product-item__review-item {
-    align-self: center;
-    margin-top: 2px;
-    margin-bottom: 0;
-    font-size: 13px;
-    color: $color-main;
-    border-bottom: 1px solid transparent;
-
-    &:hover,
-    &:focus {
-        text-decoration: underline;
-    }
-}
-
 .product-item__price {
     margin: 0;
-}
-
-.product-item__price ins {
-    font-weight: 500;
-    font-size: 20px;
-    color: $color-accent;
-    text-decoration: none;
-}
-
-.product-item__price del {
-    margin-right: 15px;
-    font-size: 13px;
-    color: $grey-4;
 }
