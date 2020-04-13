@@ -1,6 +1,14 @@
 $(document).ready(function () {
     'use strict';
 
+    const element = document.documentElement;
+
+    // is mobile
+    const is_mobile = isMobile();
+    if (is_mobile) {
+        element.classList.add('is-mobile');
+    }
+
     // sticky menu
     let mainHeader = document.querySelector('.main-header');
     let mainHeaderWrapper = document.querySelector('.main-header__wr');
@@ -144,7 +152,7 @@ $(document).ready(function () {
         }
     });
 
-    // slider-offer
+    // slider offer
     $('.slider-offer').slick({
         dots: true,
         slidesToShow: 1,
@@ -161,6 +169,32 @@ $(document).ready(function () {
         nextArrow: `<button class="slider-offer__arrow slider-offer__arrow--next" type="button">
                         <span class="visually-hidden">Вперед</span> 
                         <svg width="14" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
+                    </button>`,
+        // responsive: [
+        //     {
+        //         breakpoint: 768,
+        //         settings: {
+        //
+        //         }
+        //     }
+        // ]
+    });
+
+    // slider category
+    $('.slider-category').slick({
+        dots: false,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        focusOnSelect: true,
+        prevArrow: `<button class="slider-category__arrow slider-category__arrow--prev slider-arrow slider-arrow--prev" type="button">
+                        <span class="visually-hidden">Назад</span> 
+                        <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
+                    </button>`,
+        nextArrow: `<button class="slider-category__arrow slider-category__arrow--next slider-arrow slider-arrow--next" type="button">
+                        <span class="visually-hidden">Вперед</span> 
+                        <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,
         // responsive: [
         //     {
@@ -229,6 +263,11 @@ $(document).ready(function () {
     // numberWithSpaces
     function numberWithSpaces(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    }
+
+    // is mobile
+    function isMobile() {
+        return $.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
     }
 
 }); // end ready

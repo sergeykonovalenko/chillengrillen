@@ -1,4 +1,6 @@
 .slider-offer {
+    @include slider-fix(100%);
+
     background-color: $color-main;
     font-size: 0;
     overflow: hidden;

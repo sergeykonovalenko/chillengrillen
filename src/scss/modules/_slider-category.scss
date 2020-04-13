@@ -1,0 +1,33 @@
+.slider-category {
+    @include slider-fix(240px);
+}
+
+.slider-category .slick-list {
+
+}
+
+.slider-category__item {
+    padding: 0 15px;
+}
+
+.slider-category__link {
+    display: block;
+    color: $color-main;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.slider-category__arrow {
+    position: absolute;
+    top: -82px;
+
+    &--prev {
+        right: 65px;
+    }
+
+    &--next {
+        right: 15px;
+    }
+}
