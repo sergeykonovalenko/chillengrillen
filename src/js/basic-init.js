@@ -53,6 +53,14 @@ $(document).ready(function () {
         $(this).addClass('catalog-mode__button--active');
     });
 
+    $('.catalog-mode__button--list').on('click', function () {
+        $('.products-list').addClass('products-list--list-mode');
+    });
+
+    $('.catalog-mode__button--grid').on('click', function () {
+        $('.products-list').removeClass('products-list--list-mode');
+    });
+
     // show/hide subcategories
     $('.categories__caret').on('click', function () {
         let categoriesItem = $('.categories__item');
@@ -136,6 +144,34 @@ $(document).ready(function () {
         }
     });
 
+    // slider-offer
+    $('.slider-offer').slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 4000,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        focusOnSelect: true,
+        prevArrow: `<button class="slider-offer__arrow slider-offer__arrow--prev" type="button">
+                        <span class="visually-hidden">Назад</span> 
+                        <svg width="14" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
+                    </button>`,
+        nextArrow: `<button class="slider-offer__arrow slider-offer__arrow--next" type="button">
+                        <span class="visually-hidden">Вперед</span> 
+                        <svg width="14" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
+                    </button>`,
+        // responsive: [
+        //     {
+        //         breakpoint: 768,
+        //         settings: {
+        //
+        //         }
+        //     }
+        // ]
+    });
+
     // slider product gallery
     $('.product-gallery').slick({
         dots: false,
@@ -180,6 +216,14 @@ $(document).ready(function () {
         //         }
         //     }
         // ]
+    });
+
+    // init nice number
+    $('.js-nice-number').niceNumber({
+        autoSize: false,
+        buttonDecrement: '–',
+        buttonIncrement: "+",
+        buttonPosition: 'right',
     });
 
     // numberWithSpaces

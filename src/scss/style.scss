@@ -14,17 +14,23 @@
 @import "spec/mixins";
 @import "spec/global";
 @import "spec/visually-hidden";
-@import "spec/button";
 @import "spec/animation";
 
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+@import "modules/button";
 @import "modules/main-header";
 @import "modules/main-nav";
 @import "modules/mega-menu";
 @import "modules/dropdown";
 @import "modules/user-actions";
+@import "modules/main-offer";
+@import "modules/slider-offer";
+@import "modules/body-slider-offer";
+@import "modules/banners-offer";
+@import "modules/body-banners-offer";
+
 @import "modules/main-footer";
 @import "modules/footer-list";
 @import "modules/contacts-list";
@@ -61,6 +67,7 @@
 @import "modules/product-gallery-side";
 @import "modules/content";
 @import "modules/form-quick-view";
-@import "modules/quantity";
+@import "modules/nice-number";
+@import "modules/actions";
 @import "modules/page-info";
 @import "modules/wp-pagenavi";

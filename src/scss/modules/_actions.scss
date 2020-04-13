@@ -1,0 +1,40 @@
+.actions {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.actions__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.actions__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid $color-main;
+    border-radius: 3px;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+
+        & {
+            background-color: $color-main;
+        }
+
+        .actions__icon {
+            fill: #fff;
+        }
+    }
+}
+
+.actions__icon {
+    transition: all .15s ease-in;
+}

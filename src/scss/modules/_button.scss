@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
     max-width: 100%;
-    padding: 21px 30px;
+    padding: 21px 35px;
     user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
@@ -27,5 +27,15 @@
     &--white {
         color: #fff;
         border-color: #fff;
+
+        &--on-dark {
+
+            &:hover,
+            &:focus {
+                color: #fff;
+                background-color: $color-accent;
+                border-color: $color-accent;
+            }
+        }
     }
 }

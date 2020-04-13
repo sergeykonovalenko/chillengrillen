@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
+    
+    &--list-mode {
+        display: block;
+    }
 }
 
 .products-list__item {
@@ -15,5 +19,14 @@
 
     &:nth-child(n + 4) {
         margin-top: 42px;
+    }
+
+    .products-list--list-mode & {
+        width: 100%;
+        margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

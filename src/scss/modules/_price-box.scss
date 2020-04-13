@@ -7,6 +7,10 @@
     font-size: 20px;
     color: $color-accent;
     text-decoration: none;
+
+    .products-list--list-mode & {
+        font-size: 30px;
+    }
 }
 
 .price-box--big ins {
@@ -17,6 +21,10 @@
     margin-right: 15px;
     font-size: 13px;
     color: $grey-4;
+
+    .products-list--list-mode & {
+        font-size: 20px;
+    }
 }
 
 .price-box--big del {

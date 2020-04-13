@@ -1,0 +1,14 @@
+.main-offer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-offer__slider {
+    flex-shrink: 0;
+    width: 70.44107%;
+}
+
+.main-offer__banners {
+    flex-grow: 1;
+    margin: 0;
+}

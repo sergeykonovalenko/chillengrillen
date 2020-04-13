@@ -1,0 +1,43 @@
+.body-banners-offer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding: 23.3853% 6.681514% 6.681514% 13.363%;
+    line-height: 1.25;
+}
+
+.body-banners-offer__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.body-banners-offer__button {
+    position: relative;
+    display: inline-block;
+    margin-top: 35px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    font-size: 12px;
+    letter-spacing: .333333em;
+    text-transform: uppercase;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: $color-accent;
+        transition: all .3s ease-out;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
