@@ -10,15 +10,30 @@
 }
 
 .products-list__item {
-    width: calc((100% - 60px) / 3);
     margin-right: 30px;
 
-    &:nth-child(3n) {
-        margin-right: 0;
+    .products-list--3-columns & {
+        width: calc((100% - 60px) / 3);
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(n + 4) {
+            margin-top: 42px;
+        }
     }
 
-    &:nth-child(n + 4) {
-        margin-top: 42px;
+    .products-list--4-columns & {
+        width: calc((100% - 90px) / 4);
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(n + 5) {
+            margin-top: 42px;
+        }
     }
 
     .products-list--list-mode & {
@@ -29,4 +44,5 @@
             margin-bottom: 0;
         }
     }
+
 }

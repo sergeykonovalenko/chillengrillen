@@ -196,14 +196,15 @@ $(document).ready(function () {
                         <span class="visually-hidden">Вперед</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                }
+            }
+        ]
     });
 
     // slider product gallery
