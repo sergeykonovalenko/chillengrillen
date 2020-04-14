@@ -1,0 +1,15 @@
+.popular-category {
+    display: flex;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.popular-category__banner {
+    flex-grow: 1;
+    margin-right: 30px;
+}
+
+.popular-category__tabs {
+    flex-shrink: 0;
+    width: 74.468085%;
+}

@@ -1,3 +1,4 @@
+import 'jquery-ui/ui/widgets/tabs';
 import 'waypoints/lib/noframework.waypoints.min';
 import '@fancyapps/fancybox';
 import './vendor/rater.min';

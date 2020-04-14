@@ -1,0 +1,35 @@
+.subcategory-tabs {
+    overflow: hidden;
+}
+
+.subcategory-tabs__wr {
+    width: calc(100% + 30px);
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.subcategory-tabs__nav {
+    @include reset-list;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subcategory-tabs__nav li {
+
+}
+
+.subcategory-tabs__nav a {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-main;
+}
+
+.subcategory-tabs__body {
+
+}
+
+.subcategory-tabs__slider {
+    //width: 1050px;
+}

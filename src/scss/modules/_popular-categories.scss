@@ -1,6 +1,19 @@
 .popular-categories {
     padding-top: 90px;
     padding-bottom: 55px;
+    background-color: $grey;
+}
+
+.popular-categories__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.popular-categories__item {
+    width: calc(100% + 60px);
+    margin-right: -30px;
+    margin-left: -30px;
 }
 
 .popular-categories__title {

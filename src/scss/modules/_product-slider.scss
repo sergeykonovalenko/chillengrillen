@@ -1,0 +1,27 @@
+.product-slider {
+
+}
+
+.product-slider__item {
+    padding: 0 15px;
+}
+
+.product-slider a {
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.product-slider__arrow {
+    position: absolute;
+    top: -50px;
+
+    &--prev {
+        right: 45px;
+    }
+
+    &--next {
+        right: 0;
+    }
+}

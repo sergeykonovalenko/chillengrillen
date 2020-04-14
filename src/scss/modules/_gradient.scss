@@ -1,0 +1,28 @@
+.gradient {
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        //background: url("img/bg/pattern.png") repeat;
+        opacity: .5;
+    }
+
+    &--1::after {
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    }
+
+    &--2::after {
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    }
+
+    &--3::after {
+        background-image: linear-gradient(to right top, #741c82, #6f288c, #683296, #603c9f, #5644a8, #6945a9, #7a46aa, #8a47aa, #ae419d, #c93e8c, #dd4278, #e94f64);
+    }
+}
+
+

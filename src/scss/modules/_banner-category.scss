@@ -1,0 +1,48 @@
+.banner-category {
+    position: relative;
+    display: flex;
+    padding: 85px 15px 15px 30px;
+    overflow: hidden;
+
+    &:hover .banner-category__img-base {
+        transform: scale(1.1);
+    }
+}
+
+.banner-category__body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.banner-category__name {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.banner-category__img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.banner-category__img-base-box {
+    margin: auto 0 0 auto;
+}
+
+.banner-category__img-base {
+    margin: auto auto 0;
+    transition: all .3s ease-out;
+}

@@ -23,6 +23,10 @@
     &:focus {
         outline: none;
     }
+    
+    &--white {
+        background-color: #fff;
+    }
 }
 
 .slider-arrow__icon {
