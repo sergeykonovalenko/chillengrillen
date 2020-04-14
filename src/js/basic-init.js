@@ -261,6 +261,11 @@ $(document).ready(function () {
         buttonPosition: 'right',
     });
 
+    // init custom scrollbar
+    $('.mini-cart__list-wr').mCustomScrollbar({
+            theme: 'dark-2',
+    });
+
     // numberWithSpaces
     function numberWithSpaces(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');

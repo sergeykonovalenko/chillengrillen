@@ -12,6 +12,7 @@
     text-transform: uppercase;
     white-space: normal;
     word-wrap: normal;
+    color: $color-main;
     background-color: transparent;
     border: 1px solid $color-main;
     border-radius: 3px;
@@ -37,5 +38,10 @@
                 border-color: $color-accent;
             }
         }
+    }
+
+    &--small {
+        padding: 12.5px 15px;
+        font-size: 12px;
     }
 }

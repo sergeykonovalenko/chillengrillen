@@ -5,6 +5,7 @@
 @import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 @import "~ion-rangeslider/css/ion.rangeSlider.min.css";
 @import "~slick-carousel/slick/slick.css";
+@import "~malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css";
 
 /* ==========================================================================
    SPECIFICATION
@@ -24,7 +25,9 @@
 @import "modules/main-nav";
 @import "modules/mega-menu";
 @import "modules/dropdown";
-@import "modules/user-actions";
+@import "modules/mini-cart";
+@import "modules/product-mini-cart";
+@import "modules/mini-cart-total";
 @import "modules/main-offer";
 @import "modules/slider-offer";
 @import "modules/body-slider-offer";
@@ -34,7 +37,7 @@
 @import "modules/slider-category";
 @import "modules/category-item";
 @import "modules/slider-arrow";
-@import "modules/new-goods";
+@import "modules/new-products";
 @import "modules/popular-categories";
 
 @import "modules/main-footer";

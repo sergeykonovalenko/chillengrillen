@@ -1,0 +1,20 @@
+.mini-cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+.mini-cart-total__title {
+    display: block;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+.mini-cart-total__total-price {
+    display: block;
+    font-weight: 700;
+    color: $color-accent;
+}
