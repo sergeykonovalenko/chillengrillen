@@ -1,0 +1,26 @@
+.social-extra {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.social-extra__item {
+    display: flex;
+}
+
+.social-extra__link {
+    display: flex;
+    align-items: center;
+    padding: 5px 14px;
+
+    &:hover svg,
+    &:focus svg {
+        fill: $color-secondary;
+        animation: .6s shake-custom;
+    }
+}
+
+.social-extra__link svg {
+    transition: all .15s ease-out;
+}

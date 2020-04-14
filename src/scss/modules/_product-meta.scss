@@ -1,0 +1,46 @@
+.product-meta {
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+}
+
+.product-meta__item {
+    display: flex;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.product-meta__term {
+    flex-shrink: 0;
+    width: 22.68%;
+    margin: 0 15px 0 0;
+    font-weight: 700;
+}
+
+.product-meta__value {
+    flex-grow: 1;
+
+    &--social {
+        display: flex;
+    }
+}
+
+.product-meta__value a {
+    color: $color-main;
+}
+
+.product-meta__value--list-links a {
+    transition: all .15s ease-out;
+
+    &:hover,
+    &:focus {
+        color: $color-secondary;
+    }
+}
+
+.product-meta__social-extra {
+    margin: -5px -14px;
+}

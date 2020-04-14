@@ -26,21 +26,26 @@
     width: calc((100% - 30px) / 2);
 }
 
+.modal-quick-view__head {
+    margin-bottom: 21px;
+    border-bottom:  1px solid $grey-6;
+}
+
 .modal-quick-view__name {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 15px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.25;
 }
 
 .modal-quick-view__review {
-
+    margin-bottom: 20px;
 }
 
 .modal-quick-view__status {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 16px;
 
     &--in-stock {
@@ -50,4 +55,21 @@
     &--on-order {
         color: #ff5c00;
     }
+}
+
+.modal-quick-view__description {
+    margin-bottom: 15px;
+}
+
+.modal-quick-view__price {
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.modal-quick-view__form {
+    margin-bottom: 25px;
+}
+
+.modal-quick-view__product-meta {
+    margin: 0;
 }
