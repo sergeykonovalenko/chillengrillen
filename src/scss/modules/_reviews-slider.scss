@@ -23,12 +23,8 @@
     margin: 20px 0 0 0;
     padding: 0;
     list-style: none;
-    //position: absolute;
     display: flex;
     justify-content: center;
-    bottom: -15px;
-    left: 50%;
-    //transform: translate(-50%, 0);
 }
 
 .reviews-slider .slick-dots li {
@@ -47,7 +43,7 @@
     font-size: 0;
     line-height: 0;
     border: none;
-    background-color: #fff;
+    background-color: $color-secondary--light;
     border-radius: 50%;
     outline: none;
     cursor: pointer;
