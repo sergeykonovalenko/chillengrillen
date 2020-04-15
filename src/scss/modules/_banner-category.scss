@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     padding: 85px 15px 15px 30px;
+    background-color: $color-main;
     overflow: hidden;
 
     &:hover .banner-category__img-base {
