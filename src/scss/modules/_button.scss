@@ -23,6 +23,7 @@
     &:focus {
         color: #fff;
         background-color: $color-main;
+        border-color: $color-main;
     }
 
     &--white {
@@ -34,8 +35,8 @@
             &:hover,
             &:focus {
                 color: #fff;
-                background-color: $color-accent;
-                border-color: $color-accent;
+                background-color: $color-secondary--light;
+                border-color: $color-secondary--light;
             }
         }
     }

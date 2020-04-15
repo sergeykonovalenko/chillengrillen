@@ -1,0 +1,19 @@
+.breadcrumbs {
+    color: #fff;
+}
+
+.breadcrumbs > span {
+    margin-right: 10px;
+}
+
+.breadcrumbs a {
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.breadcrumbs__separator {
+    font-size: 18px;
+}

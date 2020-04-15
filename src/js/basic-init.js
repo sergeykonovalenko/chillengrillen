@@ -241,11 +241,11 @@ $(document).ready(function () {
         pauseOnFocus: false,
         pauseOnHover: false,
         focusOnSelect: true,
-        prevArrow: `<button class="reviews-slider__arrow reviews-slider__arrow--prev slider-arrow slider-arrow--prev" type="button">
+        prevArrow: `<button class="reviews-slider__arrow reviews-slider__arrow--prev slider-arrow slider-arrow--white slider-arrow--prev" type="button">
                         <span class="visually-hidden">Назад</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
                     </button>`,
-        nextArrow: `<button class="reviews-slider__arrow reviews-slider__arrow--next slider-arrow slider-arrow--next" type="button">
+        nextArrow: `<button class="reviews-slider__arrow reviews-slider__arrow--next slider-arrow slider-arrow--white slider-arrow--next" type="button">
                         <span class="visually-hidden">Вперед</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,

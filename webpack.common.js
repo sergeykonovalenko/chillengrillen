@@ -15,6 +15,7 @@ module.exports = mode => {
     return {
         entry: {
             app: './src/index.js',
+            'modernizr.custom': './src/js/vendor/modernizr-custom.js',
         },
         output: {
             filename: 'js/[name].bundle.js',

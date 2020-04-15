@@ -24,7 +24,7 @@
     //margin-top: 46px;
     //margin-bottom: 23px;
     //font-weight: 700;
-    //font-size: 48px;
+    font-size: 38px;
 }
 
 .content h2,
@@ -36,9 +36,9 @@
 
 .content h3,
 .content .heading-3 {
-    margin-top: 46px;
-    margin-bottom: 13px;
-    font-size: 28px;
+    //margin-top: 46px;
+    //margin-bottom: 13px;
+    //font-size: 28px;
 }
 
 .content h4,
@@ -95,23 +95,6 @@
     }
 }
 
-/* blockquote */
-.content blockquote {
-    //clear: both;
-    //margin: 16px 0;
-    //padding: 60px 30px;
-    //font-weight: 700;
-    //font-size: 18px;
-    //text-align: center;
-    //border: 5px solid $color-accent;
-}
-
-.content blockquote cite {
-    //display: block;
-    //font-size: 15px;
-    //color: $color-secondary;
-}
-
 .content *:first-child {
     margin-top: 0;
 }
@@ -133,23 +116,5 @@
     .content h3,
     .content .heading-3 {
         //font-size: 24px;
-    }
-
-    .content blockquote {
-        //padding-right: 15px;
-        //padding-left: 15px;
-        //
-        //&::before,
-        //&::after {
-        //    font-size: 70px;
-        //}
-        //
-        //&::before {
-        //    top: -14px;
-        //}
-        //
-        //&::after {
-        //    bottom: -48px;
-        //}
     }
 }

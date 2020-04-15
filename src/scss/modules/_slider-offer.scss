@@ -107,7 +107,7 @@
     }
 
     &:hover {
-        background-color: $color-accent;
+        background-color: $color-secondary--light;
 
         & svg {
             fill: #fff;
@@ -155,14 +155,14 @@
     outline: none;
     cursor: pointer;
     opacity: .5;
-    transition: all .3s ease;
+    //transition: all .3s ease;
 
-    &:hover {
-        background-color: $color-accent;
-    }
+    //&:hover {
+    //    background-color: $color-secondary--light;
+    //}
 }
 
 .slider-offer .slick-active button {
     opacity: 1;
-    background-color: $color-accent;
+    background-color: $color-secondary--light;
 }
