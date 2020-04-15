@@ -9,8 +9,9 @@
 }
 
 .subcategory-tabs__nav {
-    @include reset-list;
-
+    margin: 0 0 15px 0;
+    padding: 0 145px 0 15px;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,10 +21,41 @@
 }
 
 .subcategory-tabs__nav a {
+    position: relative;
     display: block;
+    padding: 15px;
     font-weight: 700;
+    font-size: 14px;
     text-transform: uppercase;
     color: $color-main;
+    transition: all .15s ease-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 15px;
+        left: 15px;
+        height: 2px;
+        background-color: transparent;
+    }
+
+    &:hover {
+        color: $color-secondary;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.subcategory-tabs .ui-state-active a {
+    color: $color-secondary;
+
+    &::before {
+        background-color: $color-secondary;
+    }
 }
 
 .subcategory-tabs__body {

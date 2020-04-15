@@ -293,7 +293,12 @@ $(document).ready(function () {
     });
 
     // init tabs
-    $('.subcategory-tabs').tabs();
+    $('.subcategory-tabs').tabs({
+        heightStyle: 'auto',
+        activate: function( event, ui ) {
+            $('.product-slider').slick('setPosition');
+        }
+    });
 
     // numberWithSpaces
     function numberWithSpaces(x) {

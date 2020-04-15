@@ -23,6 +23,8 @@
     &--3::after {
         background-image: linear-gradient(to right top, #741c82, #6f288c, #683296, #603c9f, #5644a8, #6945a9, #7a46aa, #8a47aa, #ae419d, #c93e8c, #dd4278, #e94f64);
     }
+
+    &--4::after {
+        background-image: linear-gradient(to right top, #f7000c, #f70024, #f50034, #f10042, #ed004f, #e8005a, #e20064, #db056d, #d21176, #c81b7f, #bc2487, #b02c8d);
+    }
 }
-
-

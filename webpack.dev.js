@@ -31,7 +31,7 @@ module.exports = (env, argv) => {
             host: localIpAddress,
             port: 8081,
             hot: true,
-            writeToDisk: true,
+            // writeToDisk: true,
         },
         watchOptions: {
             aggregateTimeout: 100,
