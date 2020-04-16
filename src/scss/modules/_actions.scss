@@ -26,7 +26,8 @@
     &:focus {
 
         & {
-            background-color: $color-main;
+            background-color: $color-secondary;
+            border-color: $color-secondary;
         }
 
         .actions__icon {

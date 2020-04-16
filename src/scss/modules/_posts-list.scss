@@ -1,0 +1,20 @@
+.posts-list {
+    padding: 0;
+    list-style: none;
+
+    &--3-column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.posts-list__item {
+
+    .posts-list--1-column & {
+        margin-bottom: 70px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

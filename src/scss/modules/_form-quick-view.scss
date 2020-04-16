@@ -3,10 +3,12 @@
 }
 
 .form-quick-view__btn-add-to-cart {
+    flex-grow: 1;
     margin: 0 10px;
 }
 
 .form-quick-view__actions {
+    flex-shrink: 0;
     margin: 0;
 }
 

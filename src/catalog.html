@@ -744,6 +744,7 @@
                         </a>
                         <div class="dropdown__box dropdown__box--level-2 dropdown__box--cart mini-cart">
                             <p class="mini-cart__title">В корзине: 3 товара</p>
+                            <!--<p class="mini-cart__empty">В корзине нет товаров.</p>-->
                             <div class="mini-cart__list-wr">
                                 <ul class="mini-cart__list">
                                     <li class="mini-cart__item product-mini-cart">
@@ -807,8 +808,8 @@
                                 <span class="mini-cart-total__total-price">132 205 руб.</span>
                             </p><!-- / .mini-cart-total -->
                             <div class="mini-cart__buttons">
-                                <a class="mini-cart__button button button--small" href="#">Просмотр</a>
-                                <a class="mini-cart__button button button--small" href="#">Оформление</a>
+                                <a class="mini-cart__button button button--inversion button--small" href="#">Просмотр</a>
+                                <a class="mini-cart__button button button--inversion button--small" href="#">Оформление</a>
                             </div>
                         </div><!-- / .mini-cart -->
                     </li>
@@ -1020,6 +1021,7 @@
                     </a>
                 </aside><!-- / .sidebar -->
                 <div class="page-content__main main">
+                    <h1 class="visually-hidden">Каталог</h1>
                     <div class="main__catalog-settings catalog-settings">
                         <ul class="catalog-settings__mode catalog-mode">
                             <li class="catalog-mode__item">
@@ -2169,8 +2171,7 @@
                         Инновационная технология энергосбережения. Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
                         потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
                         разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                        2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для устройств,
-                        которые носят, который обеспечивает высокую производительность и низкое энергопотребление.
+                        2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией.
                     </p>
                 </div>
                 <p class="modal-quick-view__price price-box price-box--big">
@@ -2179,7 +2180,7 @@
                 </p>
                 <form class="modal-quick-view__form form-quick-view" action="#" method="post">
                     <input class="nice-number__field js-nice-number" type="number" value="1" min="1" name="quantity">
-                    <button class="form-quick-view__btn-add-to-cart button">В корзину</button>
+                    <button class="form-quick-view__btn-add-to-cart button button--extra">В корзину</button>
                     <ul class="form-quick-view__actions actions">
                         <li class="actions__item">
                             <a class="actions__link" href="#" title="Добавить к сравнению">

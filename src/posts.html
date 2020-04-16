@@ -40,7 +40,7 @@
                 <nav class="main-header__nav main-nav">
                     <!-- Desktop menu -->
                     <ul class="main-nav__list mega-menu">
-                        <li class="mega-menu-item mega-menu-megamenu mega-menu-item-has-children mega-current-menu-item font-weight-bold">
+                        <li class="mega-menu-item mega-menu-megamenu mega-menu-item-has-children font-weight-bold">
                             <a class="mega-menu-link" href="catalog.html">Каталог</a>
                             <ul class="mega-sub-menu">
                                 <li class="mega-menu-row">
@@ -692,7 +692,7 @@
                             <a class="mega-menu-link" href="#">Мастерская</a>
                         </li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">О нас</a></li>
-                        <li class="mega-menu-item"><a class="mega-menu-link" href="posts.html">Блог</a></li>
+                        <li class="mega-menu-item mega-current-menu-item"><a class="mega-menu-link" href="posts.html">Блог</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">Доставка, оплата и гарантия</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">Вакансии</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">Контакты</a></li>
@@ -744,6 +744,7 @@
                         </a>
                         <div class="dropdown__box dropdown__box--level-2 dropdown__box--cart mini-cart">
                             <p class="mini-cart__title">В корзине: 3 товара</p>
+                            <!--<p class="mini-cart__empty">В корзине нет товаров.</p>-->
                             <div class="mini-cart__list-wr">
                                 <ul class="mini-cart__list">
                                     <li class="mini-cart__item product-mini-cart">
@@ -807,8 +808,8 @@
                                 <span class="mini-cart-total__total-price">132 205 руб.</span>
                             </p><!-- / .mini-cart-total -->
                             <div class="mini-cart__buttons">
-                                <a class="mini-cart__button button button--small" href="#">Просмотр</a>
-                                <a class="mini-cart__button button button--small" href="#">Оформление</a>
+                                <a class="mini-cart__button button button--inversion button--small" href="#">Просмотр</a>
+                                <a class="mini-cart__button button button--inversion button--small" href="#">Оформление</a>
                             </div>
                         </div><!-- / .mini-cart -->
                     </li>
@@ -980,770 +981,269 @@
                     </ul><!-- / .widgets -->
                 </aside><!-- / .sidebar -->
                 <div class="page-content__main main">
-                    <ul class="main__products-list products-list products-list--3-columns">
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <ul class="product-item__label product-label">
-                                        <li class="product-label__item product-label__item--sale">-15%</li>
-                                    </ul><!-- / .product-label -->
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Watch-GT2-46mm-Sport-Black-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Watch-GT2-46mm-Sport-Black-1.png" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Watch-GT2-46mm-Sport-Black-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Watch-GT2-46mm-Sport-Black-2.png" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Смарт-часы Huawei Watch GT2 46mm Sport Black</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4.5></div>
-                                        <a class="rating-and-review__review" href="#">145 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <del>17 857 руб.</del>
-                                        <ins>16 994 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                    <ul class="page-content__posts-list posts-list posts-list--1-column">
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-1.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-1.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
                                 </div>
-                            </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <ul class="product-item__label product-label">
-                                        <li class="product-label__item product-label__item--sale">-10%</li>
-                                    </ul><!-- / .product-label -->
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Crown-Gaming-Headset-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Crown-Gaming-Headset-1.jpg" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Crown-Gaming-Headset-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Crown-Gaming-Headset-2.jpg" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Навушники Crown Gaming Headset CMGH-3002 Green</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4.5></div>
-                                        <a class="rating-and-review__review" href="#">237 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <del>47 380 руб.</del>
-                                        <ins>43 597 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
                                 </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
                             </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Kingco-K66-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Kingco-K66-1.jpg" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Kingco-K66-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Kingco-K66-2.jpg" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Квадрокоптер Kingco K66 2.4 ГГц 4 Axis Mini White (KK66w)</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4></div>
-                                        <a class="rating-and-review__review" href="#">354 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <ins>365 450 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-2.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-2.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
                                 </div>
-                            </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Logitech-G502-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Logitech-G502-1.jpg" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Logitech-G502-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Logitech-G502-2.jpg" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Мышь Logitech G502 Lightspeed Wireless Gaming (910-005567) Black</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4.5></div>
-                                        <a class="rating-and-review__review" href="#">57 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <ins>27 310 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
                                 </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
                             </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Apple-MacBook-Pro-16-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Apple-MacBook-Pro-16-1.jpg" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Apple-MacBook-Pro-16-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Apple-MacBook-Pro-16-2.jpg" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Ноутбук Apple MacBook Pro 16'' TB 1Tb MVVK2 Space Grey</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=5></div>
-                                        <a class="rating-and-review__review" href="#">515 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <ins>270 934 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-3.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-3.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
                                 </div>
-                            </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Nikon-Z7-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Nikon-Z7-1.jpg" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Nikon-Z7-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Nikon-Z7-2.jpg" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Фотоапарат Nikon Z7 Body</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4.5></div>
-                                        <a class="rating-and-review__review" href="#">324 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <ins>315 840 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
                                 </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
                             </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Apple-iPhone-11-Pro-Max-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Apple-iPhone-11-Pro-Max-1.jpg" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Apple-iPhone-11-Pro-Max-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Apple-iPhone-11-Pro-Max-2.jpg" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Мобильный телефон Apple iPhone 11 Pro Max 512GB Gold</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=5></div>
-                                        <a class="rating-and-review__review" href="#">115 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <ins>145 350 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-4.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-4.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
                                 </div>
-                            </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <ul class="product-item__label product-label">
-                                        <li class="product-label__item product-label__item--sale">-7%</li>
-                                    </ul><!-- / .product-label -->
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Apple-AirPods-Pro-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Apple-AirPods-Pro-1.jpg" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Apple-AirPods-Pro-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Apple-AirPods-Pro-2.jpg" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Навушники Apple AirPods Pro</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4></div>
-                                        <a class="rating-and-review__review" href="#">98 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <del>31 250 руб.</del>
-                                        <ins>27 100 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
                                 </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
                             </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Asus-ROG-Rapture-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Asus-ROG-Rapture-1.png" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Asus-ROG-Rapture-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Asus-ROG-Rapture-2.png" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Беспроводной маршрутизатор Asus ROG Rapture (GT-AX11000)</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4.5></div>
-                                        <a class="rating-and-review__review" href="#">35 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <ins>45 329 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-5.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-5.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
                                 </div>
-                            </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/iStorage-datAshur-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/iStorage-datAshur-1.png" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/iStorage-datAshur-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/iStorage-datAshur-2.png" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Флешка с шифрованием iStorage datAshur PRO2 512GB USB 3.2</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=3.5></div>
-                                        <a class="rating-and-review__review" href="#">140 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <ins>58 415 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
                                 </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
                             </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/MSI-DS501-GAMING-Headset-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/MSI-DS501-GAMING-Headset-1.png" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/MSI-DS501-GAMING-Headset-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/MSI-DS501-GAMING-Headset-2.png" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Игровые наушники с микрофоном MSI DS501 GAMING Headset</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4.5></div>
-                                        <a class="rating-and-review__review" href="#">30 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <ins>87 320 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-6.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-6.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
                                 </div>
-                            </div>
-                        </li><!-- / .product-item -->
-                        <li class="products-list__item product-item">
-                            <div class="product-item__thumb">
-                                <a class="product-item__link" href="#">
-                                    <ul class="product-item__label product-label">
-                                        <li class="product-label__item product-label__item--sale">-11%</li>
-                                    </ul><!-- / .product-label -->
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Rondell-Walzer-1.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Rondell-Walzer-1.jpg" alt="">
-                                    </picture>
-                                    <picture class="product-item__img-box">
-                                        <source srcset="img/base/Rondell-Walzer-2.webp" type="image/webp">
-                                        <img class="product-item__img" src="img/base/Rondell-Walzer-2.jpg" alt="">
-                                    </picture>
-                                </a>
-                                <ul class="product-item__additional product-additional">
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в корзину">
-                                            <span class="visually-hidden">Добавить в корзину</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 512" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M552 64H144.3l-8.7-44.6C133.4 8.1 123.5 0 112 0H12C5.4 0 0 5.4 0 12v24c0 6.6 5.4 12 12 12h80.2l69.6 355.7c-11 11.5-17.8 27.1-17.8 44.3 0 35.3 28.7 64 64 64s64-28.7 64-64c0-11.2-2.9-22.3-8.6-32h145.2c-5.6 9.7-8.6 20.8-8.6 32 0 35.3 28.7 64 64 64s64-28.7 64-64c0-18.1-7.6-34.5-19.7-46.1l1-4.8c3.3-15-8.1-29.1-23.5-29.1h-282l-9.4-48h312.4c11.3 0 21.1-7.9 23.5-18.9l45.2-208c3.2-15-8.2-29.1-23.5-29.1zm-88 360c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm-256 0c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24zm279.4-152H185l-31.3-160h368.5l-34.8 160zM272 200v-16c0-6.6 5.4-12 12-12h32v-32c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v32h32c6.6 0 12 5.4 12 12v16c0 6.6-5.4 12-12 12h-32v32c0 6.6-5.4 12-12 12h-16c-6.6 0-12-5.4-12-12v-32h-32c-6.6 0-12-5.4-12-12z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить в список желаний">
-                                            <span class="visually-hidden">Добавить в список желаний</span>
-                                            <svg class="product-additional__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link" href="#" title="Добавить к сравнению">
-                                            <span class="visually-hidden">Добавить к сравнению</span>
-                                            <svg class="product-additional__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"/></svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-additional__item">
-                                        <a class="product-additional__link btn-modal" href="#js-modal-quick-view" title="Быстрый просмотр">
-                                            <span class="visually-hidden">Быстрый просмотр</span>
-                                            <svg class="product-additional__icon" width="18" viewBox="0 0 576 384" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M288 80c-10.6.2-21.1 1.8-31.2 5 4.7 8.2 7.2 17.5 7.2 27 0 30.9-25.1 56-56 56-9.5-.1-18.8-2.6-27-7.2C163.9 220 198.1 282 257.4 299c59.3 17.1 121.2-17.1 138.3-76.4s-17.1-121.2-76.4-138.3C309.1 81.4 298.6 80 288 80zm284.5 97.4C518.3 71.6 410.9 0 288 0S57.7 71.6 3.5 177.4c-4.6 9.2-4.6 20 0 29.2C57.7 312.4 165.1 384 288 384s230.3-71.6 284.5-177.4c4.7-9.2 4.7-20 0-29.2zM288 336c-98.6 0-189.1-55-237.9-144C98.9 103 189.3 48 288 48s189.1 55 237.9 144C477.1 281 386.7 336 288 336z"/></svg>
-                                        </a>
-                                    </li>
-                                </ul><!-- / .product-additional -->
-                            </div>
-                            <div class="product-item__info">
-                                <a class="product-item__name" href="#">Чайник Rondell Walzer 3л со свистком</a>
-                                <div class="product-item__footer">
-                                    <div class="product-item__review rating-and-review">
-                                        <div class="rating-and-review__rating rating" data-rate-value=4.5></div>
-                                        <a class="rating-and-review__review" href="#">27 отзывов</a>
-                                    </div><!-- / .rating-and-review -->
-                                    <p class="product-item__price price-box">
-                                        <del>7 587 руб.</del>
-                                        <ins>5 422 руб.</ins>
-                                    </p><!-- / .price-box -->
-                                    <div class="product-item__description content">
-                                        <p>
-                                            Huawei Watch GT 2 Готов к открытиям Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                                            Инновационная технология энергосбережения Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                                            потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                                            разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                                            2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для
-                                            устройств, которые носят, который обеспечивает высокую производительность.
-                                        </p>
-                                    </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
                                 </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
                             </div>
-                        </li><!-- / .product-item -->
-                    </ul><!-- / .products-list -->
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-7.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-7.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
+                                </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
+                                </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
+                            </div>
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-8.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-8.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
+                                </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
+                                </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
+                            </div>
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-9.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-9.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
+                                </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
+                                </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
+                            </div>
+                        </li><!-- / .post-item -->
+                        <li class="posts-list__item post-item">
+                            <a class="post-item__thumb-link" href="post.html">
+                                <picture>
+                                    <source srcset="img/base/post-10.webp" type="image/webp">
+                                    <img class="post-item__thumb" src="img/base/post-10.jpg" alt="">
+                                </picture>
+                            </a>
+                            <div class="post-item__info">
+                                <div class="post-item__categories">
+                                    <a href="#">Life Style</a>,
+                                    <a href="#">Smartphone</a>
+                                </div>
+                                <h2 class="post-item__title">
+                                    <a href="#">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
+                                </h2>
+                                <div class="post-item__description content">
+                                    <p>
+                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
+                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
+                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
+                                    </p>
+                                </div>
+                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
+                            </div>
+                        </li><!-- / .post-item -->
+                    </ul><!-- / .posts-list -->
                     <div class="main__page-info page-info">
-                        <p class="page-info__count">Showing <span>1–12</span> of <span>323</span> results</p>
                         <div class="page-info__pagination wp-pagenavi">
                             <span class="current">1</span>
                             <a class="page larger" href="#" title="Страница 2">2</a>
@@ -1940,221 +1440,6 @@
             </section>
         </footer><!-- / .main-footer -->
     </div><!-- / .wrapper -->
-
-    <!-- Modal quick view -->
-    <div class="modal-quick-view modal-common" id="js-modal-quick-view" style="display: none">
-        <div class="modal-quick-view__body">
-            <div class="modal-quick-view__left">
-                <div class="modal-quick-view__product-gallery product-gallery">
-                    <div class="product-gallery__item">
-                        <p class="product-gallery__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-1.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-1.png" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery__item">
-                        <p class="product-gallery__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-2.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-2.png" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery__item">
-                        <p class="product-gallery__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-3.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-3.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery__item">
-                        <p class="product-gallery__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-4.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-4.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery__item">
-                        <p class="product-gallery__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-5.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-5.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery__item">
-                        <p class="product-gallery__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-6.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-6.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery__item">
-                        <p class="product-gallery__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-7.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-7.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                </div><!-- / .product-gallery -->
-                <div class="modal-quick-view__product-gallery-side product-gallery-side">
-                    <div class="product-gallery-side__item">
-                        <p class="product-gallery-side__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-1.webp" type="image/webp">
-                                <img class="product-gallery-side__img" src="img/base/Watch-GT2-46mm-Sport-Black-1.png" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery-side__item">
-                        <p class="product-gallery-side__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-2.webp" type="image/webp">
-                                <img class="product-gallery-side__img" src="img/base/Watch-GT2-46mm-Sport-Black-2.png" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery-side__item">
-                        <p class="product-gallery-side__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-3.webp" type="image/webp">
-                                <img class="product-gallery-side__img" src="img/base/Watch-GT2-46mm-Sport-Black-3.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery-side__item">
-                        <p class="product-gallery-side__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-4.webp" type="image/webp">
-                                <img class="product-gallery-side__img" src="img/base/Watch-GT2-46mm-Sport-Black-4.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery-side__item">
-                        <p class="product-gallery-side__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-5.webp" type="image/webp">
-                                <img class="product-gallery-side__img" src="img/base/Watch-GT2-46mm-Sport-Black-5.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery-side__item">
-                        <p class="product-gallery-side__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-6.webp" type="image/webp">
-                                <img class="product-gallery-side__img" src="img/base/Watch-GT2-46mm-Sport-Black-6.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                    <div class="product-gallery-side__item">
-                        <p class="product-gallery-side__img-box">
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-7.webp" type="image/webp">
-                                <img class="product-gallery-side__img" src="img/base/Watch-GT2-46mm-Sport-Black-7.jpg" alt="">
-                            </picture>
-                        </p>
-                    </div>
-                </div><!-- / .product-gallery-side -->
-            </div>
-            <div class="modal-quick-view__right">
-                <div class="modal-quick-view__head">
-                    <p class="modal-quick-view__name">Смарт-часы Huawei Watch GT2 46mm Sport Black</p>
-                    <div class="modal-quick-view__review rating-and-review">
-                        <div class="rating-and-review__rating rating" data-rate-value=4.5></div>
-                        <a class="rating-and-review__review" href="#">350 отзывов</a>
-                    </div><!-- / .rating-and-review -->
-                </div>
-                <p class="modal-quick-view__status modal-quick-view__status--in-stock">В наличии</p>
-                <!--<p class="modal-quick-view__status modal-quick-view__status&#45;&#45;on-order">На заказ</p>-->
-                <div class="modal-quick-view__description content">
-                    <p>
-                        Huawei Watch GT 2. Готов к открытиям. Процессор Kirin A1 | Длительная работа батареи | Различные спортивные режимы
-                        Инновационная технология энергосбережения. Создатели Huawei Watch GT поставили перед собой задачу выявить максимальный
-                        потенциал батареи смарт-часов. Благодаря двойному процессору для устройств, которые носят, Kirin A1 (собственная
-                        разработка Huawei) и интеллектуальной технологии энергосбережения вы сможете пользоваться смарт-часами целые сутки до
-                        2 недель без подзарядки. высокая производительность Kirin A1 - это разработанный компанией Huawei процессор для устройств,
-                        которые носят, который обеспечивает высокую производительность и низкое энергопотребление.
-                    </p>
-                </div>
-                <p class="modal-quick-view__price price-box price-box--big">
-                    <del>17 857 руб.</del>
-                    <ins>16 994 руб.</ins>
-                </p>
-                <form class="modal-quick-view__form form-quick-view" action="#" method="post">
-                    <input class="nice-number__field js-nice-number" type="number" value="1" min="1" name="quantity">
-                    <button class="form-quick-view__btn-add-to-cart button">В корзину</button>
-                    <ul class="form-quick-view__actions actions">
-                        <li class="actions__item">
-                            <a class="actions__link" href="#" title="Добавить к сравнению">
-                                <span class="visually-hidden">Добавить к сравнению</span>
-                                <svg class="actions__icon" width="15" viewBox="0 0 496 496" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M475.5 20.5l-52.2 52.2C378.5 27.8 316.5 0 248 0 115.2 0 6.8 104.3.3 235.5c-.3 6.8 5.2 12.5 12 12.5h28c6.4 0 11.6-5 12-11.3C58.2 133.6 143.5 52 248 52c54.2 0 103.2 21.9 138.6 57.4l-54.1 54.1c-7.6 7.6-2.2 20.5 8.5 20.5h143c6.6 0 12-5.4 12-12V29c0-10.7-12.9-16.1-20.5-8.5zm8.2 227.5h-28c-6.4 0-11.6 5-12 11.3C437.8 362.4 352.5 444 248 444c-54.2 0-103.2-21.9-138.6-57.4l54.1-54.1c7.6-7.6 2.2-20.5-8.5-20.5H12c-6.6 0-12 5.4-12 12v143c0 10.7 12.9 16 20.5 8.5l52.2-52.2C117.5 468.2 179.5 496 248 496c132.8 0 241.2-104.3 247.7-235.5.3-6.8-5.2-12.5-12-12.5z"></path></svg>
-                            </a>
-                        </li>
-                        <li class="actions__item">
-                            <a class="actions__link" href="#" title="Добавить в список желаний">
-                                <span class="visually-hidden">Добавить в список желаний</span>
-                                <svg class="actions__icon" width="17" viewBox="0 0 512 448.1" fill="#222" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
-                            </a>
-                        </li>
-                    </ul><!-- / .actions -->
-                </form><!-- / .form-quick-view -->
-                <ul class="modal-quick-view__product-meta product-meta">
-                    <li class="product-meta__item">
-                        <p class="product-meta__term">Категории:</p>
-                        <div class="product-meta__value product-meta__value--list-links">
-                            <a href="#">Game Console</a>,
-                            <a href="#">On Ear</a>,
-                            <a href="#">Speaker</a>
-                        </div>
-                    </li>
-                    <li class="product-meta__item">
-                        <p class="product-meta__term">Теги:</p>
-                        <div class="product-meta__value product-meta__value--list-links">
-                            <a href="#">HeadPhones</a>,
-                            <a href="#">Smart phone</a>
-                        </div>
-                    </li>
-                    <li class="product-meta__item">
-                        <p class="product-meta__term">Поделиться:</p>
-                        <div class="product-meta__value product-meta__value--social">
-                            <ul class="product-meta__social-extra social-extra">
-                                <li class="social-extra__item">
-                                    <a class="social-extra__link" href="#" target="_blank" rel="noopener nofollow">
-                                        <span class="visually-hidden">Поделиться в ВК</span>
-                                        <svg width="19" viewBox="0 0 538.7 320" fill="#999" xmlns="http://www.w3.org/2000/svg"><path d="M526.4 21.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V21.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4C99.9 6.6 94.2 0 79.1 0H20.2C3.4 0 0 7.9 0 16.7c0 15.6 20 93.1 93.1 195.5C141.8 282.1 210.4 320 272.8 320c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg>
-                                    </a>
-                                </li>
-                                <li class="social-extra__item">
-                                    <a class="social-extra__link" href="#" target="_blank" rel="noopener nofollow">
-                                        <span class="visually-hidden">Поделиться в Инстаграм</span>
-                                        <svg width="16" viewBox="0 0 448.3 448.1" fill="#999" xmlns="http://www.w3.org/2000/svg"><path d="M224.2 109.2c-63.6 0-114.9 51.3-114.9 114.9S160.6 339 224.2 339s114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zm-47.8 224.5c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                                    </a>
-                                </li>
-                                <li class="social-extra__item">
-                                    <a class="social-extra__link" href="#" target="_blank" rel="noopener nofollow">
-                                        <span class="visually-hidden">Поделиться в Фейсбук</span>
-                                        <svg width="10" viewBox="0 0 320 512" fill="#999" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
-                                    </a>
-                                </li>
-                                <li class="social-extra__item">
-                                    <a class="social-extra__link" href="#" target="_blank" rel="noopener nofollow">
-                                        <span class="visually-hidden">Поделиться в Google Plus</span>
-                                        <svg width="24" viewBox="0 0 512 320" fill="#999" xmlns="http://www.w3.org/2000/svg"><path d="M465.557 96h-46.656v46.443H372.46v46.656h46.44v46.442h46.656V189.1H512v-46.656h-46.443zM160 320c92.33 0 153.664-64.81 153.664-156.288a136.714 136.714 0 0 0-2.603-26.624h-151.04v54.997h90.816c-3.712 23.36-27.498 68.971-90.816 68.971-54.549 0-99.093-45.184-99.093-101.056s44.523-101.077 99.093-101.077c31.211 0 51.947 13.312 63.744 24.661L267.2 41.899C239.232 15.723 203.221 0 160 0a160 160 0 0 0 0 320z"/></svg>
-                                    </a>
-                                </li>
-                            </ul><!-- / .social-extra -->
-                        </div>
-                    </li>
-                </ul><!-- / .product-meta -->
-            </div>
-        </div>
-    </div><!-- / .modal-quick-view -->
 
     <script src="js/app.bundle.js"></script>
 </body>

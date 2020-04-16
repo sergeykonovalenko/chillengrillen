@@ -27,14 +27,13 @@
 
     &:hover,
     &:focus {
-        color: #fff;
-        background-color: $color-main;
+        color: $color-main;
         border-color: $color-main;
     }
 
     &:hover svg,
     &:focus svg {
-        fill: #fff;
+        fill: $color-main;
     }
 }
 
