@@ -3,6 +3,7 @@
 }
 
 .search__field {
+    padding: 32px 30px;
     border-radius: 6px 0 0 6px;
     appearance: none;
 
@@ -15,6 +16,14 @@
     &::-webkit-search-results-button,
     &::-webkit-search-results-decoration {
         display: none;
+    }
+
+    &:focus {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+
+    &::placeholder {
+        color: $grey-7;
     }
 }
 

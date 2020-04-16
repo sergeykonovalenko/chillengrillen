@@ -9,6 +9,27 @@ $(document).ready(function () {
         element.classList.add('is-mobile');
     }
 
+    // init modal
+    $('.light-box-img').fancybox({
+        backFocus: false,
+    });
+
+    $('.btn-modal').fancybox({
+        touch : false,
+        backFocus : false,
+        btnTpl: {
+            smallBtn: `
+                <button class="modal-common__close fancybox-button fancybox-close-small" type="button" data-fancybox-close title="Закрыть">
+                    <svg width="15" height="15" viewBox="0 0 320 320" fill="#000" xmlns="http://www.w3.org/2000/svg"><path d="M207.6 160L315.3 52.3c6.2-6.2 6.2-16.3 0-22.6l-25-25c-6.2-6.2-16.3-6.2-22.6 0L160 112.4 52.3 4.7c-6.2-6.2-16.3-6.2-22.6 0l-25 25c-6.2 6.2-6.2 16.3 0 22.6L112.4 160 4.7 267.7c-6.2 6.2-6.2 16.3 0 22.6l25 25c6.2 6.2 16.3 6.2 22.6 0L160 207.6l107.7 107.7c6.2 6.2 16.3 6.2 22.6 0l25-25c6.2-6.2 6.2-16.3 0-22.6L207.6 160z"/></svg>
+                </button>`
+        },
+        afterLoad: function( instance, slide ) {
+            // Вручную обновить позиционирование слайдеров внутри
+            $('.product-gallery').slick('setPosition');
+            $('.product-gallery-side').slick('setPosition');
+        }
+    });
+
     // sticky menu
     let mainHeader = document.querySelector('.main-header');
     let mainHeaderWrapper = document.querySelector('.main-header__wr');
@@ -33,27 +54,6 @@ $(document).ready(function () {
             }
         });
     }
-
-    // init modal
-    $('.light-box-img').fancybox({
-        backFocus: false,
-    });
-
-    $('.btn-modal').fancybox({
-        touch : false,
-        backFocus : false,
-        btnTpl: {
-            smallBtn: `
-                <button class="modal-common__close fancybox-button fancybox-close-small" type="button" data-fancybox-close title="Закрыть">
-                    <svg width="15" height="15" viewBox="0 0 320 320" fill="#000" xmlns="http://www.w3.org/2000/svg"><path d="M207.6 160L315.3 52.3c6.2-6.2 6.2-16.3 0-22.6l-25-25c-6.2-6.2-16.3-6.2-22.6 0L160 112.4 52.3 4.7c-6.2-6.2-16.3-6.2-22.6 0l-25 25c-6.2 6.2-6.2 16.3 0 22.6L112.4 160 4.7 267.7c-6.2 6.2-6.2 16.3 0 22.6l25 25c6.2 6.2 16.3 6.2 22.6 0L160 207.6l107.7 107.7c6.2 6.2 16.3 6.2 22.6 0l25-25c6.2-6.2 6.2-16.3 0-22.6L207.6 160z"/></svg>
-                </button>`
-        },
-        afterLoad: function( instance, slide ) {
-            // Вручную обновить позиционирование слайдеров внутри
-            $('.product-gallery').slick('setPosition');
-            $('.product-gallery-side').slick('setPosition');
-        }
-    });
 
     // switching tile display mode
     $('.catalog-mode__button').on('click', function () {

@@ -1,0 +1,46 @@
+.post__thumb-box {
+    margin-bottom: 50px;
+}
+
+.post__thumb {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.post__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: left;
+}
+
+.post__date {
+    display: block;
+    margin-bottom: 27px;
+    color: $grey-4;
+}
+
+.post__content {
+    margin-bottom: 45px;
+}
+
+.post__tags-and-social {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.post__tags {
+    flex-grow: 1;
+    margin: -5px;
+}
+
+.post__social {
+    flex-shrink: 0;
+    margin-left: 30px;
+}
+
+.post__control {
+    margin: 0 0 70px 0;
+}

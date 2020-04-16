@@ -1,0 +1,31 @@
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.tag-cloud li {
+    margin: 5px;
+}
+
+.tag-cloud a {
+    display: block;
+    padding: 8px 30px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $grey-4;
+    border: 1px solid $grey-6;
+    border-radius: 20px;
+    transition: all .15s ease-out;
+
+    &:hover,
+    &:focus {
+        color: $color-main;
+        border-color: $color-main;
+    }
+}
+
+.post__social {
+    margin: 0;
+}

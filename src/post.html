@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SEO -->
-    <title>Блог | Интернет-магазин Chillengrillen.ru</title>
+    <title>Лов-лайв стори от первых лиц из Новой Англии 2020. | Интернет-магазин Chillengrillen.ru</title>
     <meta name="description" content="🚴‍♀️ Интернет-магазин Chillengrillen.ru предлагает велосипеды и велосипедные запчасти для профессионалов и любителей велоспорта, а также услуги ремонта велосипедов в Санкт-Петербурге - купить велосипедную продукцию с гарантией и бесплатной доставкой.">
     <meta name="keywords" content="велосипед, запчасти для велосипеда, ремонт велосипеда, веломастерская, спб, интернет-магазин, купить велосипед">
     <!-- Favicon -->
@@ -31,6 +31,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Preloader  -->
+    <div class="preloader">
+        <div class='preloader__loader-wr'>
+            <span class='preloader__loader'>
+              <span class='preloader__loader-inner'></span>
+            </span>
+        </div>
+    </div><!-- / .preloader -->
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded-hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded-hiding');
+            }, 500);
+        }
+    </script>
+
     <div class="wrapper">
         <header class="main-header">
             <div class="main-header__wr">
@@ -692,7 +711,7 @@
                             <a class="mega-menu-link" href="#">Мастерская</a>
                         </li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">О нас</a></li>
-                        <li class="mega-menu-item mega-current-menu-item"><a class="mega-menu-link" href="posts.html">Блог</a></li>
+                        <li class="mega-menu-item"><a class="mega-menu-link" href="posts.html">Блог</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">Доставка, оплата и гарантия</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">Вакансии</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">Контакты</a></li>
@@ -823,12 +842,14 @@
 
         <div class="offer">
             <div class="container">
-                <h1 class="offer__title">Блог</h1>
+                <h1 class="offer__title">Лов-лайв стори от первых лиц из Новой Англии 2020.</h1>
                 <div class="breadcrumbs">
                     <!-- Breadcrumb NavXT 6.4.0 -->
                     <span><a href="index.html"><span>Главная</span></a></span>
                     <span class="breadcrumbs__separator">»</span>
-                    <span class="current-item">Блог</span>
+                    <span><a href="index.html"><span>Блог</span></a></span>
+                    <span class="breadcrumbs__separator">»</span>
+                    <span class="current-item">Лов-лайв стори от первых лиц из Новой Англии 2020.</span>
                 </div><!-- / .breadcrumbs -->
             </div>
         </div><!-- / .offer -->
@@ -978,288 +999,136 @@
                         </ul><!-- / .instagram -->
                     </div><!-- / .widget -->
                 </aside><!-- / .sidebar -->
-                <div class="page-content__main main">
-                    <ul class="page-content__posts-list posts-list posts-list--1-column">
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-1.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-1.jpg" alt="">
-                                </picture>
+                <div class="page-content__main main post">
+                    <picture class="post__thumb-box">
+                        <source srcset="img/base/post-6.webp" type="image/webp">
+                        <img class="post__thumb" src="img/base/post-6.jpg" alt="">
+                    </picture>
+                    <h2 class="post__title">Лов-лайв стори от первых лиц из Новой Англии 2020.</h2>
+                    <time class="post__date" datetime="2020-04-16">Опубликовано 16 апреля 2020</time>
+                    <div class="post__content content">
+                        <p>
+                            Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                            Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor. Cum sociis natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis
+                            sed, nonummy id, metus. Nulla neque dolor, sagittis eget. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <p>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                            vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                        </p>
+                        <ul class="gallery">
+                            <li class="gallery__item">
+                                <a class="gallery__link" href="img/base/post-4.jpg" data-fancybox="gallery-1">
+                                    <picture>
+                                        <source srcset="img/base/post-4.webp" type="image/webp">
+                                        <img class="gallery__img" src="img/base/post-4.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="gallery__item">
+                                <a class="gallery__link" href="img/base/post-3.jpg" data-fancybox="gallery-1">
+                                    <picture>
+                                        <source srcset="img/base/post-3.webp" type="image/webp">
+                                        <img class="gallery__img" src="img/base/post-3.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul><!-- / .gallery -->
+                        <p>
+                            Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
+                            Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor. Cum sociis natoque penatibus et
+                            magnis dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis
+                            sed, nonummy id, metus. Nulla neque dolor, sagittis eget. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <p>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                            est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                            vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                        </p>
+                    </div>
+                    <div class="post__tags-and-social">
+                        <ul class="post__tags tag-cloud">
+                            <li><a href="#">Life Style</a></li>
+                            <li><a href="#">Smartphone</a></li>
+                            <li><a href="#">Tech</a></li>
+                        </ul><!-- / .tag-cloud -->
+                        <ul class="post__social social-third">
+                            <li class="social-third__item">
+                                <a class="social-third__link social-third__link--vk" href="#" target="_blank" rel="noopener nofollow" title="Поделиться в Вконтакте">
+                                    <span class="visually-hidden">Поделиться в ВК</span>
+                                    <svg width="17" viewBox="0 0 538.7 320" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M526.4 21.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V21.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4C99.9 6.6 94.2 0 79.1 0H20.2C3.4 0 0 7.9 0 16.7c0 15.6 20 93.1 93.1 195.5C141.8 282.1 210.4 320 272.8 320c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"/></svg>
+                                </a>
+                            </li>
+                            <li class="social-third__item">
+                                <a class="social-third__link social-third__link--instagram" href="https://www.instagram.com/chillengrillen" target="_blank" rel="noopener nofollow" title="Поделиться в Инстаграм">
+                                    <span class="visually-hidden">Поделиться в Instagram</span>
+                                    <svg width="15" viewBox="0 0 448.3 448.1" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M224.2 109.2c-63.6 0-114.9 51.3-114.9 114.9S160.6 339 224.2 339s114.9-51.3 114.9-114.9-51.3-114.9-114.9-114.9zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zm-47.8 224.5c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                                </a>
+                            </li>
+                            <li class="social-third__item">
+                                <a class="social-third__link social-third__link--facebook" href="https://www.facebook.com/chillengrillen/" target="_blank" rel="noopener nofollow" title="Поделиться в Фейсбук">
+                                    <span class="visually-hidden">Поделиться в Facebook</span>
+                                    <svg width="10" viewBox="0 0 320 512" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                                </a>
+                            </li>
+                        </ul><!-- / .social-third -->
+                    </div>
+                    <ul class="post__control post-control">
+                        <li class="post-control__item">
+                            <a class="post-control__link" href="post.html">
+                                <span class="post-control__button">
+                                    <svg class="post-control__icon" width="13" viewBox="0 0 31.49 22.142" fill="#999" xmlns="http://www.w3.org/2000/svg"><path d="M.333 10.286a1.093 1.093 0 0 0 0 1.571l9.952 9.952a1.112 1.112 0 0 0 1.587 0 1.14 1.14 0 0 0 0-1.587L3.825 12.19h26.554a1.118 1.118 0 0 0 1.111-1.127 1.106 1.106 0 0 0-1.111-1.112H3.825l8.047-8.047A1.117 1.117 0 0 0 10.285.333z"/></svg>
+                                    Предыдущий пост
+                                </span>
+                                <p class="post-control__title">Analysts are in charge of plannin...</p>
                             </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-2.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-2.jpg" alt="">
-                                </picture>
+                        </li>
+                        <li class="post-control__item">
+                            <a class="post-control__link" href="post.html">
+                                <span class="post-control__button">
+                                    Следующий пост
+                                    <svg class="post-control__icon" width="13" viewBox="0 0 31.5 22.1" fill="#999" xmlns="http://www.w3.org/2000/svg"><path d="M21.2.3c-.4-.4-1.1-.4-1.6 0-.4.4-.4 1.1 0 1.6l8 8H1.1c-.6.1-1.1.5-1.1 1.2s.5 1.1 1.1 1.1h26.6l-8 8c-.4.4-.4 1.2 0 1.6.4.4 1.2.4 1.6 0l10-10c.4-.4.4-1.1 0-1.6L21.2.3z"/></svg>
+                                </span>
+                                <p class="post-control__title">Your face, your password...</p>
                             </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-3.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-3.jpg" alt="">
-                                </picture>
-                            </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-4.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-4.jpg" alt="">
-                                </picture>
-                            </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-5.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-5.jpg" alt="">
-                                </picture>
-                            </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-6.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-6.jpg" alt="">
-                                </picture>
-                            </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-7.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-7.jpg" alt="">
-                                </picture>
-                            </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-8.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-8.jpg" alt="">
-                                </picture>
-                            </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-9.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-9.jpg" alt="">
-                                </picture>
-                            </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                        <li class="posts-list__item post-item">
-                            <a class="post-item__thumb-link" href="post.html">
-                                <picture>
-                                    <source srcset="img/base/post-10.webp" type="image/webp">
-                                    <img class="post-item__thumb" src="img/base/post-10.jpg" alt="">
-                                </picture>
-                            </a>
-                            <div class="post-item__info">
-                                <div class="post-item__categories">
-                                    <a href="#">Life Style</a>,
-                                    <a href="#">Smartphone</a>
-                                </div>
-                                <h2 class="post-item__title">
-                                    <a href="post.html">Лов-лайв стори от первых лиц из Новой Англии 2020.</a>
-                                </h2>
-                                <div class="post-item__description content">
-                                    <p>
-                                        Cauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Praesent nonummy mi in odio.
-                                        Etiam imperdiet imperdiet orci. Sed cursus turpis vitae tortor.Cum sociis natoque penatibus et magnis
-                                        dis parturient montes, nascetur ridiculus mus. Vestibulum purus quam, scelerisque ut, mollis sed,
-                                        nonummy id, metus. Nulla neque dolor, sagittis eget,...
-                                    </p>
-                                </div>
-                                <a class="post-item__read-more button-link" href="#">Читать больше</a>
-                            </div>
-                        </li><!-- / .post-item -->
-                    </ul><!-- / .posts-list -->
-                    <div class="main__page-info page-info">
-                        <div class="page-info__pagination wp-pagenavi">
-                            <span class="current">1</span>
-                            <a class="page larger" href="#" title="Страница 2">2</a>
-                            <a class="page larger" href="#" title="Страница 3">3</a>
-                            <span class="extend">...</span>
-                            <a class="larger page" href="#" title="Страница 10">10</a>
-                            <span class="extend">...</span>
-                            <!-- Стрелка влево -->
-                            <!--<a class="previouspostslink" rel="prev" href="#">
-                                <svg width="9" viewBox="0 0 149 256.1" fill="#ccc" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
-                            </a>-->
-                            <a class="nextpostslink" rel="next" href="#">
-                                <svg width="9" viewBox="0 0 149 256.1" fill="#ccc" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
-                            </a>
-                            <a class="last" href="#">15</a>
-                            <a class="show-all" href="#">Показать все</a>
-                        </div><!-- / .wp-pagenavi -->
-                    </div><!-- / .page-info -->
+                        </li>
+                    </ul><!-- / .post-control -->
+                    <div class="leave-comments">
+                        <p class="leave-comments__title">Оставить комментарий</p>
+                        <form class="leave-comments__form form-extra" action="#" method="post">
+                            <ul class="form-extra__list">
+                                <li class="form-extra__item">
+                                    <label class="visually-hidden" for="form-extra-name">Ваше имя</label>
+                                    <input class="form-extra__field" id="form-extra-name" type="text" name="name" placeholder="Ваше имя*" required>
+                                </li>
+                                <li class="form-extra__item">
+                                    <label class="visually-hidden" for="form-extra-email">Ваш E-mail</label>
+                                    <input class="form-extra__field" id="form-extra-email" type="email" name="email" placeholder="Ваш e-mail*" required>
+                                </li>
+                                <li class="form-extra__item">
+                                    <label class="visually-hidden" for="form-extra-subject">Тема</label>
+                                    <input class="form-extra__field" id="form-extra-subject" type="text" name="subject" placeholder="Тема">
+                                </li>
+                                <li class="form-extra__item">
+                                    <label class="visually-hidden" for="form-extra-comment">Комментарий</label>
+                                    <textarea class="form-extra__field" id="form-extra-comment" name="comment" placeholder="Комментарий*" required></textarea>
+                                </li>
+                            </ul>
+                            <p class="form-extra__button-box">
+                                <button class="form-extra__button button">Отправить</button>
+                            </p>
+                        </form><!-- / .form-extra -->
+                    </div><!-- / .leave-comments -->
                 </div><!-- / .main -->
             </div>
         </div><!-- / .page-content -->

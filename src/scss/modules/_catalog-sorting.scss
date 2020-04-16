@@ -42,4 +42,8 @@
     padding-bottom: 19px;
     cursor: pointer;
     appearance: none;
+
+    &:focus {
+        box-shadow: 0 0 7px rgba(0, 0, 0, .2);
+    }
 }

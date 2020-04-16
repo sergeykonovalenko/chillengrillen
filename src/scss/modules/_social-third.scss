@@ -1,0 +1,44 @@
+.social-third {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.social-third__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-third__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    &--vk {
+        background-color: #4f7db3;
+    }
+
+    &--instagram {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    &--facebook {
+        background-color: #3b5998;
+    }
+    
+    &:hover svg,
+    &:focus svg {
+        transform: rotate(360deg);
+    }
+}
+
+.social-third__link svg {
+    transition: transform .6s ease;
+}

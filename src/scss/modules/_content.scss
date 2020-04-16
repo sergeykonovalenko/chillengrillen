@@ -49,16 +49,16 @@
 }
 
 .content p,
-.content ul {
+.content ul:not(.gallery) {
     margin: 1em 0;
 }
 
-.content ul {
+.content ul:not(.gallery) {
     padding: 0;
     list-style: none;
 }
 
-.content li {
+.content ul:not(.gallery) li {
     position: relative;
     margin-bottom: .5em;
     padding-left: 40px;
