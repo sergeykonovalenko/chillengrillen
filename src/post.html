@@ -33,21 +33,23 @@
 <body>
     <!-- Preloader  -->
     <div class="preloader">
-        <div class='preloader__loader-wr'>
-            <span class='preloader__loader'>
-              <span class='preloader__loader-inner'></span>
-            </span>
+        <div class="preloader__bars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div><!-- / .preloader -->
 
     <script>
         window.onload = function () {
-            document.body.classList.add('loaded-hiding');
+            document.documentElement.classList.add('loaded-hiding');
             window.setTimeout(function () {
-                document.body.classList.add('loaded');
-                document.body.classList.remove('loaded-hiding');
+                document.documentElement.classList.add('loaded');
+                document.documentElement.classList.remove('loaded-hiding');
             }, 500);
-        }
+        };
     </script>
 
     <div class="wrapper">

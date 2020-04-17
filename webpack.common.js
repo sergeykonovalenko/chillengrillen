@@ -30,6 +30,7 @@ module.exports = mode => {
                         template: `./src/${page}`,
                         filename: `./${page}`,
                         inject: false,
+                        minify: false,
                     })
             ),
             new webpack.DefinePlugin({

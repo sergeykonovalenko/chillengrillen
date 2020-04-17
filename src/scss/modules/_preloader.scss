@@ -8,79 +8,80 @@
     width: 100%;
     height: 100%;
     background-color: $color-secondary;
+
+    .loaded-hiding & {
+        transition: opacity .3s;
+        opacity: 0;
+    }
+
+    .loaded & {
+        display: none;
+    }
+
+    .no-js & {
+        display: none
+    }
 }
 
-//.no-js .preloaders,
-//.oldie .preloaders {
-//    display: none
-//}
-
-.preloader__loader-wr {
+.preloader__bars {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
+    height: 50px;
+    width: 50px;
     transform: translate(-50%, -50%);
 }
 
-.preloader__loader {
-    position: relative;
-    top: 50%;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border: 4px solid #Fff;
-    animation: loader 2s infinite ease;
+.preloader__bars span {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 9px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, .35);
+    animation: bars 1.5s  infinite ease-in-out;
 }
 
-.preloader__loader-inner {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-    background-color: #fff;
-    animation: loader-inner 2s infinite ease-in;
+.preloader__bars span:nth-child(2) {
+    left: 11px;
+    animation-delay: .2s;
 }
 
-.loaded-hiding .preloader {
-    transition: opacity .3s;
-    opacity: 0;
+.preloader__bars span:nth-child(3) {
+    left: 22px;
+    animation-delay: .4s;
 }
 
-.loaded .preloader {
-    display: none;
+.preloader__bars span:nth-child(4) {
+    left: 33px;
+    animation-delay: .6s;
 }
 
-@keyframes loader {
+.preloader__bars span:nth-child(5) {
+    left: 44px;
+    animation-delay: .8s;
+}
+
+@keyframes bars {
     0% {
-        transform: rotate(0deg);
+        height: 5px;
+        background-color: rgba(255, 255, 255, .35);
+        transform: translateY(0px);
     }
     25% {
-        transform: rotate(180deg);
+        height: 30px;
+        background-color: #fff;
+        transform: translateY(15px);
     }
     50% {
-        transform: rotate(180deg);
-    }
-    75% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes loader-inner {
-    0% {
-        height: 0%;
-    }
-    25% {
-        height: 0%;
-    }
-    50% {
-        height: 100%;
-    }
-    75% {
-        height: 100%;
+        height: 5px;
+        background-color: rgba(255, 255, 255, .35);
+        transform: translateY(0);
     }
     100% {
-        height: 0%;
+        height: 5px;
+        background-color: rgba(255, 255, 255, .35);
+        transform: translateY(0);
     }
 }

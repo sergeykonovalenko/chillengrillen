@@ -305,6 +305,16 @@ $(document).ready(function () {
         // ]
     });
 
+    // // preloader
+    // window.onload = function () {
+    //     document.documentElement.classList.add('loaded-hiding');
+    //     console.log('loaded');
+    //     window.setTimeout(function () {
+    //         document.documentElement.classList.add('loaded');
+    //         document.documentElement.classList.remove('loaded-hiding');
+    //     }, 500);
+    // };
+
     // init nice number
     $('.js-nice-number').niceNumber({
         autoSize: false,

@@ -31,6 +31,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Preloader  -->
+    <div class="preloader">
+        <div class="preloader__bars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div><!-- / .preloader -->
+
+    <script>
+        window.onload = function () {
+            document.documentElement.classList.add('loaded-hiding');
+            window.setTimeout(function () {
+                document.documentElement.classList.add('loaded');
+                document.documentElement.classList.remove('loaded-hiding');
+            }, 500);
+        };
+    </script>
+
     <div class="wrapper">
         <header class="main-header">
             <div class="main-header__wr">

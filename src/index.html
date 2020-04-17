@@ -31,6 +31,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Preloader  -->
+    <div class="preloader">
+        <div class="preloader__bars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div><!-- / .preloader -->
+
+    <script>
+        window.onload = function () {
+            document.documentElement.classList.add('loaded-hiding');
+            window.setTimeout(function () {
+                document.documentElement.classList.add('loaded');
+                document.documentElement.classList.remove('loaded-hiding');
+            }, 500);
+        };
+    </script>
+
     <div class="wrapper">
         <header class="main-header">
             <div class="main-header__wr">
@@ -6460,7 +6481,7 @@
                                     nonummy id, metus. Nulla neque dolor, sagittis eget,...
                                 </p>
                             </div>
-                            <a class="post-item__read-more button-link" href="#">Читать больше</a>
+                            <a class="post-item__read-more button-link" href="post.html">Читать больше</a>
                         </div>
                     </li><!-- / .post-item -->
                     <li class="posts-list__item post-item post-item--small">
@@ -6486,7 +6507,7 @@
                                     nonummy id, metus. Nulla neque dolor, sagittis eget,...
                                 </p>
                             </div>
-                            <a class="post-item__read-more button-link" href="#">Читать больше</a>
+                            <a class="post-item__read-more button-link" href="post.html">Читать больше</a>
                         </div>
                     </li><!-- / .post-item -->
                     <li class="posts-list__item post-item post-item--small">
@@ -6512,7 +6533,7 @@
                                     nonummy id, metus. Nulla neque dolor, sagittis eget,...
                                 </p>
                             </div>
-                            <a class="post-item__read-more button-link" href="#">Читать больше</a>
+                            <a class="post-item__read-more button-link" href="post.html">Читать больше</a>
                         </div>
                     </li><!-- / .post-item -->
                 </ul><!-- / .posts-list -->
