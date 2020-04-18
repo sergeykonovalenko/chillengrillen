@@ -1,0 +1,164 @@
+.shop-table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.shop-table tr {
+    border-bottom: 1px solid $grey-6;
+}
+
+.shop-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+//.shop-table tr:first-child th:nth-child(1) {
+//    width: 3.76%;
+//}
+//
+//.shop-table tr:first-child th:nth-child(2) {
+//    width: 10.75%;
+//    min-width: 100px;
+//}
+//
+//.shop-table tr:first-child th:nth-child(4) {
+//    width: 15.59%;
+//    width: 145px;
+//}
+//
+//.shop-table tr:first-child th:nth-child(3) {
+//    width: 35.5%;
+//}
+//
+//.shop-table tr:first-child th:nth-child(5) {
+//    width: 19.35%;
+//    width: 180px;
+//}
+//
+//.shop-table tr:first-child th:nth-child(6) {
+//    width: 15.05%;
+//    width: 140px;
+//}
+
+.shop-table th {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.shop-table th,
+.shop-table td {
+    padding: 20px 10px;
+}
+
+.shop-table tr th:first-child,
+.shop-table tr td:first-child {
+    padding-left: 0;
+}
+
+.shop-table tr th:last-child,
+.shop-table tr td:last-child {
+    padding-right: 0;
+}
+
+.shop-table__remove {
+
+}
+
+.shop-table__remove-button {
+    display: block;
+
+    &:hover svg {
+        animation: .6s shake-custom;
+        fill: $color-secondary;
+    }
+}
+
+.shop-table__remove-button svg {
+    transition: all .15s ease-out;
+}
+
+.shop-table__thumbnail {
+    
+}
+
+.shop-table__thumbnail img {
+    width: 90px;
+    min-width: 90px;
+    max-height: 90px;
+    object-fit: contain;
+}
+
+.shop-table__thumbnail a {
+    display: block;
+}
+
+.shop-table__name {
+
+}
+
+.shop-table__name-link {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: $color-main;
+    transition: all .15s ease-out;
+
+    &:hover,
+    &:focus {
+        color: $color-secondary;
+    }
+}
+
+.shop-table__status {
+    display: block;
+    font-size: 12px;
+
+    &--in-stock {
+        color: #3cb111;
+    }
+
+    &--on-order {
+        color: #ff5c00;
+    }
+}
+
+.shop-table__price {
+    font-size: 20px;
+    line-height: 1.25;
+    white-space: nowrap;
+    color: $color-accent;
+}
+
+.shop-table__subtotal {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.25;
+    white-space: nowrap;
+    color: $color-accent;
+}
+
+.shop-table__coupon {
+    float: left;
+}
+
+.shop-table__btn-update-cart {
+    float: right;
+}
+
+@media screen and (max-width: 1440px) {
+    .shop-table__thumbnail img {
+        width: 75px;
+        min-width: 75px;
+        max-height: 75px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cart__box {
+        display: block;
+    }
+
+    .cart__form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

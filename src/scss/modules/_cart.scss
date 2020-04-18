@@ -1,0 +1,28 @@
+.cart {
+
+}
+
+.cart__title {
+    margin-top: 0;
+    margin-bottom: 26px;
+    text-align: left;
+}
+
+.cart__box {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cart__form {
+    flex-shrink: 0;
+    width: 65.95744681%;
+    margin-right: 30px;
+}
+
+.cart__table {
+    width: 100%;
+}
+
+.cart__stamp {
+    flex-grow: 1;
+}

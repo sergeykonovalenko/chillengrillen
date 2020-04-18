@@ -67,14 +67,17 @@ textarea {
     }
 }
 
+select {
+    cursor: pointer;
+}
+
 textarea {
     height: 240px;
     resize: none;
 }
 
 ::placeholder {
-    color: #666666;
-    color: $grey-4;
+    color: $grey-7;
 }
 
 h1,

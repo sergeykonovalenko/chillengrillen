@@ -336,6 +336,11 @@ $(document).ready(function () {
         }
     });
 
+    // show/hide shipping-calculator
+    $('.table-cart-totals__btn-shipping-calculator').on('click', function () {
+        $('.shipping-calculator').slideToggle(300);
+    });
+
     // numberWithSpaces
     function numberWithSpaces(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');

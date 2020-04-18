@@ -1,0 +1,45 @@
+.stamp {
+    position: relative;
+    padding: 30px;
+    background-color: $grey-2;
+
+    &::after,
+    &::before {
+        content: "";
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background-color: transparent;
+        background-size: 15px 15px;
+        background-image: radial-gradient(farthest-side, rgba(0, 0, 0, 0) 6px, #f8f8f8 0);
+    }
+
+    &::before {
+        top: -10px;
+        bottom: -10px;
+        background-position: -3px -5px,0 0;
+    }
+
+    &::after {
+        bottom: -10px;
+        background-position: -3px 2px,0 0;
+    }
+}
+
+.stamp__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.stamp__table-cart-totals {
+    margin-bottom: 15px;
+}
+
+.stamp__button {
+    display: block;
+    width: 100%;
+}
