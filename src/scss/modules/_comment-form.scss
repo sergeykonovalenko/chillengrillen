@@ -1,0 +1,32 @@
+.comment-form {
+
+}
+
+.comment-form__notes {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.comment-form__notes sup {
+    font-weight: 700;
+    color: red;
+}
+
+.comment-form__list {
+    margin: 0 0 50px 0;
+}
+
+.comment-form__rating-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.comment-form__button-box {
+    margin: 0;
+    text-align: center;
+}
+
+.comment-form__button {
+    min-width: 215px;
+}

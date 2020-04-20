@@ -12,6 +12,14 @@
     padding-bottom: 100%;
 }
 
+.product-gallery__label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    margin: 0;
+}
+
 .product-gallery__img-box picture {
     position: absolute;
     top: 0;

@@ -1,16 +1,12 @@
 .reviews {
-    padding-top: 90px;
-    padding-bottom: 100px;
-    background-image: linear-gradient(to right top, #2551e5, #1d59e6, #1760e6, #1667e6, #1a6ee5, #007eed, #008ef3, #009df8, #00b8ff, #00d0ff, #00e7fa, #5ffbf1);
+    padding: 0;
+    list-style: none;
 }
 
-.reviews__title {
-    margin-bottom: 15px;
-    color: #fff;
-}
+.reviews__item {
+    margin-bottom: 10px;
 
-.reviews__slider {
-    width: calc(100% + 40px);
-    margin-right: -20px;
-    margin-left: -20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }

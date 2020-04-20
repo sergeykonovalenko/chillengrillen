@@ -49,9 +49,9 @@
 @import "modules/product-slider";
 @import "modules/inspiration";
 @import "modules/seo-block";
-@import "modules/reviews";
+@import "modules/reviews-section";
 @import "modules/reviews-slider";
-@import "modules/review";
+@import "modules/review-extra";
 @import "modules/main-footer";
 @import "modules/footer-list";
 @import "modules/contacts-list";
@@ -99,6 +99,21 @@
 @import "modules/wp-pagenavi";
 
 /* ==========================================================================
+   PRODUCT PAGE
+   ========================================================================== */
+@import "modules/product-gallery-main";
+@import "modules/product";
+@import "modules/product-detail";
+@import "modules/product-detail-info";
+@import "modules/form-product-detail";
+@import "modules/product-tabs";
+@import "modules/reviews";
+@import "modules/review";
+@import "modules/comment-respond";
+@import "modules/comment-form";
+@import "modules/product-group-slider";
+
+/* ==========================================================================
    POSTS PAGE
    ========================================================================== */
 @import "modules/offer";
@@ -117,8 +132,6 @@
 @import "modules/tag-cloud";
 @import "modules/social-third";
 @import "modules/post-control";
-@import "modules/leave-comments";
-@import "modules/form-extra";
 
 /* ==========================================================================
    CART PAGE

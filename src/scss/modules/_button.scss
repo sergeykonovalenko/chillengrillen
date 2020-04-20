@@ -2,12 +2,13 @@
     position: relative;
     display: inline-block;
     max-width: 100%;
-    padding: 20px 35px;
+    padding: 19px 35px;
     user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
     font-weight: 500;
     font-size: 18px;
+    line-height: 1.25;
     text-align: center;
     text-transform: uppercase;
     white-space: normal;
@@ -48,9 +49,18 @@
     }
 
     &--small {
-        padding: 10.5px 30px;
+        padding: 12.5px 30px;
         font-size: 16px;
-        line-height: inherit;
         text-transform: none;
     }
+
+    &[disabled] {
+        opacity: .5;
+        cursor: not-allowed;
+    }
+}
+
+button[disabled] {
+    opacity: .5;
+    cursor: not-allowed;
 }

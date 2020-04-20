@@ -1,0 +1,45 @@
+.product-tabs {
+
+}
+
+.product-tabs__nav {
+    @include reset-list;
+
+    display: flex;
+    justify-content: center;
+}
+
+.product-tabs__nav li {
+
+}
+
+.product-tabs__nav a {
+    display: block;
+    padding: 0 25px 13px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $grey-3;
+    border-bottom: 2px solid transparent;
+    transition: all .15s ease-out;
+
+    &:hover {
+        color: $color-main;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.product-tabs .ui-tabs-active a {
+    color: $color-main;
+    border-bottom-color: $color-secondary;
+}
+
+.product-tabs__body {
+    padding-top: 45px;
+}
+
+.product-tabs__reviews {
+    margin: 0 0 38px 0;
+}

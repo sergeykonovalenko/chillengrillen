@@ -1,0 +1,45 @@
+.product-detail-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+}
+
+.product-detail-info__item {
+    padding: 0 15px;
+    border-right: 1px solid $grey-6;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &--available {
+
+        &--in-stock {
+            color: #3cb111;
+        }
+        
+        &--on-order {
+            color: #ff5c00;
+        }
+    }
+
+    &--brand {
+
+    }
+
+    &--sku {
+
+    }
+}
+
+.product-detail-info__item--brand a {
+    color: $color-secondary;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}

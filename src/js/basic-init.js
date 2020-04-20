@@ -81,7 +81,7 @@ $(document).ready(function () {
         $(this).closest('.categories__item').find('.categories__children').slideToggle(300);
     });
 
-    // rater
+    // rating
     let options = {
         max_value: 5,
         step_size: 0.5,
@@ -95,7 +95,11 @@ $(document).ready(function () {
         // additional_data: {} // Additional data to send to the server
     };
 
-    $('.rating').rate(options);
+    $('.js-rating--readonly--true').rate(options);
+
+    options.readonly = false;
+
+    $('.js-rating--readonly--false').rate(options);
 
     // initialise Ion.RangeSlider
     let rangeField = $('.range__field');
@@ -305,15 +309,57 @@ $(document).ready(function () {
         // ]
     });
 
-    // // preloader
-    // window.onload = function () {
-    //     document.documentElement.classList.add('loaded-hiding');
-    //     console.log('loaded');
-    //     window.setTimeout(function () {
-    //         document.documentElement.classList.add('loaded');
-    //         document.documentElement.classList.remove('loaded-hiding');
-    //     }, 500);
-    // };
+    // slider product gallery main
+    $('.product-gallery-main').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        prevArrow: `<button class="product-gallery-main__arrow product-gallery-main__arrow--prev slider-arrow slider-arrow--prev" type="button">
+                        <span class="visually-hidden">Назад</span> 
+                        <svg class="slider-arrow__icon" width="14" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
+                    </button>`,
+        nextArrow: `<button class="product-gallery-main__arrow product-gallery-main__arrow--next slider-arrow slider-arrow--next" type="button">
+                        <span class="visually-hidden">Вперед</span> 
+                        <svg class="slider-arrow__icon" width="14" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
+                    </button>`,
+        // responsive: [
+        //     {
+        //         breakpoint: 769,
+        //         settings: {
+        //             dots: true,
+        //         }
+        //     }
+        // ]
+    });
+
+    // product group slider
+    $('.product-group-slider__box').slick({
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        focusOnSelect: true,
+        prevArrow: `<button class="product-group-slider__arrow product-group-slider__arrow--prev slider-arrow slider-arrow--prev" type="button">
+                        <span class="visually-hidden">Назад</span> 
+                        <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
+                    </button>`,
+        nextArrow: `<button class="product-group-slider__arrow product-group-slider__arrow--next slider-arrow slider-arrow--next" type="button">
+                        <span class="visually-hidden">Вперед</span> 
+                        <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
+                    </button>`,
+        // responsive: [
+        //     {
+        //         breakpoint: 768,
+        //         settings: {
+        //
+        //         }
+        //     }
+        // ]
+    });
 
     // init nice number
     $('.js-nice-number').niceNumber({
@@ -335,6 +381,8 @@ $(document).ready(function () {
             $('.product-slider').slick('setPosition');
         }
     });
+
+    $('.product-tabs').tabs();
 
     // show/hide shipping-calculator
     $('.table-cart-totals__btn-shipping-calculator').on('click', function () {

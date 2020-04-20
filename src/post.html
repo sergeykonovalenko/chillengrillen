@@ -1001,7 +1001,7 @@
                         </ul><!-- / .instagram -->
                     </div><!-- / .widget -->
                 </aside><!-- / .sidebar -->
-                <div class="page-content__main main post">
+                <main class="page-content__main main post">
                     <picture class="post__thumb-box">
                         <source srcset="img/base/post-6.webp" type="image/webp">
                         <img class="post__thumb" src="img/base/post-6.jpg" alt="">
@@ -1105,33 +1105,34 @@
                             </a>
                         </li>
                     </ul><!-- / .post-control -->
-                    <div class="leave-comments">
-                        <p class="leave-comments__title">Оставить комментарий</p>
-                        <form class="leave-comments__form form-extra" action="#" method="post">
-                            <ul class="form-extra__list">
-                                <li class="form-extra__item">
-                                    <label class="visually-hidden" for="form-extra-name">Ваше имя</label>
-                                    <input class="form-extra__field" id="form-extra-name" type="text" name="name" placeholder="Ваше имя*" required>
+                    <div class="comment-respond">
+                        <p class="comment-respond__title">Оставить комментарий</p>
+                        <form class="comment-respond__form comment-form" action="#" method="post">
+                            <p class="comment-form__notes">Ваш адрес email не будет опубликован. Обязательные поля помечены <sup>*</sup></p>
+                            <ul class="comment-form__list fields-list">
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="comment-form-name">Ваше имя <sup>*</sup></label>
+                                    <input class="fields-list__field" id="comment-form-name" type="text" name="name" required>
                                 </li>
-                                <li class="form-extra__item">
-                                    <label class="visually-hidden" for="form-extra-email">Ваш E-mail</label>
-                                    <input class="form-extra__field" id="form-extra-email" type="email" name="email" placeholder="Ваш e-mail*" required>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="comment-form-email">Ваш e-mail <sup>*</sup></label>
+                                    <input class="fields-list__field" id="comment-form-email" type="email" name="email" required>
                                 </li>
-                                <li class="form-extra__item">
-                                    <label class="visually-hidden" for="form-extra-subject">Тема</label>
-                                    <input class="form-extra__field" id="form-extra-subject" type="text" name="subject" placeholder="Тема">
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="comment-form-subject">Тема</label>
+                                    <input class="fields-list__field" id="comment-form-subject" type="text" name="subject">
                                 </li>
-                                <li class="form-extra__item">
-                                    <label class="visually-hidden" for="form-extra-comment">Комментарий</label>
-                                    <textarea class="form-extra__field" id="form-extra-comment" name="comment" placeholder="Комментарий*" required></textarea>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="comment-form-comment">Ваш комментарий <sup>*</sup></label>
+                                    <textarea class="fields-list__field" id="comment-form-comment" name="comment" required></textarea>
                                 </li>
-                            </ul>
-                            <p class="form-extra__button-box">
-                                <button class="form-extra__button button">Отправить</button>
+                            </ul><!-- / .fields-list -->
+                            <p class="comment-form__button-box">
+                                <button class="comment-form__button button">Отправить</button>
                             </p>
-                        </form><!-- / .form-extra -->
-                    </div><!-- / .leave-comments -->
-                </div><!-- / .main -->
+                        </form><!-- / .comment-form -->
+                    </div><!-- / .comment-respond -->
+                </main><!-- / .main -->
             </div>
         </div><!-- / .page-content -->
 

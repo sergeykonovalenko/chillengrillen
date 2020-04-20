@@ -1,0 +1,24 @@
+.product-group-slider {
+    padding-top: 90px;
+    padding-bottom: 55px;
+}
+
+.product-group-slider__arrow {
+    position: absolute;
+    top: -84px;
+
+    &--prev {
+        right: 70px;
+    }
+
+    &--next {
+        right: 15px;
+    }
+}
+
+.product-group-slider .product-item__link {
+
+    &:focus {
+        outline: none;
+    }
+}
