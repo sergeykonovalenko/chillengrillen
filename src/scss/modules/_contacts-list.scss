@@ -12,6 +12,14 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    .contacts-list--extra & {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .contacts-list__link {
@@ -33,6 +41,14 @@
 
             & .contacts-list__icon {
                 fill: #fff;
+
+                .contacts-list--extra & {
+                    fill: $color-secondary;
+                }
+            }
+
+            .contacts-list--extra & {
+                background-color: transparent;
             }
         }
     }
@@ -49,6 +65,12 @@
     background-color: #fff;
     border-radius: 50%;
     transition: background-color .15s ease-out;
+
+    .contacts-list--extra & {
+        width: 15px;
+        height: 15px;
+        background-color: transparent;
+    }
 }
 
 .contacts-list__icon {

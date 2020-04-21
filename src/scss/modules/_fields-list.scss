@@ -11,8 +11,16 @@
 .fields-list__item {
     margin-bottom: 16px;
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     .fields-list--2-columns &--half {
 
+    }
+
+    .fields-list--big & {
+        margin-bottom: 30px;
     }
 }
 
@@ -53,5 +61,23 @@
     .fields-list__field-box--select & {
         padding-right: 33px;
         appearance: none;
+    }
+
+    .fields-list--big & {
+        padding: 21px 30px;
+    }
+
+    .fields-list--white & {
+        color: #fff;
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, .3);
+
+        &:focus {
+            box-shadow: 0 0 7px rgba(255, 255, 255, .3);
+        }
+        
+        &::placeholder {
+            color: #fff;
+        }
     }
 }

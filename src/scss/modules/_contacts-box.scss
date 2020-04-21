@@ -1,0 +1,30 @@
+.contacts-box {
+    padding-top: 95px;
+    padding-bottom: 80px;
+    background-color: $grey;
+}
+
+.contacts-box__row {
+    display: flex;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contacts-box__left {
+    width: 39.1666666666%;
+    margin-right: 100px;
+}
+
+.contacts-box__head {
+    margin-bottom: 47px;
+}
+
+.contacts-box__txt {
+    margin-bottom: 35px;
+}
+
+.contacts-box__map {
+    width: calc(100% - 39.1666666666% - 100px);
+    height: 400px;
+}

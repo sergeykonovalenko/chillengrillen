@@ -44,6 +44,17 @@
         }
     }
 
+    &--white-dark {
+        color: $color-main;
+        background-color: #fff;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            background-color: $color-main;
+        }
+    }
+
     &--extra {
         border-radius: 3px;
     }

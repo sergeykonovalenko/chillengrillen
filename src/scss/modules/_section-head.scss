@@ -1,0 +1,37 @@
+.section-head {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 21px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 13%;
+        height: 2px;
+        background-color: $color-secondary;
+    }
+    
+    &--white::after {
+        background-color: #fff;
+    }
+}
+
+.section-head__subtitle {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $color-secondary;
+
+    .section-head--white & {
+        color: #fff;
+    }
+}
+
+.section-head__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+}

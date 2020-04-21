@@ -7,4 +7,5 @@ import 'slick-carousel';
 import 'jquery.nice-number/dist/jquery.nice-number';
 import './vendor/jquery.mb.browser';
 import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min';
+import './vendor/google-maps';
 import './basic-init';
