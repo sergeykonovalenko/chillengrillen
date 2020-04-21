@@ -371,7 +371,11 @@ $(document).ready(function () {
 
     // init custom scrollbar
     $('.mini-cart__list-wr').mCustomScrollbar({
-            theme: 'dark-2',
+        theme: 'dark-2',
+    });
+
+    $('.product-options__list-wr').mCustomScrollbar({
+        theme: 'dark-2',
     });
 
     // init tabs

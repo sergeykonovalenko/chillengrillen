@@ -86,12 +86,11 @@
 }
 
 .content a {
-    text-decoration: underline;
     color: $color-secondary;
 
     &:hover,
     &:focus {
-        text-decoration: none;
+        text-decoration: underline;
     }
 }
 

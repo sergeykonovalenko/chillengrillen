@@ -1,0 +1,38 @@
+.order-features {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.order-features ul {
+    @include reset-list;
+}
+
+.order-features > ul {
+    display: flex;
+}
+
+.order-features > ul > li {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+}
+
+.order-features > ul > li > ul {
+
+}
+
+.order-features > ul > li > ul > li {
+    margin-bottom: 7px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.order-features > ul > li > ul > li:first-child {
+    margin-bottom: 15px;
+}
+
+.order-features > ul > li > ul > li:first-child > strong {
+    font-weight: 700;
+    border-bottom: 2px solid $color-main;
+}

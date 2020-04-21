@@ -11,7 +11,35 @@
     margin: 0 auto 85px;
 }
 
+.product__options {
+    margin-bottom: 30px;
+}
+
+.product__meta {
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.product__meta a {
+    color: $color-main;
+    transition: all .15s ease-out;
+
+    &:hover,
+    &:focus {
+        color: $color-secondary;
+    }
+}
+
+.product__social-extra {
+    justify-content: center;
+    margin: 0;
+}
+
 .product__tabs {
     width: 930px;
     margin: 0 auto;
+}
+
+.product .product-group-slider:last-child {
+    padding-bottom: 0;
 }

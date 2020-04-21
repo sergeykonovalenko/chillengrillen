@@ -1,0 +1,26 @@
+.product-options {
+
+}
+
+.product-options__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.product-options__list-wr {
+    max-height: 790px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.product-options__list {
+    @include reset-list;
+}
+
+.product-options__item {
+    padding: 15px 0;
+    border-top: 1px solid $grey-6;
+}
