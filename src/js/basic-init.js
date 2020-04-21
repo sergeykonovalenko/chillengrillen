@@ -158,6 +158,7 @@ $(document).ready(function () {
 
     // slider offer
     $('.slider-offer').slick({
+        lazyLoad: 'progressive',
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -186,6 +187,7 @@ $(document).ready(function () {
 
     // slider category
     $('.slider-category').slick({
+        lazyLoad: 'ondemand',
         dots: false,
         slidesToShow: 6,
         slidesToScroll: 6,
@@ -213,6 +215,7 @@ $(document).ready(function () {
 
     // product slider
     $('.product-slider').slick({
+        lazyLoad: 'ondemand',
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -239,6 +242,7 @@ $(document).ready(function () {
 
     // reviews slider
     $('.reviews-slider').slick({
+        lazyLoad: 'ondemand',
         dots: true,
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -265,6 +269,7 @@ $(document).ready(function () {
 
     // slider product gallery
     $('.product-gallery').slick({
+        lazyLoad: 'ondemand',
         dots: false,
         arrows: false,
         slidesToShow: 1,
@@ -284,6 +289,7 @@ $(document).ready(function () {
 
     // slider product gallery side
     $('.product-gallery-side').slick({
+        lazyLoad: 'ondemand',
         dots: false,
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -311,6 +317,7 @@ $(document).ready(function () {
 
     // slider product gallery main
     $('.product-gallery-main').slick({
+        lazyLoad: 'ondemand',
         dots: false,
         arrows: true,
         slidesToShow: 3,
@@ -337,6 +344,7 @@ $(document).ready(function () {
 
     // product group slider
     $('.product-group-slider__box').slick({
+        lazyLoad: 'ondemand',
         dots: false,
         slidesToShow: 4,
         slidesToScroll: 4,

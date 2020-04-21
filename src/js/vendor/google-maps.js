@@ -389,7 +389,7 @@ function initMap() {
         let InfoWindow = new google.maps.InfoWindow({
             content: `<div class="info-window">
                           <img class="info-window__img" src="../img/base/map-window.jpg" alt="">
-                          <p class="info-window__title">Интернет-магазин Chillengrillen.ru</p> 
+                          <p class="info-window__title">Интернет-магазин Chillengrillen.ru</p>
                           <a class="info-window__phone" href="88007007653">8 800 700 76 53</a>
                         </div>`
         });
