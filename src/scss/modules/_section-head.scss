@@ -1,20 +1,27 @@
 .section-head {
     position: relative;
     font-weight: 500;
-    padding-bottom: 21px;
 
     &::after {
         content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 13%;
+        display: block;
+        width: 60px;
         height: 2px;
+        margin-top: 18px;
         background-color: $color-secondary;
     }
     
     &--white::after {
         background-color: #fff;
+    }
+
+    &--centered {
+        text-align: center;
+
+        &::after {
+            margin-right: auto;
+            margin-left: auto;
+        }
     }
 }
 

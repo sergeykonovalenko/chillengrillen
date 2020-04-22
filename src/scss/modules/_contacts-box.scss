@@ -4,16 +4,14 @@
     background-color: $grey;
 }
 
-.contacts-box__row {
+.contacts-box .container {
     display: flex;
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 .contacts-box__left {
-    width: 39.1666666666%;
+    width: 33.3333333333333%;
     margin-right: 100px;
+    margin-left: 120px;
 }
 
 .contacts-box__head {
@@ -25,6 +23,7 @@
 }
 
 .contacts-box__map {
-    width: calc(100% - 39.1666666666% - 100px);
+    width: calc(100% - 33.3333333333333% - 340px);
     height: 400px;
+    margin-right: 120px;
 }

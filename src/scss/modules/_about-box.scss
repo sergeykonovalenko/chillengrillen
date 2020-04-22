@@ -1,0 +1,26 @@
+.about-box {
+    padding-top: 95px;
+    padding-bottom: 80px;
+    background-color: $grey;
+}
+
+.about-box .container {
+    display: flex;
+}
+.about-box__left {
+    width: 31.914893617%;
+    margin-right: 100px;
+    margin-left: 120px;
+}
+
+.about-box__head {
+    margin-bottom: 47px;
+}
+
+.about-box__right {
+    width: calc(100% - 31.914893617% - 220px);
+}
+
+.about-box__img {
+    margin: 0 auto;
+}
