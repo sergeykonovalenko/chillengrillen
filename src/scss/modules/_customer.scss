@@ -1,0 +1,51 @@
+.customer {
+
+}
+
+.customer__box {
+    display: flex;
+}
+
+.customer__sidebar {
+    width: 29.7872340425%;
+    margin: 0 30px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.customer__sidebar li {
+    margin-bottom: 5px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.customer__sidebar a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: $color-main;
+    border: 1px solid $grey-6;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $color-secondary;
+    }
+}
+
+.customer__sidebar .current-menu-item a {
+    color: #fff;
+    background-color: $color-secondary;
+}
+
+.customer__content {
+    width: calc(100% - 29.7872340425% - 30px);
+    padding: 15px;
+    border: 1px solid $grey-6;
+}
+
+.customer__login-register {
+    margin: 0;
+}

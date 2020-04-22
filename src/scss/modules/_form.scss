@@ -1,0 +1,33 @@
+.form {
+
+}
+
+.form__list {
+    margin: 0 0 45px 0;
+}
+
+.form__button-box {
+    margin: 0;
+    text-align: center;
+}
+
+.form__button {
+
+}
+
+.form a {
+    color: $color-secondary;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,31 @@
+.login-register {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.login-register__item {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 55px) / 2);
+    margin-right: 55px;
+    
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+.login-register__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.login-register__form {
+    flex-grow: 1;
+    padding: 20px;
+    border: 1px solid $grey-6;
+    border-radius: 5px;
+}

@@ -1,0 +1,33 @@
+.checkbox {
+
+}
+
+.checkbox__label {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.checkbox__field {
+    position: static;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    margin: -3px 5px 0 0;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+    background-color: #eee;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: button-bevel;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

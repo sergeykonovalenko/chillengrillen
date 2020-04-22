@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SEO -->
-    <title>О нас | Интернет-магазин Chillengrillen.ru</title>
+    <title>Мой аккаунт | Интернет-магазин Chillengrillen.ru</title>
     <meta name="description" content="🚴‍♀️ Интернет-магазин Chillengrillen.ru предлагает велосипеды и велосипедные запчасти для профессионалов и любителей велоспорта, а также услуги ремонта велосипедов в Санкт-Петербурге - купить велосипедную продукцию с гарантией и бесплатной доставкой.">
     <meta name="keywords" content="велосипед, запчасти для велосипеда, ремонт велосипеда, веломастерская, спб, интернет-магазин, купить велосипед">
     <!-- Favicon -->
@@ -712,11 +712,11 @@
                         <li class="mega-menu-item font-weight-bold">
                             <a class="mega-menu-link" href="#">Мастерская</a>
                         </li>
-                        <li class="mega-menu-item mega-current-menu-item"><a class="mega-menu-link" href="about.html">О нас</a></li>
+                        <li class="mega-menu-item"><a class="mega-menu-link" href="about.html">О нас</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="posts.html">Блог</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">Доставка, оплата и гарантия</a></li>
                         <li class="mega-menu-item"><a class="mega-menu-link" href="#">Вакансии</a></li>
-                        <li class="mega-menu-item"><a class="mega-menu-link" href="contacts.html">Контакты</a></li>
+                        <li class="mega-menu-item mega-current-menu-item"><a class="mega-menu-link" href="contacts.html">Контакты</a></li>
                     </ul><!-- / .mega-menu -->
                     <!-- Mobile menu -->
                 </nav><!-- / .main-nav -->
@@ -847,96 +847,76 @@
             </div>
         </header><!-- / .main-header -->
 
-        <section class="about-box">
+        <div class="offer">
             <div class="container">
-                <div class="about-box__left">
-                    <div class="about-box__head section-head">
-                        <p class="section-head__subtitle">О chillengrillen.ru</p>
-                        <p class="section-head__title">Кто мы: создание и миссия</p>
-                    </div><!-- / .section-head -->
-                    <div class="about-box__txt content">
-                        <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium laudantium.
-                        </p>
-                    </div>
-                </div>
-                <p class="about-box__right">
-                    <picture>
-                        <source srcset="img/base/about-banner.webp" type="image/webp">
-                        <img class="about-box__img" src="img/base/about-banner.png" alt="">
-                    </picture>
-                </p>
+                <h1 class="offer__title">Магазин</h1>
+                <div class="breadcrumbs">
+                    <!-- Breadcrumb NavXT 6.4.0 -->
+                    <span><a href="index.html"><span>Главная</span></a></span>
+                    <span class="breadcrumbs__separator">»</span>
+                    <span class="current-item">Мой аккаунт</span>
+                </div><!-- / .breadcrumbs -->
             </div>
-        </section><!-- / .about-box -->
+        </div><!-- / .offer -->
 
-        <section class="our-team">
+        <main class="main main--full-width customer">
             <div class="container">
-                <div class="our-team__head section-head section-head--white section-head--centered">
-                    <p class="section-head__subtitle">Наша команда</p>
-                    <p class="section-head__title">Кто мы</p>
-                </div><!-- / .section-head -->
-                <ul class="our-team__list team-list">
-                    <li class="team-list__item">
-                        <a class="team-list__link" href="#">
-                            <p class="team-list__thumb-wr">
-                                <picture>
-                                    <source srcset="img/base/team1.webp" type="image/webp">
-                                    <img class="team-list__thumb" src="img/base/team1.jpg" alt="">
-                                </picture>
-                            </p>
-                            <div class="team-list__info">
-                                <p class="team-list__name">Wiliam Robert</p>
-                                <p class="team-list__position">CEO - 7uptheme</p>
+                <ul class="customer__login-register login-register">
+                    <li class="login-register__item">
+                        <p class="login-register__title">Вход</p>
+                        <form class="login-register__form customer-form-login form" action="#" method="post">
+                            <ul class="form__list fields-list">
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="customer-form-login-name">Имя пользователя или адрес электронной почты <sup>*</sup></label>
+                                    <input class="fields-list__field" id="customer-form-login-name" type="text" name="name" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="customer-form-login-password">Пароль <sup>*</sup></label>
+                                    <input class="fields-list__field" id="customer-form-login-password" type="password" name="password" required>
+                                </li>
+                            </ul><!-- / .fields-list -->
+                            <div class="customer-form-login__btn-and-checkbox">
+                                <button class="customer-form-login__button form__button button button--small button--inversion">Войти</button>
+                                <p class="customer-form-login__remember-me checkbox">
+                                    <label class="checkbox__label">
+                                        <input class="checkbox__field" type="checkbox" name="remember-me">
+                                        <span>Запомнить меня</span>
+                                    </label>
+                                </p><!-- / .checkbox -->
                             </div>
-                        </a>
-                    </li>
-                    <li class="team-list__item">
-                        <a class="team-list__link" href="#">
-                            <p class="team-list__thumb-wr">
-                                <picture>
-                                    <source srcset="img/base/team2.webp" type="image/webp">
-                                    <img class="team-list__thumb" src="img/base/team2.jpg" alt="">
-                                </picture>
+                            <p class="customer-form-login__lost-password">
+                                <a href="#">Забыли пароль?</a>
                             </p>
-                            <div class="team-list__info">
-                                <p class="team-list__name">Jacky Chan</p>
-                                <p class="team-list__position">Leader - Designer</p>
-                            </div>
-                        </a>
+                        </form><!-- / .form -->
                     </li>
-                    <li class="team-list__item">
-                        <a class="team-list__link" href="#">
-                            <p class="team-list__thumb-wr">
-                                <picture>
-                                    <source srcset="img/base/team3.webp" type="image/webp">
-                                    <img class="team-list__thumb" src="img/base/team3.jpg" alt="">
-                                </picture>
+                    <li class="login-register__item">
+                        <p class="login-register__title">Регистрация</p>
+                        <form class="login-register__form customer-form-register form" action="#" method="post">
+                            <ul class="customer-form-register__list form__list fields-list">
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="customer-form-register-email">Адрес электронной почты <sup>*</sup></label>
+                                    <input class="fields-list__field" id="customer-form-register-email" type="email" name="email" required>
+                                </li>
+                            </ul><!-- / .fields-list -->
+                            <p class="customer-form-register__informer">Пароль будет отправлен на ваш адрес электронной почты.</p>
+                            <p class="customer-form-register__become-seller checkbox">
+                                <label class="checkbox__label">
+                                    <input class="checkbox__field" type="checkbox" name="remember-me">
+                                    <span>Подать заявку, чтобы стать продавцом?</span>
+                                </label>
+                            </p><!-- / .checkbox -->
+                            <p class="customer-form-register__privacy-policy-txt">
+                                Ваши личные данные будут использоваться для поддержки вашего опыта на этом веб-сайте, для управления
+                                доступом к вашей учетной записи и для других целей, описанных в нашей политике конфиденциальности.
                             </p>
-                            <div class="team-list__info">
-                                <p class="team-list__name">Michale Jave</p>
-                                <p class="team-list__position">Leader - Developer</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="team-list__item">
-                        <a class="team-list__link" href="#">
-                            <p class="team-list__thumb-wr">
-                                <picture>
-                                    <source srcset="img/base/team4.webp" type="image/webp">
-                                    <img class="team-list__thumb" src="img/base/team4.jpg" alt="">
-                                </picture>
+                            <p class="customer-form-register__button-box form__button-box">
+                                <button class="form__button button button--small button--inversion">Регистрация</button>
                             </p>
-                            <div class="team-list__info">
-                                <p class="team-list__name">Anissa Rose</p>
-                                <p class="team-list__position">CEO - Maketing</p>
-                            </div>
-                        </a>
+                        </form><!-- / .form -->
                     </li>
-                </ul><!-- / .team-list -->
+                </ul><!-- / .login-register -->
             </div>
-        </section><!-- / .our-team -->
+        </main><!-- / .main -->
 
         <footer class="main-footer">
             <section class="main-footer__top main-footer__top--grey">
