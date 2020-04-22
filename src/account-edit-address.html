@@ -849,7 +849,7 @@
 
         <div class="offer">
             <div class="container">
-                <h1 class="offer__title">Мой аккаунт</h1>
+                <h1 class="offer__title">Магазин</h1>
                 <div class="breadcrumbs">
                     <!-- Breadcrumb NavXT 6.4.0 -->
                     <span><a href="index.html"><span>Главная</span></a></span>
@@ -861,60 +861,23 @@
 
         <main class="main main--full-width customer">
             <div class="container">
-                <ul class="customer__login-register login-register">
-                    <li class="login-register__item">
-                        <p class="login-register__title">Вход</p>
-                        <form class="login-register__form customer-form-login form" action="#" method="post">
-                            <ul class="form__list fields-list">
-                                <li class="fields-list__item">
-                                    <label class="fields-list__label" for="customer-form-login-name">Имя пользователя или адрес электронной почты <sup>*</sup></label>
-                                    <input class="fields-list__field" id="customer-form-login-name" type="text" name="name" required>
-                                </li>
-                                <li class="fields-list__item">
-                                    <label class="fields-list__label" for="customer-form-login-password">Пароль <sup>*</sup></label>
-                                    <input class="fields-list__field" id="customer-form-login-password" type="password" name="password" required>
-                                </li>
-                            </ul><!-- / .fields-list -->
-                            <div class="customer-form-login__btn-and-checkbox">
-                                <button class="customer-form-login__button form__button button button--small button--inversion">Войти</button>
-                                <p class="customer-form-login__remember-me checkbox">
-                                    <label class="checkbox__label">
-                                        <input class="checkbox__field" type="checkbox" name="remember-me">
-                                        <span>Запомнить меня</span>
-                                    </label>
-                                </p><!-- / .checkbox -->
+                <div class="customer__box">
+                    <ul class="customer__sidebar">
+                        <li><a href="account-dashboard.html">Консоль</a></li>
+                        <li class="current-menu-item"><a href="account-orders.html">Заказы</a></li>
+                        <li><a href="account-edit-address.html">Адреса</a></li>
+                        <li><a href="account-edit-account.html">Профиль</a></li>
+                        <li><a href="account.html">Выйти</a></li>
+                    </ul>
+                    <div class="customer__content">
+                        <div class="message">
+                            <div class="message__txt content">
+                                <p>Заказов ещё не создано.</p>
                             </div>
-                            <p class="customer-form-login__lost-password">
-                                <a href="#">Забыли пароль?</a>
-                            </p>
-                        </form><!-- / .form -->
-                    </li>
-                    <li class="login-register__item">
-                        <p class="login-register__title">Регистрация</p>
-                        <form class="login-register__form customer-form-register form" action="#" method="post">
-                            <ul class="customer-form-register__list form__list fields-list">
-                                <li class="fields-list__item">
-                                    <label class="fields-list__label" for="customer-form-register-email">Адрес электронной почты <sup>*</sup></label>
-                                    <input class="fields-list__field" id="customer-form-register-email" type="email" name="email" required>
-                                </li>
-                            </ul><!-- / .fields-list -->
-                            <p class="customer-form-register__informer">Пароль будет отправлен на ваш адрес электронной почты.</p>
-                            <p class="customer-form-register__become-seller checkbox">
-                                <label class="checkbox__label">
-                                    <input class="checkbox__field" type="checkbox" name="remember-me">
-                                    <span>Подать заявку, чтобы стать продавцом?</span>
-                                </label>
-                            </p><!-- / .checkbox -->
-                            <p class="customer-form-register__privacy-policy-txt">
-                                Ваши личные данные будут использоваться для поддержки вашего опыта на этом веб-сайте, для управления
-                                доступом к вашей учетной записи и для других целей, описанных в нашей политике конфиденциальности.
-                            </p>
-                            <p class="customer-form-register__button-box form__button-box">
-                                <button class="form__button button button--small button--inversion">Регистрация</button>
-                            </p>
-                        </form><!-- / .form -->
-                    </li>
-                </ul><!-- / .login-register -->
+                            <a class="message__button button button--small button--inversion" href="catalog.html">Просмотр товаров</a>
+                        </div><!-- / .message -->
+                    </div>
+                </div>
             </div>
         </main><!-- / .main -->
 

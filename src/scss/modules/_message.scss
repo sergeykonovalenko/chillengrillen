@@ -1,0 +1,28 @@
+.message {
+    position: relative;
+    display: flex;
+    padding: 15px 30px 15px 50px;
+    border-top: 3px solid #1e85be;
+    background-color: #f7f6f7;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 22px;
+        width: 14px;
+        height: 14px;
+        background: url("img/bg/tick.svg") no-repeat 0 0;
+        background-size: contain;
+    }
+}
+
+.message__txt {
+    flex-grow: 1;
+    margin-right: 30px;
+}
+
+.message__button {
+    flex-shrink: 0;
+    margin-left: auto;
+}
