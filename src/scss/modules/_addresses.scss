@@ -1,0 +1,35 @@
+.addresses {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.addresses__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+
+    &:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+.addresses__head {
+    display: flex;
+    align-items: center;
+}
+
+.addresses__title {
+    margin: 0 15px 0 0;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.addresses__button {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.addresses__body {
+    font-style: normal;
+}

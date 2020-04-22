@@ -2,7 +2,7 @@
     padding: 0;
     list-style: none;
 
-    .fields-list--2-columns {
+    &--2-columns {
         display: flex;
         flex-wrap: wrap;
     }
@@ -15,8 +15,16 @@
         margin-bottom: 0;
     }
 
-    .fields-list--2-columns &--half {
+    .fields-list--2-columns & {
+        width: 100%;
 
+        &--half {
+            width: calc((100% - 30px) / 2);
+
+            &:nth-child(odd) {
+                margin-right: 30px;
+            }
+        }
     }
 
     .fields-list--big & {

@@ -65,6 +65,13 @@
         text-transform: none;
     }
 
+    &--smaller {
+        padding: 9px 30px;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: none;
+    }
+
     &[disabled] {
         opacity: .5;
         cursor: not-allowed;

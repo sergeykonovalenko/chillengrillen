@@ -46,6 +46,18 @@
     border: 1px solid $grey-6;
 }
 
+.customer__content > *:first-child {
+    margin-top: 0;
+}
+
+.customer__content > *:last-child {
+    margin-bottom: 0;
+}
+
 .customer__login-register {
+    margin: 0;
+}
+
+.customer__addresses {
     margin: 0;
 }

@@ -864,18 +864,70 @@
                 <div class="customer__box">
                     <ul class="customer__sidebar">
                         <li><a href="account-dashboard.html">Консоль</a></li>
-                        <li class="current-menu-item"><a href="account-orders.html">Заказы</a></li>
-                        <li><a href="account-edit-address.html">Адреса</a></li>
+                        <li><a href="account-orders.html">Заказы</a></li>
+                        <li class="current-menu-item"><a href="account-edit-address.html">Адреса</a></li>
                         <li><a href="account-edit-account.html">Профиль</a></li>
                         <li><a href="account.html">Выйти</a></li>
                     </ul>
                     <div class="customer__content">
-                        <div class="message">
-                            <div class="message__txt content">
-                                <p>Заказов ещё не создано.</p>
-                            </div>
-                            <a class="message__button button button--small button--inversion" href="catalog.html">Просмотр товаров</a>
-                        </div><!-- / .message -->
+                        <form class="address-form form" action="#" method="post">
+                            <p class="address-form__title">Адрес доставки</p>
+                            <ul class="form__list fields-list fields-list--2-columns">
+                                <li class="fields-list__item fields-list__item--half">
+                                    <label class="fields-list__label" for="shipping-first-name">Имя <sup>*</sup></label>
+                                    <input class="fields-list__field" id="shipping-first-name" type="text" name="shipping_first_name" required>
+                                </li>
+                                <li class="fields-list__item fields-list__item--half">
+                                    <label class="fields-list__label" for="shipping-last-name">Фамилия <sup>*</sup></label>
+                                    <input class="fields-list__field" id="shipping-last-name" type="text" name="shipping_last_name" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="shipping-company">Название компании (необязательно)</label>
+                                    <input class="fields-list__field" id="shipping-company" type="text" name="shipping_company">
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="shipping-country">Страна/регион <sup>*</sup></label>
+                                    <p class="fields-list__field-box fields-list__field-box--select">
+                                        <select class="fields-list__field" id="shipping-country" name="shipping_country" required>
+                                            <option>Страна 1</option>
+                                            <option>Страна 2</option>
+                                            <option>Страна 3</option>
+                                            <option>Страна 4</option>
+                                            <option>Страна 5</option>
+                                        </select>
+                                    </p>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="shipping-address-1">Адрес <sup>*</sup></label>
+                                    <input class="fields-list__field" id="shipping-address-1" type="text" name="shipping_address_1" placeholder="Номер дома и название улицы *" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="visually-hidden" for="shipping-address-2">Дополнительные сведения об адресе (необязательно)</label>
+                                    <input class="fields-list__field" id="shipping-address-2" type="text" name="shipping_address_2" placeholder="Дополнительные сведения об адресе (необязательно)" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="shipping-city">Населённый пункт <sup>*</sup></label>
+                                    <input class="fields-list__field" id="shipping-city" type="text" name="shipping_city" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="shipping-state">Область / район <sup>*</sup></label>
+                                    <input class="fields-list__field" id="shipping-state" type="text" name="shipping_state" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="shipping-postcode">Почтовый индекс <sup>*</sup></label>
+                                    <input class="fields-list__field" id="shipping-postcode" type="text" name="shipping_postcode" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="shipping-phone">Телефон <sup>*</sup></label>
+                                    <input class="fields-list__field" id="shipping-phone" type="tel" name="shipping_phone" placeholder="+7 (___) ___ __ __" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="shipping-email">E-mail <sup>*</sup></label>
+                                    <input class="fields-list__field" id="shipping-email" type="email" name="shipping_email" required>
+                                </li>
+                            </ul><!-- / .fields-list -->
+                            <button class="form__button button button--small button--inversion">Сохранить адрес</button>
+                        </form><!-- / .form -->
                     </div>
                 </div>
             </div>

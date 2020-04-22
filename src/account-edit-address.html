@@ -849,7 +849,7 @@
 
         <div class="offer">
             <div class="container">
-                <h1 class="offer__title">Магазин</h1>
+                <h1 class="offer__title">Мой аккаунт</h1>
                 <div class="breadcrumbs">
                     <!-- Breadcrumb NavXT 6.4.0 -->
                     <span><a href="index.html"><span>Главная</span></a></span>
@@ -864,18 +864,29 @@
                 <div class="customer__box">
                     <ul class="customer__sidebar">
                         <li><a href="account-dashboard.html">Консоль</a></li>
-                        <li class="current-menu-item"><a href="account-orders.html">Заказы</a></li>
-                        <li><a href="account-edit-address.html">Адреса</a></li>
+                        <li><a href="account-orders.html">Заказы</a></li>
+                        <li class="current-menu-item"><a href="account-edit-address.html">Адреса</a></li>
                         <li><a href="account-edit-account.html">Профиль</a></li>
                         <li><a href="account.html">Выйти</a></li>
                     </ul>
                     <div class="customer__content">
-                        <div class="message">
-                            <div class="message__txt content">
-                                <p>Заказов ещё не создано.</p>
-                            </div>
-                            <a class="message__button button button--small button--inversion" href="catalog.html">Просмотр товаров</a>
-                        </div><!-- / .message -->
+                        <p>Следующие адреса будут использоваться на странице оформления заказа по умолчанию.</p>
+                        <ul class="customer__addresses addresses">
+                            <li class="addresses__item">
+                                <div class="addresses__head">
+                                    <p class="addresses__title">Платёжный адрес</p>
+                                    <a class="addresses__button button button--smaller" href="account-edit-address--billing.html">Добавить</a>
+                                </div>
+                                <address class="addresses__body">Вы пока не указали этот тип адреса.</address>
+                            </li>
+                            <li class="addresses__item">
+                                <div class="addresses__head">
+                                    <p class="addresses__title">Адрес доставки</p>
+                                    <a class="addresses__button button button--smaller" href="account-edit-address--shipping.html">Добавить</a>
+                                </div>
+                                <address class="addresses__body">Вы пока не указали этот тип адреса.</address>
+                            </li>
+                        </ul><!-- / .addresses -->
                     </div>
                 </div>
             </div>
