@@ -24,6 +24,35 @@
     }
 }
 
+.form__field-group {
+    margin-bottom: 26px;
+
+    &:last-of-type {
+        margin-bottom: 45px;
+    }
+}
+
+.form__field-group > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.form__legend {
+    display: block;
+    width: 100%;
+    margin-bottom: 26px;
+    padding-bottom: 9px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid $grey-6;
+}
+
 .form > *:first-child {
     margin-top: 0;
 }
