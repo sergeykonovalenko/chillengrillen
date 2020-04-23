@@ -85,16 +85,6 @@
 @import "modules/rating-and-review";
 @import "modules/rating";
 @import "modules/price-box";
-@import "modules/modal-common";
-@import "modules/modal-quick-view";
-@import "modules/product-gallery";
-@import "modules/product-gallery-side";
-@import "modules/content";
-@import "modules/form-quick-view";
-@import "modules/nice-number";
-@import "modules/actions";
-@import "modules/product-meta";
-@import "modules/social-extra";
 @import "modules/page-info";
 @import "modules/wp-pagenavi";
 
@@ -201,3 +191,23 @@
    ACCOUNT EDIT ACCOUNT PAGE
    ========================================================================== */
 @import "modules/edit-account-form";
+
+/* MODAL QUICK VIEW
+   ========================================================================== */
+@import "modules/modal-common";
+@import "modules/modal-quick-view";
+@import "modules/product-gallery";
+@import "modules/product-gallery-side";
+@import "modules/content";
+@import "modules/form-quick-view";
+@import "modules/nice-number";
+@import "modules/actions";
+@import "modules/product-meta";
+@import "modules/social-extra";
+
+/* LOGIN MODAL
+   ========================================================================== */
+@import "modules/login-modal";
+@import "modules/tabs-login-modal";
+@import "modules/modal-login-form";
+@import "modules/modal-register-form";

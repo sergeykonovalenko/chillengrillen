@@ -389,6 +389,10 @@ $(document).ready(function () {
 
     $('.product-tabs').tabs();
 
+    $('.tabs-login-modal').tabs({
+        // heightStyle: 'auto',
+    });
+
     // show/hide shipping-calculator
     $('.table-cart-totals__btn-shipping-calculator').on('click', function () {
         $('.shipping-calculator').slideToggle(300);
