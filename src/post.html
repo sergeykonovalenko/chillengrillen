@@ -751,9 +751,14 @@
                         </ul>
                     </li>
                     <li class="dropdown__item dropdown__item--level-1">
-                        <a class="dropdown__link dropdown__link--level-1 btn-modal" href="#js-login-modal">
+                        <a class="dropdown__link dropdown__link--level-1 btn-modal" href="#js-login-modal" title="Мой аккаунт">
                             <span class="visually-hidden">Аккаунт</span>
                             <svg class="dropdown__icon" width="16" viewBox="0 0 20 22" fill="#555" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C6.1 0 3 3.1 3 7c0 2.4 1.2 4.6 3.1 5.8C2.5 14.3 0 17.9 0 22h2c0-4.4 3.6-8 8-8s8 3.6 8 8h2c0-4.1-2.5-7.7-6.1-9.2C15.8 11.6 17 9.4 17 7c0-3.9-3.1-7-7-7zm0 2c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z"/></svg>
+                        </a>
+                    </li>
+                    <li class="dropdown__item dropdown__item--level-1">
+                        <a class="dropdown__link dropdown__link--level-1" href="#" title="Список желаний">
+                            <svg class="dropdown__icon" width="20" viewBox="0 0 512 448.1" fill="#555" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 32.3C400.6-16.3 311.3-9 256 47.3 200.7-9 111.4-16.4 53.6 32.3-21.6 95.6-10.6 198.8 43 253.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 253.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 398.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 219.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
                         </a>
                     </li>
                     <li class="dropdown__item dropdown__item--level-1">
@@ -1107,9 +1112,9 @@
                     </ul><!-- / .post-control -->
                     <div class="comment-respond">
                         <p class="comment-respond__title">Оставить комментарий</p>
-                        <form class="comment-respond__form comment-form" action="#" method="post">
+                        <form class="comment-respond__form comment-form form" action="#" method="post">
                             <p class="comment-form__notes">Ваш адрес email не будет опубликован. Обязательные поля помечены <sup>*</sup></p>
-                            <ul class="comment-form__list fields-list">
+                            <ul class="form__list fields-list">
                                 <li class="fields-list__item">
                                     <label class="fields-list__label" for="comment-form-name">Ваше имя <sup>*</sup></label>
                                     <input class="fields-list__field" id="comment-form-name" type="text" name="name" required>
@@ -1127,10 +1132,10 @@
                                     <textarea class="fields-list__field" id="comment-form-comment" name="comment" required></textarea>
                                 </li>
                             </ul><!-- / .fields-list -->
-                            <p class="comment-form__button-box">
-                                <button class="comment-form__button button">Отправить</button>
+                            <p class="form__button-box">
+                                <button class="comment-form__button form__button button">Отправить</button>
                             </p>
-                        </form><!-- / .comment-form -->
+                        </form><!-- / .form -->
                     </div><!-- / .comment-respond -->
                 </main><!-- / .main -->
             </div>

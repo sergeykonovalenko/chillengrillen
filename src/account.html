@@ -751,7 +751,7 @@
                         </ul>
                     </li>
                     <li class="dropdown__item dropdown__item--level-1">
-                        <a class="dropdown__link dropdown__link--level-1 btn-modal" href="#js-login-modal">
+                        <a class="dropdown__link dropdown__link--level-1 btn-modal" href="#js-login-modal" title="Мой аккаунт">
                             <span class="visually-hidden">Аккаунт</span>
                             <svg class="dropdown__icon" width="16" viewBox="0 0 20 22" fill="#555" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C6.1 0 3 3.1 3 7c0 2.4 1.2 4.6 3.1 5.8C2.5 14.3 0 17.9 0 22h2c0-4.4 3.6-8 8-8s8 3.6 8 8h2c0-4.1-2.5-7.7-6.1-9.2C15.8 11.6 17 9.4 17 7c0-3.9-3.1-7-7-7zm0 2c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z"/></svg>
                         </a>
@@ -861,10 +861,10 @@
 
         <main class="main main--full-width customer">
             <div class="container">
-                <ul class="customer__login-register login-register">
-                    <li class="login-register__item">
-                        <p class="login-register__title">Вход</p>
-                        <form class="login-register__form customer-form-login form" action="#" method="post">
+                <ul class="customer__authorization authorization">
+                    <li class="authorization__item">
+                        <p class="authorization__title">Вход</p>
+                        <form class="authorization__form customer-form-login form" action="#" method="post">
                             <ul class="form__list fields-list">
                                 <li class="fields-list__item">
                                     <label class="fields-list__label" for="customer-form-login-name">Имя пользователя или адрес электронной почты <sup>*</sup></label>
@@ -889,9 +889,9 @@
                             </p>
                         </form><!-- / .form -->
                     </li>
-                    <li class="login-register__item">
-                        <p class="login-register__title">Регистрация</p>
-                        <form class="login-register__form customer-form-register form" action="#" method="post">
+                    <li class="authorization__item">
+                        <p class="authorization__title">Регистрация</p>
+                        <form class="authorization__form customer-form-register form" action="#" method="post">
                             <ul class="customer-form-register__list form__list fields-list">
                                 <li class="fields-list__item">
                                     <label class="fields-list__label" for="customer-form-register-email">Адрес электронной почты <sup>*</sup></label>
@@ -914,7 +914,7 @@
                             </p>
                         </form><!-- / .form -->
                     </li>
-                </ul><!-- / .login-register -->
+                </ul><!-- / .authorization -->
             </div>
         </main><!-- / .main -->
 

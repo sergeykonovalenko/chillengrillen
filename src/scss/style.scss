@@ -155,10 +155,18 @@
 @import "modules/info-window";
 
 /* ==========================================================================
+   CHECKOUT PAGE
+   ========================================================================== */
+@import "modules/checkout";
+@import "modules/checkout-form";
+@import "modules/order";
+@import "modules/order-table";
+
+/* ==========================================================================
    ACCOUNT PAGE
    ========================================================================== */
 @import "modules/customer";
-@import "modules/login-register";
+@import "modules/authorization";
 @import "modules/form";
 @import "modules/customer-form-login";
 @import "modules/checkbox";

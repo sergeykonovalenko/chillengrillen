@@ -1,0 +1,17 @@
+.checkout-form {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkout-form__details {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+}
+
+.checkout-form__details > *:last-child {
+    margin-bottom: 0;
+}
+
+.checkout-form__stamp {
+    width: calc((100% - 30px) / 2);
+}

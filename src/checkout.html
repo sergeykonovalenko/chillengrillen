@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SEO -->
-    <title>Мой аккаунт | Интернет-магазин Chillengrillen.ru</title>
+    <title>Оформление заказа | Интернет-магазин Chillengrillen.ru</title>
     <meta name="description" content="🚴‍♀️ Интернет-магазин Chillengrillen.ru предлагает велосипеды и велосипедные запчасти для профессионалов и любителей велоспорта, а также услуги ремонта велосипедов в Санкт-Петербурге - купить велосипедную продукцию с гарантией и бесплатной доставкой.">
     <meta name="keywords" content="велосипед, запчасти для велосипеда, ремонт велосипеда, веломастерская, спб, интернет-магазин, купить велосипед">
     <!-- Favicon -->
@@ -849,35 +849,126 @@
 
         <div class="offer">
             <div class="container">
-                <h1 class="offer__title">Мой аккаунт</h1>
+                <h1 class="offer__title">Оформление заказа</h1>
                 <div class="breadcrumbs">
                     <!-- Breadcrumb NavXT 6.4.0 -->
                     <span><a href="index.html"><span>Главная</span></a></span>
                     <span class="breadcrumbs__separator">»</span>
-                    <span class="current-item">Мой аккаунт</span>
+                    <span class="current-item">Оформление заказа</span>
                 </div><!-- / .breadcrumbs -->
             </div>
         </div><!-- / .offer -->
 
-        <main class="main main--full-width customer">
+        <main class="main main--full-width checkout">
             <div class="container">
-                <div class="customer__box">
-                    <ul class="customer__sidebar">
-                        <li><a href="account-dashboard.html">Консоль</a></li>
-                        <li class="current-menu-item"><a href="account-orders.html">Заказы</a></li>
-                        <li><a href="account-edit-address.html">Адреса</a></li>
-                        <li><a href="account-edit-account.html">Профиль</a></li>
-                        <li><a href="account.html">Выйти</a></li>
-                    </ul>
-                    <div class="customer__content">
-                        <div class="message">
-                            <div class="message__txt content">
-                                <p>Заказов ещё не создано.</p>
-                            </div>
-                            <a class="message__button button button--small button--inversion" href="catalog.html">Просмотр товаров</a>
-                        </div><!-- / .message -->
+                <form class="checkout__form checkout-form  form" action="#" method="post">
+                    <div class="checkout-form__details">
+                        <fieldset class="form__field-group form__fieldset">
+                            <legend class="form__legend">Детали оплаты</legend>
+                            <ul class="form__list fields-list fields-list--2-columns">
+                                <li class="fields-list__item fields-list__item--half">
+                                    <label class="fields-list__label" for="billing-first-name">Имя <sup>*</sup></label>
+                                    <input class="fields-list__field" id="billing-first-name" type="text" name="billing_first_name" required>
+                                </li>
+                                <li class="fields-list__item fields-list__item--half">
+                                    <label class="fields-list__label" for="billing-last-name">Фамилия <sup>*</sup></label>
+                                    <input class="fields-list__field" id="billing-last-name" type="text" name="billing_last_name" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="billing-company">Название компании (необязательно)</label>
+                                    <input class="fields-list__field" id="billing-company" type="text" name="billing_company">
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="billing-country">Страна/регион <sup>*</sup></label>
+                                    <p class="fields-list__field-box fields-list__field-box--select">
+                                        <select class="fields-list__field" id="billing-country" name="billing_country" required>
+                                            <option>Страна 1</option>
+                                            <option>Страна 2</option>
+                                            <option>Страна 3</option>
+                                            <option>Страна 4</option>
+                                            <option>Страна 5</option>
+                                        </select>
+                                    </p>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="billing-address-1">Адрес <sup>*</sup></label>
+                                    <input class="fields-list__field" id="billing-address-1" type="text" name="billing_address_1" placeholder="Номер дома и название улицы *" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="visually-hidden" for="billing-address-2">Дополнительные сведения об адресе (необязательно)</label>
+                                    <input class="fields-list__field" id="billing-address-2" type="text" name="billing_address_2" placeholder="Дополнительные сведения об адресе (необязательно)" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="billing-city">Населённый пункт <sup>*</sup></label>
+                                    <input class="fields-list__field" id="billing-city" type="text" name="billing_city" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="billing-state">Область / район <sup>*</sup></label>
+                                    <input class="fields-list__field" id="billing-state" type="text" name="billing_state" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="billing-postcode">Почтовый индекс <sup>*</sup></label>
+                                    <input class="fields-list__field" id="billing-postcode" type="text" name="billing_postcode" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="billing-phone">Телефон <sup>*</sup></label>
+                                    <input class="fields-list__field" id="billing-phone" type="tel" name="billing_phone" placeholder="+7 (___) ___ __ __" required>
+                                </li>
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="billing-email">E-mail <sup>*</sup></label>
+                                    <input class="fields-list__field" id="billing-email" type="email" name="billing_email" required>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="form__field-group form__fieldset" id="change-password">
+                            <legend class="form__legend">Детали</legend>
+                            <ul class="form__list fields-list">
+                                <li class="fields-list__item">
+                                    <label class="fields-list__label" for="checkout-form-comments">Примечание к заказу (необязательно)</label>
+                                    <textarea class="fields-list__field" id="checkout-form-comments" name="checkout-form-comments" placeholder="Примечания к вашему заказу, например, особые пожелания отделу доставки."></textarea>
+                                </li>
+                            </ul>
+                        </fieldset>
                     </div>
-                </div>
+                    <div class="checkout-form__stamp stamp order">
+                        <p class="order__title stamp__title">Ваш заказ</p>
+                        <div class="order__table-wr">
+                            <table class="order__table order-table">
+                                <thead>
+                                <tr>
+                                    <th>Товар</th>
+                                    <th>Подытог</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Смарт-часы Huawei Watch GT2 46mm Sport Black × <strong>1</strong></td>
+                                    <td>16 994 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td>Навушники Crown Gaming Headset CMGH-3002 Green × <strong>1</strong></td>
+                                    <td>43 597 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td>Мышь Logitech G502 Lightspeed Wireless Gaming (910-005567) Black × <strong>1</strong></td>
+                                    <td>27 310 руб.</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr class="order-table__subtotal">
+                                    <th>Подытог</th>
+                                    <td class="order-table__subtotal-value">132 205 руб.</td>
+                                </tr>
+                                <tr class="order-table__total">
+                                    <th>Итого</th>
+                                    <td class="order-table__total-value">132 205 руб.</td>
+                                </tr>
+                                </tfoot>
+                            </table><!-- / .order-table -->
+                        </div>
+                        <button class="order__button stamp__button button button--small button--inversion">Подтвердить заказ</button>
+                    </div><!-- / .stamp -->
+                </form><!-- / .checkout-form -->
             </div>
         </main><!-- / .main -->
 

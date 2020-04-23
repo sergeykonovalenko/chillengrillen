@@ -1,10 +1,10 @@
-.login-register {
+.authorization {
     display: flex;
     padding: 0;
     list-style: none;
 }
 
-.login-register__item {
+.authorization__item {
     display: flex;
     flex-direction: column;
     width: calc((100% - 55px) / 2);
@@ -15,7 +15,7 @@
     }
 }
 
-.login-register__title {
+.authorization__title {
     margin-top: 0;
     margin-bottom: 24px;
     font-weight: 700;
@@ -23,7 +23,7 @@
     text-transform: uppercase;
 }
 
-.login-register__form {
+.authorization__form {
     flex-grow: 1;
     padding: 20px;
     border: 1px solid $grey-6;

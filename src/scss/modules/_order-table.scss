@@ -1,0 +1,46 @@
+.order-table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.order-table tr {
+    border-bottom: 1px solid $grey-6;
+}
+
+.order-table tfoot tr {
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.order-table th,
+.order-table td {
+    padding: 15px 15px 15px 0;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.order-table tr:first-child th:first-child {
+    width: 78%;
+}
+
+.order-table th {
+    font-weight: 700;
+}
+
+.order-table strong {
+    font-weight: 700;
+}
+
+.order-table__subtotal-value,
+.order-table__total-value {
+    font-size: 20px;
+    color: $color-accent;
+}
+
+.order-table__total-value {
+    font-weight: 700;
+}
