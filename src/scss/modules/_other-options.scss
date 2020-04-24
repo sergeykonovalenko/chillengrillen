@@ -1,0 +1,19 @@
+.other-options {
+    display: block;
+    width: 310px;
+    padding: 15px;
+    color: $color-main;
+    border: 1px solid $grey-6;
+    border-radius: 3px;
+    transition: all .15s ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: $grey-6;
+    }
+}
+
+.other-options span {
+    display: block;
+    color: $color-accent;
+}

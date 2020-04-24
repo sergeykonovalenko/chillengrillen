@@ -1,10 +1,10 @@
-.actions {
+.product-actions {
     display: flex;
     padding: 0;
     list-style: none;
 }
 
-.actions__item {
+.product-actions__item {
     margin-right: 10px;
 
     &:last-child {
@@ -12,7 +12,7 @@
     }
 }
 
-.actions__link {
+.product-actions__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,12 +30,12 @@
             border-color: $color-secondary;
         }
 
-        .actions__icon {
+        .product-actions__icon {
             fill: #fff;
         }
     }
 }
 
-.actions__icon {
+.product-actions__icon {
     transition: all .15s ease-in;
 }

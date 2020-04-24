@@ -96,16 +96,26 @@
 @import "modules/product-detail";
 @import "modules/product-detail-info";
 @import "modules/form-product-detail";
-@import "modules/product-options";
-@import "modules/option-item";
 @import "modules/product-tabs";
 @import "modules/reviews";
 @import "modules/review";
 @import "modules/comment-respond";
+@import "modules/form";
 @import "modules/comment-form";
 @import "modules/order-features";
 @import "modules/order-info";
 @import "modules/product-group-slider";
+
+/* ==========================================================================
+   PRODUCT OPTIONS PAGE
+   ========================================================================== */
+@import "modules/product-options";
+@import "modules/option-item";
+
+/* ==========================================================================
+   VARIATION PAGE
+   ========================================================================== */
+@import "modules/other-options";
 
 /* ==========================================================================
    POSTS PAGE
@@ -172,7 +182,6 @@
    ========================================================================== */
 @import "modules/customer";
 @import "modules/authorization";
-@import "modules/form";
 @import "modules/customer-form-login";
 @import "modules/checkbox";
 @import "modules/customer-form-register";
@@ -214,7 +223,7 @@
 @import "modules/content";
 @import "modules/form-quick-view";
 @import "modules/nice-number";
-@import "modules/actions";
+@import "modules/product-actions";
 @import "modules/product-meta";
 @import "modules/social-extra";
 
