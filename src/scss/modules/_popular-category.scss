@@ -13,3 +13,27 @@
     flex-shrink: 0;
     width: 74.468085%;
 }
+
+@media screen and (max-width: 992px) {
+    .popular-category__tabs {
+        width: 70%;
+        margin-top: -15px;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .popular-category {
+        display: block;
+    }
+
+    .popular-category__banner {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .popular-category__tabs {
+        width: 100%;
+        margin-top: 0;
+    }
+}

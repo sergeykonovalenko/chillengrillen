@@ -1,0 +1,15 @@
+.main-nav-mobile:not(.mm-menu) {
+    display: none;
+}
+
+.main-nav-mobile__logo {
+    padding: 10px 0;
+}
+
+.main-nav-mobile #mm-1 .mm-navbar {
+    display: none;
+}
+
+.main-nav-mobile .mm-listitem__btn:not(.mm-listitem__text) {
+    border-left: none;
+}

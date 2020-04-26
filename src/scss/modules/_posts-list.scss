@@ -31,3 +31,42 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .posts-list__item {
+
+        .posts-list--3-column & {
+            width: calc((100% - 30px) / 2);
+
+            &:nth-child(3n) {
+                margin-right: 30px;
+            }
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(n + 3) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .posts-list__item {
+
+        .posts-list--3-column & {
+            width: 100%;
+            margin-right: 0;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            &:nth-child(n + 2) {
+                margin-top: 50px;
+            }
+        }
+    }
+}

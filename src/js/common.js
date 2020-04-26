@@ -9,4 +9,8 @@ import './vendor/jquery.mb.browser';
 import 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min';
 import './vendor/google-maps';
 import 'jquery.maskedinput/src/jquery.maskedinput';
+import 'mmenu-js/dist/mmenu';
+
+import mmenu from 'mmenu-js/dist/mmenu';
+
 import './basic-init';

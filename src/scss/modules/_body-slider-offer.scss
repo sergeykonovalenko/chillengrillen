@@ -29,3 +29,9 @@
     padding-right: 40px;
     padding-left: 40px;
 }
+
+@media screen and (max-width: 992px) {
+    .body-slider-offer {
+        padding: 0;
+    }
+}

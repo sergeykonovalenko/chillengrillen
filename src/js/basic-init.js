@@ -55,6 +55,34 @@ $(document).ready(function () {
         });
     }
 
+
+    // init mmenu
+    new Mmenu( "#js-main-nav-mobile", {
+        // wrappers: ["wordpress"],
+        extensions: [
+            'border-full',
+            'fx-menu-slide',
+            'fx-listitems-slide',
+            'multiline',
+            'pagedim-black',
+        ],
+        'counters': true,
+        'setSelected': {
+            'hover': true
+        },
+        navbar: {
+            title: 'МЕНЮ'
+        },
+        'navbars': [
+            {
+                'position': 'top',
+                'content': `<a class="main-nav-mobile__logo" href="/">
+                                <img src="../img/base/logo.svg" width="150" alt="Chillengrillen.ru">
+                            </a>`
+            },
+        ]
+    });
+
     // switching tile display mode
     $('.catalog-mode__button').on('click', function () {
         $('.catalog-mode__button').removeClass('catalog-mode__button--active');
@@ -162,7 +190,7 @@ $(document).ready(function () {
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 4000,
         pauseOnFocus: false,
         pauseOnHover: false,
@@ -175,14 +203,14 @@ $(document).ready(function () {
                         <span class="visually-hidden">Вперед</span> 
                         <svg width="14" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     });
 
     // slider category
@@ -203,10 +231,24 @@ $(document).ready(function () {
                     </button>`,
         responsive: [
             {
-                breakpoint: 1440,
+                breakpoint: 1441,
                 settings: {
                     slidesToShow: 5,
                     slidesToScroll: 5,
+                }
+            },
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
                 }
             }
         ]
@@ -228,14 +270,21 @@ $(document).ready(function () {
                         <span class="visually-hidden">Вперед</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                }
+            }
+        ]
     });
 
     // reviews slider
@@ -254,14 +303,15 @@ $(document).ready(function () {
                         <span class="visually-hidden">Вперед</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
     // slider product gallery

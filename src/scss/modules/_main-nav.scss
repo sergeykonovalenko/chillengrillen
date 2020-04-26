@@ -5,3 +5,9 @@
 .main-nav__list {
     margin: 0;
 }
+
+@media screen and (max-width: 1450px) {
+    .main-nav {
+        display: none;
+    }
+}
