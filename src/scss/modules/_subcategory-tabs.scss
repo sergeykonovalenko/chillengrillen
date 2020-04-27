@@ -75,3 +75,14 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .subcategory-tabs__slider {
+        //margin-bottom: -10px;
+        //padding-bottom: 10px;
+    }
+
+    .subcategory-tabs__nav {
+        padding-right: 0;
+    }
+}

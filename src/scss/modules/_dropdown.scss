@@ -120,22 +120,49 @@
 .dropdown__cart {
     position: relative;
     display: flex;
+}
 
-    &::before {
-        content: attr(data-count);
-        position: absolute;
-        top: -21px;
-        left: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-        margin-left: 1px;
-        font-size: 11px;
-        color: #fff;
-        background-color: $color-secondary;
-        border-radius: 50%;
-        transform: translate(-50%, 0);
+.dropdown__counter {
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+    font-size: 11px;
+    color: #fff;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 576px) {
+    .dropdown__link {
+
+        &--level-1 {
+            padding: 0 8px;
+
+            .dropdown__item--level-1:first-child & {
+                padding-left: 15px;
+            }
+
+            .dropdown__item--level-1:last-child & {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .dropdown__counter {
+        top: -17px;
+        width: 17px;
+        height: 17px;
+        font-size: 10px;
+    }
+
+    .dropdown__icon {
+        max-width: 18px;
     }
 }

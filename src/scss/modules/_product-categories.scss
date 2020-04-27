@@ -4,11 +4,17 @@
 }
 
 .product-categories__title {
-
+    padding: 0 145px;
 }
 
 .product-categories__slider {
     width: calc(100% + 30px);
     margin-right: -15px;
     margin-left: -15px;
+}
+
+@media screen and (max-width: 576px) {
+    .product-categories__title {
+        padding: 0;
+    }
 }

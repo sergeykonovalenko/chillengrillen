@@ -68,3 +68,17 @@
         padding: 30px 15px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .banners-offer {
+        display: block;
+    }
+
+    .banners-offer__item {
+        width: 100%;
+    }
+
+    .banners-offer__link {
+        min-height: 56.25vw;
+    }
+}

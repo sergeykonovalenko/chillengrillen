@@ -40,7 +40,7 @@
     position: relative;
     z-index: 1;
     flex-grow: 1;
-    padding: 45px 50px 65px 80px;
+    padding: 45px 50px 40px 80px;
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 3px 5px 14px -3px rgba(0, 0, 0, .2);
@@ -52,7 +52,6 @@
         bottom: 0;
         width: 25.45%;
         height: 4px;
-        //margin-top: 65px;
         background-color: $color-accent;
         transition: all .3s ease-out;
     }
@@ -80,4 +79,35 @@
 .review-extra__txt {
     margin-top: 22px;
     color: $grey-7;
+}
+
+@media screen and (max-width: 768px) {
+    .review-extra {
+        padding-top: 50px;
+        padding-left: 0;
+    }
+
+    .review-extra__avatar {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .review-extra__info {
+        text-align: center;
+        padding: 70px 20px 30px 20px;
+        
+        &::after {
+            //content: "";
+            //position: absolute;
+            left: 50%;
+            //bottom: 0;
+            //width: 25.45%;
+            //height: 4px;
+            ////margin-top: 65px;
+            //background-color: $color-accent;
+            //transition: all .3s ease-out;
+            transform: translate(-50%, 0);
+        }
+    }
 }

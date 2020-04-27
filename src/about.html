@@ -1043,7 +1043,8 @@
                     <li class="dropdown__item dropdown__item--level-1">
                         <a class="dropdown__link dropdown__link--level-1" href="cart.html">
                             <span class="visually-hidden">Корзина</span>
-                            <span class="dropdown__cart" data-count="3">
+                            <span class="dropdown__cart">
+                                <span class="dropdown__counter">3</span>
                                 <svg class="dropdown__icon" width="20" viewBox="0 0 23.8 20" fill="#555" xmlns="http://www.w3.org/2000/svg"><path d="M1 0C.4 0 0 .4 0 1s.4 1 1 1h2.2l2.6 10.5c.2.9 1 1.5 1.9 1.5h11.5c.9 0 1.7-.6 1.9-1.5L23.8 3H7l.5 2h13.7l-1.9 7H7.8L5.2 1.5C4.9.6 4.1 0 3.2 0H1zm17 14c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm-9 0c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm0 2c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zm9 0c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z"/></svg>
                             </span>
                         </a>
@@ -1119,10 +1120,10 @@
                         </div><!-- / .mini-cart -->
                     </li>
                 </ul><!-- / .dropdown -->
-                <button class="main-header__btn-search" type="button">
+                <a class="main-header__btn-search btn-modal" href="#js-search-modal" data-small-btn="false">
                     <span class="visually-hidden">Поиск</span>
                     <svg width="20" viewBox="0 0 512 512" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M286.526 0C410.85 0 512 101.151 512 225.474c0 124.33-101.15 225.474-225.474 225.474-124.33 0-225.474-101.144-225.474-225.474C61.052 101.151 162.196 0 286.526 0zm0 409.323c101.373 0 183.848-82.475 183.848-183.848S387.9 41.626 286.526 41.626s-183.848 82.475-183.848 183.848 82.475 183.849 183.848 183.849z"/><path d="M6.098 476.472l119.328-119.328a20.81 20.81 0 0 1 29.43 29.43L35.528 505.902a20.81 20.81 0 1 1-29.43-29.43z"/></svg>
-                </button>
+                </a>
             </div>
         </header><!-- / .main-header -->
 
@@ -1335,14 +1336,17 @@
                     <div class="main-footer__subscription subscription">
                         <p class="subscription__txt">Подпишитесь на рассылку</p>
                         <form class="subscription__form" action="#" method="post">
-                            <div class="subscription__fields-list">
+                            <div class="subscription__body">
                                 <p class="subscription__field-box">
                                     <label class="visually-hidden" for="subscription-email">Ваш e-mail</label>
                                     <input class="subscription__field" id="subscription-email" type="email" name="email" placeholder="Ваш e-mail*" required>
                                 </p>
-                                <p class="subscription__agreement">Подписываясь на рассылку, вы даете <a href="#" target="_blank">согласие на обработку персональных данных</a> и соглашаетесь c<br> <a href="#" target="_blank">политикой конфиденциальности</a></p>
+                                <button class="subscription__button button button--extra button--inversion">Подписаться</button>
                             </div>
-                            <button class="subscription__button button button--inversion">Подписаться</button>
+                            <p class="subscription__agreement">
+                                Подписываясь на рассылку, вы даете <a href="#" target="_blank">согласие на обработку персональных данных</a>
+                                и соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a>
+                            </p>
                         </form>
                     </div><!-- / .subscription -->
                     <div class="main-footer__logo-and-social">
@@ -1439,89 +1443,85 @@
         </div><!-- / .tabs-login-modal -->
     </div><!-- / .login-modal -->
 
+    <!-- Search modal -->
+    <div class="search-modal" id="js-search-modal" style="display: none">
+        <form class="search-form" action="#" method="GET">
+            <label class="visually-hidden" for="s">Поиск</label>
+            <input class="search-form__field" id="s" type="search" name="s" placeholder="Поиск...">
+            <button class="search-form__button">
+                <span class="visually-hidden">Поиск</span>
+                <svg width="20" viewBox="0 0 512 512" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M286.526 0C410.85 0 512 101.151 512 225.474c0 124.33-101.15 225.474-225.474 225.474-124.33 0-225.474-101.144-225.474-225.474C61.052 101.151 162.196 0 286.526 0zm0 409.323c101.373 0 183.848-82.475 183.848-183.848S387.9 41.626 286.526 41.626s-183.848 82.475-183.848 183.848 82.475 183.849 183.848 183.849z"/><path d="M6.098 476.472l119.328-119.328a20.81 20.81 0 0 1 29.43 29.43L35.528 505.902a20.81 20.81 0 1 1-29.43-29.43z"/></svg>
+            </button>
+        </form><!-- / .search-form -->
+    </div><!-- / .search-modal -->
+
     <!-- Modal quick view -->
     <div class="modal-quick-view modal-common" id="js-modal-quick-view" style="display: none">
         <div class="modal-quick-view__body">
             <div class="modal-quick-view__left">
-                <div class="modal-quick-view__product-gallery product-gallery">
-                    <div class="product-gallery__item">
-                        <div class="product-gallery__img-box">
-                            <ul class="product-gallery__label product-label">
-                                <li class="product-label__item product-label__item--sale">-15%</li>
-                            </ul><!-- / .product-label -->
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-1.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-1.png" alt="">
-                            </picture>
+                <div class="modal-quick-view__product-gallery-wr">
+                    <ul class="modal-quick-view__label product-label">
+                        <li class="product-label__item product-label__item--sale">-15%</li>
+                    </ul><!-- / .product-label -->
+                    <div class="modal-quick-view__product-gallery product-gallery">
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__img-box">
+                                <picture>
+                                    <source srcset="img/base/Watch-GT2-46mm-Sport-Black-1.webp" type="image/webp">
+                                    <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-1.png" alt="">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-gallery__item">
-                        <div class="product-gallery__img-box">
-                            <ul class="product-gallery__label product-label">
-                                <li class="product-label__item product-label__item--sale">-15%</li>
-                            </ul><!-- / .product-label -->
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-2.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-2.png" alt="">
-                            </picture>
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__img-box">
+                                <picture>
+                                    <source srcset="img/base/Watch-GT2-46mm-Sport-Black-2.webp" type="image/webp">
+                                    <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-2.png" alt="">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-gallery__item">
-                        <div class="product-gallery__img-box">
-                            <ul class="product-gallery__label product-label">
-                                <li class="product-label__item product-label__item--sale">-15%</li>
-                            </ul><!-- / .product-label -->
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-3.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-3.jpg" alt="">
-                            </picture>
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__img-box">
+                                <picture>
+                                    <source srcset="img/base/Watch-GT2-46mm-Sport-Black-3.webp" type="image/webp">
+                                    <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-3.jpg" alt="">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-gallery__item">
-                        <div class="product-gallery__img-box">
-                            <ul class="product-gallery__label product-label">
-                                <li class="product-label__item product-label__item--sale">-15%</li>
-                            </ul><!-- / .product-label -->
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-4.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-4.jpg" alt="">
-                            </picture>
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__img-box">
+                                <picture>
+                                    <source srcset="img/base/Watch-GT2-46mm-Sport-Black-4.webp" type="image/webp">
+                                    <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-4.jpg" alt="">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-gallery__item">
-                        <div class="product-gallery__img-box">
-                            <ul class="product-gallery__label product-label">
-                                <li class="product-label__item product-label__item--sale">-15%</li>
-                            </ul><!-- / .product-label -->
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-5.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-5.jpg" alt="">
-                            </picture>
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__img-box">
+                                <picture>
+                                    <source srcset="img/base/Watch-GT2-46mm-Sport-Black-5.webp" type="image/webp">
+                                    <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-5.jpg" alt="">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-gallery__item">
-                        <div class="product-gallery__img-box">
-                            <ul class="product-gallery__label product-label">
-                                <li class="product-label__item product-label__item--sale">-15%</li>
-                            </ul><!-- / .product-label -->
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-6.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-6.jpg" alt="">
-                            </picture>
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__img-box">
+                                <picture>
+                                    <source srcset="img/base/Watch-GT2-46mm-Sport-Black-6.webp" type="image/webp">
+                                    <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-6.jpg" alt="">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-gallery__item">
-                        <div class="product-gallery__img-box">
-                            <ul class="product-gallery__label product-label">
-                                <li class="product-label__item product-label__item--sale">-15%</li>
-                            </ul><!-- / .product-label -->
-                            <picture>
-                                <source srcset="img/base/Watch-GT2-46mm-Sport-Black-7.webp" type="image/webp">
-                                <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-7.jpg" alt="">
-                            </picture>
+                        <div class="product-gallery__item">
+                            <div class="product-gallery__img-box">
+                                <picture>
+                                    <source srcset="img/base/Watch-GT2-46mm-Sport-Black-7.webp" type="image/webp">
+                                    <img class="product-gallery__img" src="img/base/Watch-GT2-46mm-Sport-Black-7.jpg" alt="">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                </div><!-- / .product-gallery -->
+                    </div><!-- / .product-gallery -->
+                </div>
                 <div class="modal-quick-view__product-gallery-side product-gallery-side">
                     <div class="product-gallery-side__item">
                         <p class="product-gallery-side__img-box">

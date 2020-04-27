@@ -44,6 +44,7 @@
 }
 
 .main-footer__logo {
+    display: block;
     margin-right: 30px;
 }
 
@@ -107,5 +108,45 @@
     &:focus {
         color: $color-secondary--light;
         text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-footer__logo-and-social {
+        flex-direction: column;
+    }
+
+    .main-footer__logo {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .main-footer__logo img {
+        margin: 0 auto;
+    }
+
+    .main-footer__social {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .main-footer__nav-and-copyright {
+        display: block;
+    }
+
+    .main-footer__nav-extra {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 27px;
+    }
+
+    .main-footer__copyright {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .main-footer__author {
+        text-align: center;
     }
 }

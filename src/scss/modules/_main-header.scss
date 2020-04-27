@@ -35,7 +35,7 @@
     //--mb-bar-spacing: 10px;
     //--mb-animate-timeout: 0.4s
 
-    --mb-button-size: 40px;
+    --mb-button-size: 35px;
     --mb-bar-width: 0.8;
     --mb-bar-height: 4px;
     --mb-bar-spacing: 8px;
@@ -180,7 +180,29 @@
         padding-left: 15px;
     }
 
+    .main-header__logo {
+        flex-shrink: 1;
+    }
+
     .main-header__dropdown {
         border-left: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-header__wr {
+        height: 50px;
+    }
+
+    .main-header__hamburger {
+        margin-right: 15px;
+    }
+
+    .main-header__btn-search {
+        width: 50px;
+
+        svg {
+            max-width: 18px;
+        }
     }
 }

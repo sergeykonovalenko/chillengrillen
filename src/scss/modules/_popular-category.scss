@@ -14,11 +14,20 @@
     width: 74.468085%;
 }
 
+@media screen and (max-width: 1200px) {
+    .popular-category__tabs {
+        margin-top: -15px;
+        padding-top: 15px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .popular-category__tabs {
         width: 70%;
-        margin-top: -15px;
-        padding-top: 15px;
+        margin-top: 0;
+        margin-bottom: -10px;
+        padding-top: 0;
+        padding-bottom: 10px;
     }
 }
 

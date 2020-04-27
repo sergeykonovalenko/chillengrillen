@@ -250,6 +250,15 @@ $(document).ready(function () {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                 }
+            },
+            {
+                breakpoint: 577,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
             }
         ]
     });
@@ -274,6 +283,8 @@ $(document).ready(function () {
             {
                 breakpoint: 993,
                 settings: {
+                    arrows: false,
+                    dots: true,
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 }
@@ -281,9 +292,12 @@ $(document).ready(function () {
             {
                 breakpoint: 768,
                 settings: {
+                    arrows: false,
                     dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
-            }
+            },
         ]
     });
 
@@ -307,6 +321,14 @@ $(document).ready(function () {
             {
                 breakpoint: 993,
                 settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 577,
+                settings: {
+                    arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 }
@@ -337,7 +359,7 @@ $(document).ready(function () {
     $('.product-gallery-side').slick({
         dots: false,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 1,
         asNavFor: '.product-gallery',
         pauseOnFocus: false,
         pauseOnHover: false,

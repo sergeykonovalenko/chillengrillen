@@ -17,21 +17,20 @@
 }
 
 .subscription__form {
-    display: flex;
-    align-items: flex-start;
     flex-shrink: 0;
     width: 65.89%;
     margin-left: auto;
 }
 
-.subscription__fields-list {
-    flex-grow: 1;
-    margin-right: 30px;
+.subscription__body {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 .subscription__field-box {
     flex-grow: 1;
-    margin: 0 0 10px 0;
+    margin: 0 30px 0 0;
 }
 
 .subscription__field {
@@ -67,5 +66,45 @@
     &:focus {
         text-decoration: none;
         color: $color-main;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .subscription {
+        display: block;
+        padding: 50px 30px 55px;
+    }
+
+    .subscription__txt {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .subscription__form {
+        width: 100%;
+    }
+
+    .subscription__field-box {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .subscription {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .subscription__body {
+        display: block;
+    }
+
+    .subscription__field-box {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .subscription__button {
+        width: 100%;
     }
 }

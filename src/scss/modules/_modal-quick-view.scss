@@ -13,6 +13,18 @@
     margin-right: 30px;
 }
 
+.modal-quick-view__product-gallery-wr {
+    position: relative;
+}
+
+.modal-quick-view__label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    margin: 0;
+}
+
 .modal-quick-view__product-gallery {
     margin-bottom: 30px;
 }
