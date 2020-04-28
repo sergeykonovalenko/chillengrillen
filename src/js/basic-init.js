@@ -9,6 +9,20 @@ $(document).ready(function () {
         element.classList.add('is-mobile');
     }
 
+    // preload
+    window.onload = function () {
+        element.classList.remove('preload');
+        // document.documentElement.classList.add('loaded-hiding');
+        // window.setTimeout(function () {
+        //     document.documentElement.classList.add('loaded');
+        //     document.documentElement.classList.remove('loaded-hiding');
+        // }, 500);
+    };
+
+    // $(window).load(function () {
+    //     // $('html').removeClass('preload');
+    // });
+
     // init modal
     $('.light-box-img').fancybox({
         backFocus: false,

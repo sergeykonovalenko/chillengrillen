@@ -1,87 +1,50 @@
-.preloader {
+/*Begin Preload*/
+.preload .loading {
     position: fixed;
-    z-index: 1800;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    z-index: 999999;
     width: 100%;
     height: 100%;
+    margin-top: 0;
     background-color: $color-secondary;
-
-    .loaded-hiding & {
-        transition: opacity .3s;
-        opacity: 0;
-    }
-
-    .loaded & {
-        display: none;
-    }
-
-    .no-js & {
-        display: none
-    }
+}
+.preload .loading__center {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.preloader__bars {
+/*Preload style*/
+.loading__list {
     position: absolute;
-    display: block;
     top: 50%;
     left: 50%;
-    height: 50px;
-    width: 50px;
+    width: 150px;
+    height: 150px;
     transform: translate(-50%, -50%);
 }
 
-.preloader__bars span {
-    position: absolute;
-    bottom: 10px;
-    display: block;
-    width: 9px;
-    height: 5px;
-    background-color: rgba(255, 255, 255, .35);
-    animation: bars 1.5s  infinite ease-in-out;
+.loading__item {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 65px;
+    background-color: #fff;
+    border-radius: 50% 50% 50% 50%;
+    animation: loading-item 1.5s infinite;
 }
 
-.preloader__bars span:nth-child(2) {
-    left: 11px;
-    animation-delay: .2s;
+.loading__item:nth-child(2) {
+    animation-delay: .25s;
 }
 
-.preloader__bars span:nth-child(3) {
-    left: 22px;
-    animation-delay: .4s;
+.loading__item:nth-child(3) {
+    animation-delay: .5s;
 }
 
-.preloader__bars span:nth-child(4) {
-    left: 33px;
-    animation-delay: .6s;
-}
-
-.preloader__bars span:nth-child(5) {
-    left: 44px;
-    animation-delay: .8s;
-}
-
-@keyframes bars {
-    0% {
-        height: 5px;
-        background-color: rgba(255, 255, 255, .35);
-        transform: translateY(0px);
-    }
-    25% {
-        height: 30px;
-        background-color: #fff;
-        transform: translateY(15px);
-    }
-    50% {
-        height: 5px;
-        background-color: rgba(255, 255, 255, .35);
-        transform: translateY(0);
-    }
-    100% {
-        height: 5px;
-        background-color: rgba(255, 255, 255, .35);
-        transform: translateY(0);
+@keyframes loading-item {
+    75% {
+        transform: scale(0);
     }
 }
