@@ -1,5 +1,4 @@
-/*Begin Preload*/
-.preload .loading {
+.loading {
     position: fixed;
     top: 0;
     z-index: 999999;
@@ -7,18 +6,21 @@
     height: 100%;
     margin-top: 0;
     background-color: $color-secondary;
-}
-.preload .loading__center {
-    position: relative;
-    width: 100%;
-    height: 100%;
+
+    .loaded & {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
-/*Preload style*/
 .loading__list {
+    @include reset-list;
+
     position: absolute;
     top: 50%;
     left: 50%;
+    display: flex;
+    justify-content: center;
     width: 150px;
     height: 150px;
     transform: translate(-50%, -50%);
@@ -27,12 +29,15 @@
 .loading__item {
     width: 20px;
     height: 20px;
-    float: left;
     margin-right: 20px;
     margin-top: 65px;
     background-color: #fff;
     border-radius: 50% 50% 50% 50%;
     animation: loading-item 1.5s infinite;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .loading__item:nth-child(2) {

@@ -11,7 +11,7 @@
     color: $color-accent;
     text-decoration: none;
 
-    .products-list--list-mode & {
+    .products-list--mode--list & {
         font-size: 30px;
     }
 }
@@ -25,11 +25,35 @@
     font-size: 13px;
     color: $grey-4;
 
-    .products-list--list-mode & {
+    .products-list--mode--list & {
         font-size: 20px;
     }
 }
 
 .price-box--big del {
     font-size: 19px;
+}
+
+@media screen and (max-width: 992px) {
+    .price-box ins {
+
+        .products-list--mode--list & {
+            font-size: 24px;
+        }
+    }
+
+    .price-box--big ins {
+        font-size: 24px;
+    }
+
+    .price-box del {
+
+        .products-list--mode--list & {
+            font-size: 16px;
+        }
+    }
+
+    .price-box--big del {
+        font-size: 16px;
+    }
 }

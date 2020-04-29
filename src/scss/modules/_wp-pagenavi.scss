@@ -55,3 +55,16 @@
     padding-right: 25px;
     padding-left: 25px;
 }
+
+@media screen and (max-width: 1200px) {
+    .wp-pagenavi span,
+    .wp-pagenavi a {
+        min-width: 45px;
+        height: 45px;
+    }
+
+    .wp-pagenavi .show-all {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}

@@ -1,5 +1,6 @@
 .form-quick-view {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .form-quick-view__btn-add-to-cart {
@@ -10,4 +11,33 @@
 .form-quick-view__product-actions {
     flex-shrink: 0;
     margin: 0;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .form-quick-view__btn-add-to-cart {
+        margin-right: 0;
+    }
+
+    .form-quick-view__product-actions {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-quick-view__btn-add-to-cart {
+        margin-right: 0;
+    }
+
+    .form-quick-view__product-actions {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form-quick-view__btn-add-to-cart {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }

@@ -74,6 +74,7 @@
 }
 
 .modal-quick-view__price {
+    justify-content: flex-start;
     margin-top: 0;
     margin-bottom: 37px;
 }
@@ -84,4 +85,44 @@
 
 .modal-quick-view__product-meta {
     margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .modal-quick-view__name {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) { // включительно к 769px
+    .modal-quick-view__product-gallery-side {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-quick-view__body {
+        display: block;
+    }
+
+    .modal-quick-view__left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .modal-quick-view__right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .modal-quick-view__product-gallery-side {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .modal-quick-view__product-gallery-side {
+        width: 200px;
+    }
 }

@@ -1,15 +1,13 @@
 .catalog-sorting {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     list-style: none;
 }
 
 .catalog-sorting__item {
     margin-right: 15px;
-
-    &:last-child {
-        margin-right: 0;
-    }
+    margin-bottom: 15px;
 }
 
 .catalog-sorting__label {
@@ -45,5 +43,16 @@
 
     &:focus {
         box-shadow: 0 0 7px rgba(0, 0, 0, .2);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .catalog-sorting__item {
+        flex-grow: 1;
+    }
+
+    .catalog-sorting__field {
+        padding-top: 17px;
+        padding-bottom: 17px;
     }
 }

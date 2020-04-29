@@ -18,3 +18,17 @@
 .page-content__posts-list {
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .page-content .container {
+        flex-direction: column;
+    }
+
+    .page-content__sidebar {
+        margin-right: 0;
+    }
+
+    .page-content__main {
+        margin-bottom: 50px;
+    }
+}

@@ -1,5 +1,6 @@
 .product-actions {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     list-style: none;
 }
@@ -16,7 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    //width: 60px;
+    min-width: 60px;
     height: 60px;
     border: 1px solid $color-main;
     border-radius: 3px;
@@ -38,4 +40,24 @@
 
 .product-actions__icon {
     transition: all .15s ease-in;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .form-quick-view__product-actions .product-actions__item {
+        flex-grow: 1;
+    }
+
+    .form-quick-view__product-actions .product-actions__link {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-quick-view__product-actions .product-actions__item {
+        flex-grow: 1;
+    }
+
+    .form-quick-view__product-actions .product-actions__link {
+        flex-grow: 1;
+    }
 }

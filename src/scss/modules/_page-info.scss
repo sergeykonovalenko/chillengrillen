@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    overflow: hidden;
 }
 
 .page-info__count {
@@ -16,4 +17,15 @@
 .page-info__pagination {
     flex-shrink: 0;
     margin: -10px -10px 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+    .page-info {
+        display: block;
+    }
+    
+    .page-info__count {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
 }

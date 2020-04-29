@@ -43,3 +43,14 @@
         background-color: $color-secondary;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .search__field {
+        padding: 17px 15px;
+    }
+
+    .search__button {
+        width: 50px;
+        background-size: 15px;
+    }
+}

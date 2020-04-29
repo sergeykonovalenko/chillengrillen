@@ -11,17 +11,8 @@ $(document).ready(function () {
 
     // preload
     window.onload = function () {
-        element.classList.remove('preload');
-        // document.documentElement.classList.add('loaded-hiding');
-        // window.setTimeout(function () {
-        //     document.documentElement.classList.add('loaded');
-        //     document.documentElement.classList.remove('loaded-hiding');
-        // }, 500);
+        element.classList.add('loaded');
     };
-
-    // $(window).load(function () {
-    //     // $('html').removeClass('preload');
-    // });
 
     // init modal
     $('.light-box-img').fancybox({
@@ -104,11 +95,11 @@ $(document).ready(function () {
     });
 
     $('.catalog-mode__button--list').on('click', function () {
-        $('.products-list').addClass('products-list--list-mode');
+        $('.products-list').addClass('products-list--mode--list');
     });
 
     $('.catalog-mode__button--grid').on('click', function () {
-        $('.products-list').removeClass('products-list--list-mode');
+        $('.products-list').removeClass('products-list--mode--list');
     });
 
     // show/hide subcategories
@@ -386,14 +377,32 @@ $(document).ready(function () {
                         <span class="visually-hidden">Вперед</span> 
                         <svg width="14" viewBox="0 0 149 256.1" fill="#999999" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 501,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 401,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
     });
 
     // slider product gallery main
@@ -478,6 +487,25 @@ $(document).ready(function () {
     $('.tabs-login-modal').tabs({
         // heightStyle: 'auto',
     });
+
+    // window resize
+    window.onresize = () => showHideMiniCart();
+
+    // show/hide mini-cart
+    function showHideMiniCart() {
+        if (window.innerWidth < 993) {
+            $('.dropdown__link--cart').on('click', function (e) {
+                e.preventDefault();
+                $(document.body).toggleClass('mini-cart-open');
+            });
+        }
+
+        $('.mini-cart-backdrop, .mini-cart__close').on('click', function () {
+            $(document.body).removeClass('mini-cart-open');
+        });
+    }
+
+    showHideMiniCart();
 
     // show/hide shipping-calculator
     $('.table-cart-totals__btn-shipping-calculator').on('click', function () {

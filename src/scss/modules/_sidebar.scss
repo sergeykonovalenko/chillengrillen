@@ -29,3 +29,22 @@
 .sidebar > *:last-child {
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 30.7088744588%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        order: 2;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar__banner img {
+        width: 100%;
+    }
+}

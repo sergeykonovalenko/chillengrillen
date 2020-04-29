@@ -2,13 +2,30 @@
     padding: 20px;
 }
 
-.mini-cart__title {
-    margin-top: 0;
+.mini-cart__head {
     margin-bottom: 15px;
+}
+
+.mini-cart__title {
+    margin: 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.25;
     text-transform: uppercase;
+}
+
+.mini-cart__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .mini-cart__list-wr {
@@ -48,5 +65,19 @@
 
     &:last-child {
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mini-cart__title {
+        margin-right: 30px;
+    }
+
+    .mini-cart__close {
+        display: block;
+    }
+    
+    .mini-cart__list-wr {
+        max-height: calc(100vh - 185px); // отнять как минимум 182.2px
     }
 }

@@ -8,5 +8,19 @@
 }
 
 .catalog-settings__sorting {
-    margin: 0 0 0 auto;
+    margin: 0 -15px -15px auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .catalog-settings {
+        display: block;
+    }
+
+    .catalog-settings__mode {
+        margin-bottom: 15px;
+    }
+
+    .catalog-settings__sorting {
+        margin-left: 0;
+    }
 }

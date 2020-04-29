@@ -21,6 +21,7 @@
 /* ==========================================================================
    HOME PAGE
    ========================================================================== */
+@import "modules/wrapper";
 @import "modules/button";
 @import "modules/button-link";
 @import "modules/main-header";
@@ -29,6 +30,8 @@
 @import "modules/mega-menu";
 @import "modules/dropdown";
 @import "modules/mini-cart";
+@import "modules/mini-cart-backdrop";
+@import "modules/mini-cart-open";
 @import "modules/product-mini-cart";
 @import "modules/mini-cart-total";
 @import "modules/main-offer";

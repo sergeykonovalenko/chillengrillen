@@ -47,3 +47,9 @@
         outline: none;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .catalog-mode__button {
+        min-height: 50px;
+    }
+}
