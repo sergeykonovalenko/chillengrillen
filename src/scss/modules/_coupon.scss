@@ -14,3 +14,33 @@
 .coupon__button {
 
 }
+
+@media screen and (max-width: 768px) {
+    .coupon {
+        display: flex;
+    }
+
+    .coupon__field {
+        flex-grow: 1;
+        float: none;
+    }
+
+    .coupon__button {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .coupon {
+        display: block;
+    }
+
+    .coupon__field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .coupon__button {
+        width: 100%;
+    }
+}

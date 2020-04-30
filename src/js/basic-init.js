@@ -352,14 +352,6 @@ $(document).ready(function () {
         asNavFor: '.product-gallery-side',
         pauseOnFocus: false,
         pauseOnHover: false,
-        // responsive: [
-        //     {
-        //         breakpoint: 769,
-        //         settings: {
-        //             dots: true,
-        //         }
-        //     }
-        // ]
     });
 
     // slider product gallery side

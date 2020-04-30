@@ -17,3 +17,10 @@
     display: block;
     color: $color-accent;
 }
+
+@media screen and (max-width: 992px) {
+    .other-options {
+        width: 100%;
+        text-align: center;
+    }
+}

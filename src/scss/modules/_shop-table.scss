@@ -19,20 +19,21 @@
 .shop-table th,
 .shop-table td {
     padding: 20px 10px;
-}
 
-.shop-table tr th:first-child,
-.shop-table tr td:first-child {
-    padding-left: 0;
-}
+    &:first-child {
+        padding-left: 0;
+    }
 
-.shop-table tr th:last-child,
-.shop-table tr td:last-child {
-    padding-right: 0;
+    &:last-child {
+        padding-right: 0;
+    }
 }
 
 .shop-table__remove {
 
+    svg {
+        display: block;
+    }
 }
 
 .shop-table__remove-button {
@@ -110,6 +111,7 @@
 
 .shop-table__coupon {
     float: left;
+    margin-right: 15px;
 }
 
 .shop-table__btn-update-cart {
@@ -132,5 +134,85 @@
     .cart__form {
         width: 100%;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shop-table thead {
+        display: none;
+    }
+
+    .shop-table tr:nth-child(even) {
+        background-color: $grey-2;
+
+        &:last-child {
+            background-color: #fff;
+        }
+    }
+
+    .shop-table th,
+    .shop-table td {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: right;
+        border-bottom: 1px solid $grey-6;
+
+        &:first-child {
+            padding-left: 10px;
+        }
+
+        &:last-child {
+            padding-right: 10px;
+            border-bottom: none;
+        }
+    }
+
+    td.shop-table__remove:first-child {
+        padding: 0;
+    }
+
+    .shop-table__remove-button {
+        padding: 15px;
+    }
+
+    .shop-table td[data-title]::before {
+        content: attr(data-title) ": ";
+        display: block;
+        flex-shrink: 0;
+        width: 30%;
+        min-width: 100px;
+        margin-right: 15px;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .shop-table__thumbnail a {
+        margin: 0 auto;
+    }
+
+    .shop-table__thumbnail img {
+        width: auto;
+        min-width: 150px;
+        max-height: 150px;
+    }
+
+    td.shop-table__actions:first-child {
+        display: block;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .shop-table__coupon {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .shop-table__btn-update-cart {
+        width: 100%;
+        float: none;
     }
 }
