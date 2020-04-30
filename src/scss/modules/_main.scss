@@ -23,13 +23,13 @@
 }
 
 @media screen and (max-width: 992px) {
-    .main {
+    .main:not(.main--full-width) {
         width: calc(100% - 30.7088744588% - 30px);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .main {
+    .main:not(.main--full-width) {
         order: 1;
         width: 100%;
     }

@@ -38,5 +38,12 @@
 
 .product-detail__form {
     width: 450px;
+    max-width: 100%;
     margin: 0 auto 38px;
+}
+
+@media screen and (max-width: 576px) {
+    .product-detail__name {
+        font-size: 24px;
+    }
 }

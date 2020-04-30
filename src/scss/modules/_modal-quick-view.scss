@@ -2,6 +2,10 @@
     width: 1030px;
     padding-right: 15px;
     padding-left: 15px;
+    
+    &.fancybox-content {
+        overflow: hidden;
+    }
 }
 
 .modal-quick-view__body {
@@ -121,7 +125,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 370px) {
     .modal-quick-view__product-gallery-side {
         width: 200px;
     }

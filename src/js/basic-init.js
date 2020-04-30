@@ -252,6 +252,8 @@ $(document).ready(function () {
             {
                 breakpoint: 769,
                 settings: {
+                    arrows: false,
+                    dots: true,
                     slidesToShow: 3,
                     slidesToScroll: 3,
                 }
@@ -331,7 +333,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 577,
+                breakpoint: 769,
                 settings: {
                     arrows: false,
                     slidesToShow: 1,
@@ -397,7 +399,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 401,
+                breakpoint: 371,
                 settings: {
                     slidesToShow: 2,
                 }
@@ -421,14 +423,30 @@ $(document).ready(function () {
                         <span class="visually-hidden">Вперед</span> 
                         <svg class="slider-arrow__icon" width="14" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,
-        // responsive: [
-        //     {
-        //         breakpoint: 769,
-        //         settings: {
-        //             dots: true,
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 1441,
+                settings: {
+                    dots: true,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 577,
+                settings: {
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
     // product group slider
@@ -447,14 +465,24 @@ $(document).ready(function () {
                         <span class="visually-hidden">Вперед</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M145.4 136.5l-117.8 116c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17L105.8 128 3.6 27.6c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0l117.8 116c4.6 4.7 4.6 12.3-.1 17z"/></svg>
                     </button>`,
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            }
+        ]
     });
 
     // init nice number

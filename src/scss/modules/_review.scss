@@ -47,9 +47,38 @@
 }
 
 .review__rating {
-
+    flex-shrink: 0;
 }
 
 .review__txt {
 
+}
+
+@media screen and (max-width: 768px) {
+    .review {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .review {
+        display: block;
+    }
+
+    .review__avatar-box {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .review__avatar {
+        margin: 0 auto;
+    }
+    
+    .review__head {
+        display: block;
+    }
+
+    .review__meta {
+        margin-right: 0;
+    }
 }

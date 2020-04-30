@@ -9,8 +9,11 @@
     width: calc((100% - 90px - 330px) / 3);
 
     &:last-child {
-        width: 330px;
         margin-right: 0;
+    }
+
+    &--instagram {
+        width: 330px;
     }
 }
 
@@ -76,28 +79,18 @@
         &:nth-child(n + 3) {
             margin-top: 50px;
         }
-
-        &:last-child {
-            width: calc((100% - 30px) / 2);
-        }
     }
 }
 
 @media screen and (max-width: 576px) {
-    .footer-list {
-        display: block;
-    }
-
     .footer-list__item {
-        width: 100%;
-        margin-right: 0;
+        width: calc((100% - 15px) / 2);
+        margin-right: 15px;
 
-        &:nth-child(n + 2) {
-            margin-top: 50px;
-        }
-
-        &:last-child {
+        &--contacts,
+        &--instagram {
             width: 100%;
+            margin-right: 0;
         }
     }
 }
