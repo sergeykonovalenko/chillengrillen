@@ -57,9 +57,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .error-404 {
+        padding-bottom: 100px;
+    }
+
     .error-404__box {
         display: block;
-        padding-bottom: 100px;
     }
 
     .error-404__left {

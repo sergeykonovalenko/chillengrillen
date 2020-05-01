@@ -100,3 +100,9 @@
 .post-item__description {
     margin-bottom: 17px;
 }
+
+@media screen and (max-width: 576px) {
+    .post-item__title {
+        font-size: 24px;
+    }
+}
