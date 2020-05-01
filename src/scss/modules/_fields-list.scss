@@ -98,3 +98,19 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .fields-list__item {
+
+        .fields-list--2-columns & {
+
+            &--half {
+                width: 100%;
+
+                &:nth-child(odd) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

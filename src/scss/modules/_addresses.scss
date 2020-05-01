@@ -16,6 +16,7 @@
 .addresses__head {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .addresses__title {
@@ -32,4 +33,31 @@
 
 .addresses__body {
     font-style: normal;
+}
+
+@media screen and (max-width: 1200px) {
+    .addresses {
+        display: block;
+    }
+
+    .addresses__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .addresses__head {
+        display: block;
+    }
+
+    .addresses__title {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }

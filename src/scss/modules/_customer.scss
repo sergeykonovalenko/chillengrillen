@@ -27,6 +27,7 @@
     font-size: 16px;
     color: $color-main;
     border: 1px solid $grey-6;
+    border-radius: 5px;
 
     &:hover,
     &:focus {
@@ -44,6 +45,7 @@
     width: calc(100% - 29.7872340425% - 30px);
     padding: 15px;
     border: 1px solid $grey-6;
+    border-radius: 5px;
 }
 
 .customer__content > *:first-child {
@@ -60,4 +62,20 @@
 
 .customer__addresses {
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .customer__box {
+        display: block;
+    }
+
+    .customer__sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .customer__content {
+        width: 100%;
+    }
 }

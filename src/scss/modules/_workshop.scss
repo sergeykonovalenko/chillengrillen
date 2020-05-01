@@ -56,3 +56,12 @@
         margin-left: 7px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .workshop__table td {
+
+        &:first-of-type {
+            padding-left: 15px;
+        }
+    }
+}

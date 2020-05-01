@@ -43,3 +43,10 @@
     display: block;
     width: 100%;
 }
+
+@media screen and (max-width: 576px) {
+    .stamp {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
