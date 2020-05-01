@@ -38,9 +38,31 @@
 
 .post__social {
     flex-shrink: 0;
-    margin-left: 30px;
+    margin: 0 0 0 30px;
 }
 
 .post__control {
     margin: 0 0 70px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .post__title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .post__tags-and-social {
+        display: block;
+    }
+
+    .post__tags {
+        justify-content: center;
+    }
+
+    .post__social {
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 0;
+    }
 }
