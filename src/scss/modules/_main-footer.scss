@@ -111,6 +111,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .main-footer__top {
+        padding-top: 70px;
+        padding-bottom: 155px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .main-footer__logo-and-social {
         flex-direction: column;

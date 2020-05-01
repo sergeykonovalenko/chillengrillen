@@ -67,6 +67,13 @@ textarea {
     }
 }
 
+/* Remove shadow from fields for WebKit browsers */
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+    appearance: none;
+}
+
 select {
     cursor: pointer;
 }

@@ -9,5 +9,20 @@
 }
 
 .feedback__form {
-    margin: 0 240px;
+    width: 930px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+    .feedback__head {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feedback {
+        padding: 70px 0;
+    }
 }

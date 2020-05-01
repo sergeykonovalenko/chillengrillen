@@ -22,8 +22,45 @@
     margin-bottom: 35px;
 }
 
+.contacts-box__list {
+    margin: 0;
+}
+
 .contacts-box__map {
     width: calc(100% - 33.3333333333333% - 340px);
     height: 400px;
     margin-right: 120px;
+}
+
+@media screen and (max-width: 1440px) {
+    .contacts-box__left {
+        width: calc((100% - 30px) / 2);
+        margin-right: 30px;
+        margin-left: 0;
+    }
+
+    .contacts-box__map {
+        width: calc((100% - 30px) / 2);
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts-box {
+        padding: 70px 0;
+    }
+
+    .contacts-box .container {
+        display: block;
+    }
+
+    .contacts-box__left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .contacts-box__map {
+        width: 100%;
+    }
 }

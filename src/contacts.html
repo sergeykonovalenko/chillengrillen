@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ru">
+<html class="no-js preload" lang="ru">
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -988,7 +988,7 @@
                             <li><a href="posts.html">Блог</a></li>
                             <li><a href="shipping-and-payment.html">Доставка, оплата и гарантия</a></li>
                             <li><a href="#">Вакансии</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
+                            <li class="current-menu-item"><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </div><!-- / .main-nav-mobile -->
                 </nav><!-- / .main-nav -->
@@ -1001,7 +1001,7 @@
                         </a>
                         <ul class="dropdown__box dropdown__box--level-2 dropdown__box--settings">
                             <li class="dropdown__item dropdown__item--level-2 dropdown__item--has-children">
-                                <a class="dropdown__link dropdown__link--level-2" href="#">Язык</a>
+                                <a class="dropdown__link dropdown__link--level-2">Язык</a>
                                 <ul class="dropdown__box dropdown__box--level-3">
                                     <li class="dropdown__item dropdown__item--level-3 dropdown__item--current">
                                         <a class="dropdown__link dropdown__link--level-3" href="#">RU</a>
@@ -1012,7 +1012,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown__item dropdown__item--level-2 dropdown__item--has-children">
-                                <a class="dropdown__link dropdown__link--level-2" href="#">Валюта</a>
+                                <a class="dropdown__link dropdown__link--level-2">Валюта</a>
                                 <ul class="dropdown__box dropdown__box--level-3">
                                     <li class="dropdown__item dropdown__item--level-3 dropdown__item--current">
                                         <a class="dropdown__link dropdown__link--level-3" href="#">RUB</a>
@@ -1192,25 +1192,25 @@
                     <p class="section-head__subtitle">Заполните форму ниже</p>
                     <p class="section-head__title">Отправьте нам свои вопросы</p>
                 </div><!-- / .section-head -->
-                <form class="feedback__form comment-form" action="#" method="post">
-                    <ul class="comment-form__list fields-list fields-list--big fields-list--white">
+                <form class="feedback__form comment-form form" action="#" method="post">
+                    <ul class="form__list fields-list fields-list--big fields-list--white">
                         <li class="fields-list__item">
-                            <label class="visually-hidden" for="comment-form-name">Ваше имя *</label>
-                            <input class="fields-list__field" id="comment-form-name" type="text" name="name" placeholder="Ваше имя *" required>
+                            <label class="visually-hidden" for="feedback__form-name">Ваше имя *</label>
+                            <input class="fields-list__field" id="feedback__form-name" type="text" name="name" placeholder="Ваше имя *" required>
                         </li>
                         <li class="fields-list__item">
-                            <label class="visually-hidden" for="comment-form-email">Ваш e-mail *</label>
-                            <input class="fields-list__field" id="comment-form-email" type="email" name="email" placeholder="Ваш e-mail *" required>
+                            <label class="visually-hidden" for="feedback__form-email">Ваш e-mail *</label>
+                            <input class="fields-list__field" id="feedback__form-email" type="email" name="email" placeholder="Ваш e-mail *" required>
                         </li>
                         <li class="fields-list__item">
-                            <label class="visually-hidden" for="comment-form-comment">Ваш вопрос *</label>
-                            <textarea class="fields-list__field" id="comment-form-comment" name="comment" placeholder="Ваш вопрос *" required></textarea>
+                            <label class="visually-hidden" for="feedback__form-comment">Ваш вопрос *</label>
+                            <textarea class="fields-list__field" id="feedback__form-comment" name="comment" placeholder="Ваш вопрос *" required></textarea>
                         </li>
                     </ul><!-- / .fields-list -->
-                    <p class="comment-form__button-box">
-                        <button class="comment-form__button button button--white-dark">Отправить</button>
+                    <p class="form__button-box">
+                        <button class="comment-form__button form__button button button--white-dark">Отправить</button>
                     </p>
-                </form><!-- / .comment-form -->
+                </form><!-- / .form -->
             </div>
         </section><!-- / .feedback -->
 

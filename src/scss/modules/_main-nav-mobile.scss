@@ -10,6 +10,18 @@
     display: none;
 }
 
+.main-nav-mobile .current-menu-ancestor > a:first-child::before,
+.main-nav-mobile .current-menu-parent > a:first-child::before,
+.main-nav-mobile .current-menu-item > a:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $color-secondary;
+}
+
 .main-nav-mobile .mm-listitem__btn:not(.mm-listitem__text) {
     border-left: none;
 }

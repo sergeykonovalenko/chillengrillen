@@ -3,16 +3,16 @@ $(document).ready(function () {
 
     const element = document.documentElement;
 
+    // preload
+    window.onload = function () {
+        element.classList.remove('preload');
+    };
+
     // is mobile
     const is_mobile = isMobile();
     if (is_mobile) {
         element.classList.add('is-mobile');
     }
-
-    // preload
-    window.onload = function () {
-        element.classList.add('loaded');
-    };
 
     // init modal
     $('.light-box-img').fancybox({

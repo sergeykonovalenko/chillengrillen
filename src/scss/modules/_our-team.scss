@@ -9,5 +9,13 @@
 }
 
 .our-team__list {
-    margin: 0 120px 0;
+    margin: 0 auto;
+    width: 1170px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .our-team {
+        padding: 70px 0;
+    }
 }

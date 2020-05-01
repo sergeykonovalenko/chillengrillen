@@ -7,7 +7,7 @@
         display: block;
         width: 60px;
         height: 2px;
-        margin-top: 18px;
+        margin-top: 22px;
         background-color: $color-secondary;
     }
     
@@ -27,7 +27,7 @@
 
 .section-head__subtitle {
     margin-top: 0;
-    margin-bottom: 7px;
+    margin-bottom: 11px;
     font-size: 16px;
     text-transform: uppercase;
     color: $color-secondary;
@@ -41,4 +41,11 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 30px;
+    line-height: 1.25;
+}
+
+@media screen and (max-width: 576px) {
+    .section-head__title {
+        font-size: 24px;
+    }
 }
