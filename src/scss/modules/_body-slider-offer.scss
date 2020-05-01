@@ -35,3 +35,13 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .body-slider-offer__txt {
+        font-size: 18px;
+    }
+
+    .body-slider-offer__txt strong {
+        font-size: 35px;
+    }
+}

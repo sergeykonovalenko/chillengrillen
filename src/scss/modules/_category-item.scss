@@ -1,7 +1,7 @@
 .category-item {
     display: block;
 
-    &:hover  {
+    html:not(.is-mobile) &:hover  {
 
         .category-item__icon {
             transform: scale(1) rotate(360deg);

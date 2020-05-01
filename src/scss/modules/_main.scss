@@ -29,8 +29,15 @@
 }
 
 @media screen and (max-width: 768px) {
-    .main:not(.main--full-width) {
-        order: 1;
-        width: 100%;
+    .main {
+
+        &:not(.main--full-width) {
+            order: 1;
+            width: 100%;
+        }
+
+        &--full-width {
+            padding-bottom: 70px;
+        }
     }
 }

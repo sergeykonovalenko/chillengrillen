@@ -45,18 +45,6 @@
     }
 }
 
-.workshop__tags {
-    margin-right: -7px;
-}
-
-.workshop__tags a {
-    margin-right: 7px;
-
-    &:first-of-type {
-        margin-left: 7px;
-    }
-}
-
 @media screen and (max-width: 576px) {
     .workshop__table td {
 
