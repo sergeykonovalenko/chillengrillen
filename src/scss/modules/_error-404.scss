@@ -13,6 +13,7 @@
     width: 56.5957446808%;
     margin-right: 60px;
     padding-top: 37px;
+    padding-bottom: 30px;
 }
 
 .error-404__title {
@@ -22,16 +23,10 @@
 }
 
 .error-404__desc {
-    margin: 0;
     font-size: 20px;
-}
-
-.error-404__desc a {
-    color: $color-secondary;
-
-    &:hover,
-    &:focus {
-        text-decoration: underline;
+    
+    &--only-mobile {
+        display: none;
     }
 }
 
@@ -44,9 +39,57 @@
 }
 
 .error-404__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     width: calc(100% - 56.5957446808% - 60px);
 }
 
 .error-404__img {
-    margin: 0 auto;
+
+}
+
+@media screen and (max-width: 992px) {
+    .error-404__title {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error-404__box {
+        display: block;
+        padding-bottom: 100px;
+    }
+
+    .error-404__left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    .error-404__title {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .error-404__desc {
+        
+        &--only-desktop {
+            display: none;
+        }
+        
+        &--only-mobile {
+            display: block;
+        }
+    }
+    
+    .error-404__right {
+        width: 100%;
+    }
+
+    .error-404__img-box {
+        margin-bottom: 30px;
+    }
 }
