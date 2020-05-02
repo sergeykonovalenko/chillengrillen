@@ -133,7 +133,7 @@
     position: absolute;
     display: flex;
     bottom: 11.15%;
-    left: calc(14.005602% - 15px);
+    left: calc(14.005602% - 10px);
 }
 
 .slider-offer .slick-dots li {
@@ -147,8 +147,8 @@
 .slider-offer .slick-dots button {
     display: block;
     width: 90px;
-    height: 45px;
-    padding: 20px 15px;
+    height: 44px;
+    padding: 20px 10px;
     font-size: 0;
     line-height: 0;
     border: none;
@@ -204,6 +204,19 @@
 
     .slider-offer .slick-dots {
         bottom: 20px;
-        left: 0;
+        left: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider-offer .slick-dots {
+        left: 10px;
+    }
+
+    .slider-offer .slick-dots button {
+        width: 50px;
+        height: 43px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }

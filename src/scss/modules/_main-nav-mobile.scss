@@ -1,5 +1,8 @@
-.main-nav-mobile:not(.mm-menu) {
-    display: none;
+.main-nav-mobile {
+
+    &:not(.mm-menu) {
+        display: none;
+    }
 }
 
 .main-nav-mobile__logo {

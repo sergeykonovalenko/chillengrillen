@@ -28,6 +28,12 @@
     min-width: 215px;
     padding-right: 40px;
     padding-left: 40px;
+    
+    &:hover,
+    &:focus {
+        color: $color-main;
+        background-color: #fff;
+    }
 }
 
 @media screen and (max-width: 992px) {

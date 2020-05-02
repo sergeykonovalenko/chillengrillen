@@ -60,7 +60,6 @@ $(document).ready(function () {
         });
     }
 
-
     // init mmenu
     new Mmenu( "#js-main-nav-mobile", {
         // wrappers: ["wordpress"],
@@ -82,7 +81,7 @@ $(document).ready(function () {
             {
                 'position': 'top',
                 'content': `<a class="main-nav-mobile__logo" href="/">
-                                <img src="../img/base/logo.svg" width="150" alt="Chillengrillen.ru">
+                                <img src="../img/base/logo.svg" width="150" height="41" alt="Chillengrillen.ru">
                             </a>`
             },
         ]
@@ -508,28 +507,31 @@ $(document).ready(function () {
         // heightStyle: 'auto',
     });
 
-    // window resize
-    window.onresize = () => showHideMiniCart();
-
-    // show/hide mini-cart
-    function showHideMiniCart() {
+    // show/hide mini cart
+    $('.dropdown__link--cart').on('click', function (e) {
         if (window.innerWidth < 993) {
-            $('.dropdown__link--cart').on('click', function (e) {
-                e.preventDefault();
-                $(document.body).toggleClass('mini-cart-open');
-            });
+            e.preventDefault();
+            $(document.body).toggleClass('mini-cart-open');
         }
+    });
 
-        $('.mini-cart-backdrop, .mini-cart__close').on('click', function () {
-            $(document.body).removeClass('mini-cart-open');
-        });
-    }
+    $('.mini-cart-backdrop, .mini-cart__close').on('click', function () {
+        $(document.body).removeClass('mini-cart-open');
+    });
 
-    showHideMiniCart();
-
-    // show/hide shipping-calculator
+    // show/hide shipping calculator
     $('.table-cart-totals__btn-shipping-calculator').on('click', function () {
         $('.shipping-calculator').slideToggle(300);
+    });
+
+    // show/hide breadcrumbs dropdown
+    $('.breadcrumbs-extra__button').on('click', function () {
+        let currentBreadcrumbsExtraItem = $(this).closest('.breadcrumbs-extra__item');
+
+        $('.breadcrumbs-extra__item').not(currentBreadcrumbsExtraItem).removeClass('breadcrumbs-extra__item--show-dropdown');
+        $('.breadcrumbs-extra__item').not(currentBreadcrumbsExtraItem).find('.breadcrumbs-extra__dropdown').slideUp(300);
+        currentBreadcrumbsExtraItem.toggleClass('breadcrumbs-extra__item--show-dropdown');
+        currentBreadcrumbsExtraItem.find('.breadcrumbs-extra__dropdown').slideToggle(300);
     });
 
     // numberWithSpaces

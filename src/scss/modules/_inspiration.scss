@@ -10,3 +10,10 @@
 .inspiration__posts-list {
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .inspiration {
+        padding-top: 70px;
+        padding-bottom: 0;
+    }
+}

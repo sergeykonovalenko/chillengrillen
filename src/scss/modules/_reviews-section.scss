@@ -18,6 +18,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    .reviews-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
     .reviews-section__title {
         padding: 0;
     }

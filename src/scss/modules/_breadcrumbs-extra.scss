@@ -1,0 +1,98 @@
+.breadcrumbs-extra {
+    @include reset-list;
+}
+
+.breadcrumbs-extra__item {
+    position: relative;
+    display: inline;
+    margin-right: 5px;
+}
+
+.breadcrumbs-extra__link {
+    margin-right: 5px;
+    color: $color-main;
+    transition: all .15s ease-out;
+
+    &:hover,
+    &:focus {
+        color: $color-secondary;
+    }
+}
+
+.breadcrumbs-extra__button {
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid $color-main;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .15s ease-out;
+
+    &:hover,
+    .breadcrumbs-extra__item--show-dropdown & {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+
+        svg {
+            fill: #fff;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.breadcrumbs-extra__button svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .15s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+.breadcrumbs-extra__separator {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.breadcrumbs-extra__dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 3;
+    display: none;
+    width: 240px;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+}
+
+.breadcrumbs-extra__dropdown li {
+
+}
+
+.breadcrumbs-extra__dropdown a {
+    display: block;
+    padding: 3px 15px;
+    color: $color-main;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: $color-secondary;
+    }
+}
+
+.breadcrumbs-extra__current {
+    color: $grey-4;
+}

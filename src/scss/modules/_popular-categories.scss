@@ -18,3 +18,10 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .popular-categories {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
