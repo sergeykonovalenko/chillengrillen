@@ -13,7 +13,7 @@
     margin-right: 30px;
 
     .products-list--3-columns & {
-        width: calc((100% - 60px) / 3);
+        width: calc((99.999% - 60px) / 3);
 
         &:nth-child(3n) {
             margin-right: 0;
@@ -50,7 +50,7 @@
     .products-list__item {
 
         .products-list--in-catalog.products-list--3-columns:not(.products-list--mode--list) & {
-            width: calc((100% - 30px) / 2);
+            width: calc((99.999% - 30px) / 2);
 
             &:nth-child(3n) {
                 margin-right: 30px;
@@ -87,7 +87,7 @@
     .products-list__item {
 
         .products-list--4-columns & {
-            width: calc((100% - 30px) / 2);
+            width: calc((99.999% - 30px) / 2);
 
             &:nth-child(3n) {
                 margin-right: 30px;

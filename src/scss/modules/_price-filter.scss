@@ -41,3 +41,9 @@
         box-shadow: 0 0 7px rgba(0, 0, 0, .2);
     }
 }
+
+@media screen and (max-width: 768px) {
+    .price-filter__range {
+        padding-right: 15px;
+    }
+}

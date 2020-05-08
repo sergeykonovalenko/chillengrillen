@@ -13,8 +13,12 @@
         margin-bottom: 0;
     }
 
+    & > *:nth-child(n + 2) {
+        padding-left: 25px;
+    }
+
     .contacts-list--extra & {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
 
         &:last-child {
             margin-bottom: 0;
@@ -27,6 +31,10 @@
     align-items: center;
     color: $grey-5;
     transition: all .15s ease-out;
+
+    .contacts-list--extra & {
+        align-items: flex-start;
+    }
 
     &:hover,
     &:focus {
@@ -69,10 +77,17 @@
     .contacts-list--extra & {
         width: 15px;
         height: 15px;
+        margin-top: 4px;
         background-color: transparent;
     }
 }
 
 .contacts-list__icon {
     transition: fill .15s ease-out;
+}
+
+@media screen and (max-width: 370px) {
+    .contacts-list br {
+        display: none;
+    }
 }

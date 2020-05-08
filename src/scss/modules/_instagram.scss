@@ -6,9 +6,10 @@
 }
 
 .instagram__item {
-    width: calc((100% - 4px) / 3);
-    margin-right: 2px;
-
+    // в Edge и IE ширина блоков при такой записи больше,
+    // чем нужно и поєтому ломается верстка
+    //width: calc((100% - 4px) / 3);
+    width: calc((99.999% - 4px) / 3);    margin-right: 2px;
     &:nth-child(3n) {
         margin-right: 0;
     }

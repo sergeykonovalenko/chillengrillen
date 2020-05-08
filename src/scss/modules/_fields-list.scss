@@ -82,6 +82,10 @@
 
     .fields-list--big & {
         padding: 21px 30px;
+
+        &::placeholder {
+            color: $grey-4;
+        }
     }
 
     .fields-list--white & {
