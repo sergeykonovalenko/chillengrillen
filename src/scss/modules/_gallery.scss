@@ -7,7 +7,7 @@
 }
 
 .gallery__item {
-    width: calc((100% - 30px) / 2);
+    width: calc((99.999% - 30px) / 2);
     margin-right: 30px;
 
     &:nth-child(2n) {
@@ -27,6 +27,8 @@
     background-color: $color-main;
     border-radius: 5px;
     overflow: hidden;
+    // Safari border-radius + overflow: hidden + CSS transform fix
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 
     &::after {
         content: "";

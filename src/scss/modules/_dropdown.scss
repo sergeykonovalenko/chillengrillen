@@ -16,7 +16,6 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
     opacity: 0;
     visibility: hidden;
-    //transform: translate(0, 10px);
     margin-top: 10px;
     transition: opacity 200ms ease-in,
                 margin 200ms ease-in,
@@ -63,7 +62,6 @@
         & > .dropdown__box {
             opacity: 1;
             visibility: visible;
-            //transform: translate(0, 0);
             margin-top: 0;
         }
     }

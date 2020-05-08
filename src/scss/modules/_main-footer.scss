@@ -22,10 +22,6 @@
 .main-footer__bottom {
     padding-bottom: 65px;
     color: #fff;
-    //background: linear-gradient(90deg, rgba(135,45,29,1) 0%, rgba(186,0,43,1) 50%);
-    //background-image: radial-gradient(circle, #2e2f33, #303135, #313236, #333438, #35363a, #37383c, #38393d, #3a3b3f, #3c3d41, #3e3f43, #404145, #424347);
-    //background-image: radial-gradient(circle, #2e2f33, #333438, #38393d, #3d3e42, #424347);
-    //background-image: linear-gradient(to right top, #2d2e32, #2f3034, #303135, #323337, #343539, #36373b, #393a3e, #3b3c40, #3e3f43, #404145, #434448, #46474b);
     background-image: linear-gradient(to right top, #2d2e32, #333438, #393a3e, #404145, #46474b);
 }
 
@@ -81,7 +77,6 @@
 
     &:hover,
     &:focus {
-        //text-decoration: underline;
         color: $color-secondary--light;
     }
 }

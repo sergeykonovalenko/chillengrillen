@@ -10,6 +10,8 @@
     padding-bottom: 62.857142%;
     border-radius: 6px;
     overflow: hidden;
+    // Safari border-radius + overflow: hidden + CSS transform fix
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 
     .post-item--small & {
 

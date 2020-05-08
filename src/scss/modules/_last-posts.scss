@@ -25,6 +25,8 @@
     height: 90px;
     border-radius: 10px;
     overflow: hidden;
+    // Safari border-radius + overflow: hidden + CSS transform fix
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 
     &::before {
         content: "";

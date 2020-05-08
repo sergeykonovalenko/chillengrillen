@@ -22,6 +22,7 @@
     margin-bottom: 20px;
     padding-bottom: 100%;
     border-radius: 6px;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
 
     &:hover .product-item__img-box:first-of-type {
         opacity: 0;

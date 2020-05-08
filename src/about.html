@@ -1446,12 +1446,10 @@
                             <input class="fields-list__field" id="user-pass" type="password" name="user_pass" required>
                         </li>
                     </ul><!-- / .fields-list -->
-                    <p class="modal-login-form__remember-me checkbox">
-                        <label class="checkbox__label">
-                            <input class="checkbox__field" type="checkbox" name="remember-me">
-                            <span>Запомнить меня</span>
-                        </label>
-                    </p><!-- / .checkbox -->
+                    <label class="modal-login-form__remember-me checkbox">
+                        <input class="checkbox__field visually-hidden" type="checkbox" name="remember-me">
+                        <span class="checkbox__txt">Запомнить меня</span>
+                    </label><!-- / .checkbox -->
                     <button class="modal-login-form__button form__button button button--inversion">Войти</button>
                     <p class="modal-login-form__lost-password">
                         <a href="account-edit-account.html#change-password">Забыли пароль?</a>
