@@ -198,7 +198,7 @@ $(document).ready(function () {
         autoplaySpeed: 4000,
         pauseOnFocus: false,
         pauseOnHover: false,
-        focusOnSelect: true,
+        // focusOnSelect: true,
         prevArrow: `<button class="slider-offer__arrow slider-offer__arrow--prev" type="button">
                         <span class="visually-hidden">Назад</span> 
                         <svg width="14" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
@@ -224,7 +224,7 @@ $(document).ready(function () {
         slidesToScroll: 6,
         pauseOnFocus: false,
         pauseOnHover: false,
-        focusOnSelect: true,
+        // focusOnSelect: true,
         prevArrow: `<button class="slider-category__arrow slider-category__arrow--prev slider-arrow slider-arrow--prev" type="button">
                         <span class="visually-hidden">Назад</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
@@ -276,7 +276,7 @@ $(document).ready(function () {
         slidesToScroll: 3,
         pauseOnFocus: false,
         pauseOnHover: false,
-        focusOnSelect: true,
+        // focusOnSelect: true,
         prevArrow: `<button class="product-slider__arrow product-slider__arrow--prev slider-arrow slider-arrow--prev" type="button">
                         <span class="visually-hidden">Назад</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
@@ -314,7 +314,7 @@ $(document).ready(function () {
         slidesToScroll: 2,
         pauseOnFocus: false,
         pauseOnHover: false,
-        focusOnSelect: true,
+        // focusOnSelect: true,
         prevArrow: `<button class="reviews-slider__arrow reviews-slider__arrow--prev slider-arrow slider-arrow--white slider-arrow--prev" type="button">
                         <span class="visually-hidden">Назад</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>
@@ -447,7 +447,7 @@ $(document).ready(function () {
         slidesToScroll: 4,
         pauseOnFocus: false,
         pauseOnHover: false,
-        focusOnSelect: true,
+        // focusOnSelect: true,
         prevArrow: `<button class="product-group-slider__arrow product-group-slider__arrow--prev slider-arrow slider-arrow--prev" type="button">
                         <span class="visually-hidden">Назад</span> 
                         <svg class="slider-arrow__icon" width="9" viewBox="0 0 149 256.1" fill="#222222" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 119.5l117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L43.1 128l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L3.4 136.5c-4.6-4.7-4.6-12.3.1-17z"/></svg>

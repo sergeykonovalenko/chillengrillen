@@ -37,6 +37,10 @@
     &:hover .product-additional__icon {
         fill: #fff;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .product-additional__icon {
