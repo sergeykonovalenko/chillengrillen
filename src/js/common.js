@@ -42,7 +42,7 @@ $(document).ready(function () {
                 </button>`
         },
         afterLoad: function( instance, slide ) {
-            // Вручную обновить позиционирование слайдеров внутри
+            // update the positioning of the sliders
             $('.product-gallery').slick('setPosition');
             $('.product-gallery-side').slick('setPosition');
         }
